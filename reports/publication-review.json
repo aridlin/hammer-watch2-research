@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "reviewed_snapshot_files": 106,
+  "reviewed_snapshot_files": 113,
   "excluded": [
     "proprietary APK/SDK/face binaries and images",
     "raw captures",
@@ -11,12 +11,12 @@
   ],
   "scan_result": "No real device addresses, personal emails, JWTs or GitHub tokens in reviewed snapshot; address matches are synthetic fixtures, apparent emails are the factory filename ewrcompass_0819@LC.bin.",
   "local_tests": {
-    "passed": 146,
+    "passed": 153,
     "skipped": 0
   },
   "clean_snapshot_tests": {
-    "passed": 126,
-    "skipped": 20,
+    "passed": 127,
+    "skipped": 26,
     "reason": "Real samples/captures deliberately excluded"
   }
 }

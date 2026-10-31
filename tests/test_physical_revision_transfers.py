@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from tools.watch_face_install import validate_ack
 
-@pytest.mark.parametrize('revision,directory',[(3,'physical-seconds-no-meters-02'),(4,'physical-hands-date-rim-01')])
+@pytest.mark.parametrize('revision,directory',[(3,'physical-seconds-no-meters-02'),(4,'physical-hands-date-rim-01'),(5,'physical-weather-font-01'),(6,'physical-polish-weather-01')])
 def test_real_acknowledgments_match_source_bytes(revision,directory):
     log=Path('private/emulator')/directory/'upload.jsonl'
     binary=Path(f'faces/local/adventurer/ewr24dig0{revision}.bin')

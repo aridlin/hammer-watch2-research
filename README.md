@@ -13,8 +13,8 @@ full functional compatibility.
 Revision 4 adds dim analog hands behind `HH:MM:SS`, replaces heart rate with
 `DD.MM`, removes pressure/altitude meters, and uses the factory second-pointer
 widget for a short rim marker completing one lap per minute. This also tests
-whether retaining the factory pointer model restores compass redraws. Firmware
-behavior, date indexing and visual acceptance must be checked on the watch.
+whether retaining the factory pointer model restores compass redraws. The user confirms the compass still freezes with these pointers restored.
+Revision 5 uses weather-face font/date and its native heading renderer. Revision 6 adds Polish weekday labels and is installed/active; physical compass acceptance remains pending.
 
 See [current status](STATUS.md), [research](research.md), [format](format.md),
 [protocol](protocol.md), [field feedback](reports/field-feedback-and-revision3.json)
@@ -27,6 +27,10 @@ Earlier investigation sections below are chronological records; STATUS.md takes
 precedence over their historical missing-input or untested statements.
 
 ## Setup
+
+Rebuilding revision 6 also requires the locally installed **DejaVu Sans Bold Oblique**
+font for Polish weekday lettering. Proprietary time/day glyphs must be acquired
+locally through the documented source workflow.
 
 Python 3.11+ runs the generic tools with no dependencies. The recorded analysis environment uses Python 3.12.13, Androguard 4.1.3, pytest 8.4.2, JADX 1.5.6 and Google apksig 8.13.0. Java 17+ and `javac` are needed for the optional signature verifier; `nm` is needed for native export inspection.
 

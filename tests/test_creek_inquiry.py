@@ -50,3 +50,27 @@ def test_crc_rejection_and_real_replies_when_available():
                 if complete:
                     assert summarize_response(operation,complete)['crc16_valid'];count+=1
     if not count:pytest.skip('Private real inquiry replies not supplied')
+
+
+def test_duplicate_intermediate_fragment_and_real_long_dial_reply():
+    from tools.creek_inquiry import CheckedInquiryAssembler
+    from tools.virtual_watch_protocol import fragment_reply
+    from pathlib import Path
+    import json
+    packet=response_frame(request_for('dial-info'),integer(3,8)+blob(14,b'x'*470))
+    parts=fragment_reply(packet,243);assert len(parts)>=3
+    assembler=CheckedInquiryAssembler();result=None
+    for part in parts:
+        for _ in range(2):
+            complete=assembler.feed(part)
+            if complete:result=complete
+    assert result==packet
+    path=Path('private/emulator/physical-polish-weather-01/dial-after.jsonl')
+    if path.exists():
+        assembler=CheckedInquiryAssembler();summaries=[]
+        for line in path.read_text().splitlines():
+            event=json.loads(line)
+            if event['event']=='notification':
+                packet=assembler.feed(bytes.fromhex(event['hex']))
+                if packet:summaries.append(summarize_response('dial-info',packet))
+        assert any(r['crc16_valid'] and r['revision6_test_entry_present'] and r['active_is_revision6_test'] and r['adventurer_entry_present'] for r in summaries)

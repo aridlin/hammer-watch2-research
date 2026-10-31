@@ -14,5 +14,6 @@ Public releases use a reviewed snapshot rather than publishing the original
 workspace history. Earlier chronological reports describe the evidence at that
 stage; STATUS.md identifies superseded hypotheses and present blockers.
 
-Verification: 146 tests pass with local samples; the clean public snapshot passes
-126 tests and skips 20 tests that require deliberately excluded private inputs.
+Verification details and exact snapshot file counts are recorded in
+reports/publication-review.json. Real-sample and live capture tests skip in public
+checkouts because their private inputs are deliberately excluded.

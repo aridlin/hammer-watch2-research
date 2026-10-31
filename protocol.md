@@ -275,3 +275,14 @@ seconds but frozen compass. Revision 4 uses a new `ewr24dig04.bin` entry and the
 same validated D1/D2/D4 transfer. No activation opcode, delete, factory overwrite,
 firmware command or retry on an unknown offset is added. Transfer acknowledgment
 and runtime face correctness are separate acceptance criteria.
+
+## Duplicated inquiry fragments with a longer face list
+
+After revision 6, dial metadata totals 481 bytes and spans C1/C2/C3 notifications.
+The observed host delivered each fragment twice. The former assembler appended
+the second C2 twice and exceeded the declared length. `CheckedInquiryAssembler`
+now keeps raw and adjacent-duplicate-suppressed interpretations, bounds each via
+the existing assembler, and accepts only a CRC16-valid complete response. Keeping
+the raw interpretation avoids assuming identical continuation bytes are always
+duplicates. A synthetic doubled-fragment test and actual captured response pass.
+A fresh CRC-valid inquiry confirms revision 6 active and factory retained.

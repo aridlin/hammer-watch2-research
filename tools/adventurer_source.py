@@ -74,6 +74,82 @@ def revision4_images(source):
     return result
 
 
+def revision5_images(source):
+    from PIL import Image
+    import math
+    from .creek_bin import read_binary,decode_image
+    result=revision4_images(source)
+    result={k:v for k,v in result.items() if not k.startswith('Month/') and k!='HeartRate_8888.png'}
+    # The discarded heart-rate badge is baked into the normal background.
+    # Rebuild its footprint from unaffected same-row boundary gradient values.
+    image=result['bg_0888.bmp'];before=image.copy()
+    for y in range(275,389):
+        left=before.getpixel((176,y));right=before.getpixel((290,y))
+        for x in range(177,290):
+            t=(x-176)/114
+            image.putpixel((x,y),tuple(round((1-t)*left[c]+t*right[c]) for c in range(3)))
+    weather=read_binary(Path(source).parent/'comparison-weather.bin')
+    for index in range(11):result[f'Time/Time_{index}_8888.png']=decode_image(weather,f'Time_{index}_8888.png')
+    groups=[('day','WDay',10),('week','WWeek',7),('data','WData',12)]
+    for old,new,count in groups:
+        for i in range(count):
+            image=decode_image(weather,f'{old}_{i}_8888.png').convert('RGBA')
+            if new in {'WDay','WWeek'}:
+                alpha=image.getchannel('A');image=Image.new('RGBA',image.size,(246,127,49,255));image.putalpha(alpha)
+            if new=='WDay':
+                # Native curved glyphs rotate around the watch center. Preflip
+                # lower-arc glyphs so their baseline reads upright there.
+                image=image.transpose(Image.Transpose.ROTATE_180)
+            elif new=='WWeek':
+                curved=Image.new('RGBA',(466,466))
+                # Bend the actual weather weekday bitmap along the inner arc.
+                # This changes sprite geometry, not date/index binding.
+                for sx in range(image.width):
+                    dx=175+sx-233
+                    for sy in range(image.height):
+                        radius=130-(image.height-1-sy)
+                        angle=dx/130
+                        x=round(233+radius*math.sin(angle))
+                        y=round(233+radius*math.cos(angle))
+                        pixel=image.getpixel((sx,sy))
+                        if pixel[3]:curved.putpixel((x,y),pixel)
+                image=curved
+            result[f'{new}/{new}_{i}_8888.png']=image
+    result['WAngle_8888.png']=decode_image(weather,'angle_8888.png')
+    return result
+
+
+POLISH_WEEKDAYS=('pon','wt','śr','czw','pt','sob','ndz')
+
+
+def revision6_images(source):
+    """Monday-first order verified by viewing all seven weather source assets.
+
+    Numeric time/day glyphs remain vendor originals. Polish letters absent from
+    the English bitmap alphabet are rendered with local DejaVu Sans Bold Oblique.
+    Font bytes are not bundled in the public repository.
+    """
+    from PIL import Image,ImageFont,ImageDraw
+    import math
+    result=revision5_images(source)
+    font=ImageFont.truetype('DejaVuSans-BoldOblique.ttf',112)
+    for i,label in enumerate(POLISH_WEEKDAYS):
+        box=font.getbbox(label);glyph=Image.new('RGBA',(box[2]-box[0],box[3]-box[1]))
+        ImageDraw.Draw(glyph).text((-box[0],-box[1]),label,font=font,fill=(246,127,49,255))
+        glyph.thumbnail((288,112),Image.Resampling.LANCZOS)
+        flat=Image.new('RGBA',(288,112));flat.alpha_composite(glyph,((288-glyph.width)//2,(112-glyph.height)//2))
+        flat=flat.resize((72,28),Image.Resampling.LANCZOS)
+        curved=Image.new('RGBA',(466,466))
+        # Inverse sampling fills the curved baseline without forward-map holes.
+        for y in range(310,365):
+            for x in range(170,251):
+                dx=x-233;dy=y-233;radius=math.hypot(dx,dy)
+                sx=round(math.atan2(dx,dy)*130+58);sy=round(radius-130+27)
+                if 0<=sx<72 and 0<=sy<28:curved.putpixel((x,y),flat.getpixel((sx,sy)))
+        result[f'WWeek/WWeek_{i}_8888.png']=curved
+    return result
+
+
 def prepare_source(source,destination,revision=3):
     from PIL import Image
     source,model=validate_source(source)
@@ -95,8 +171,9 @@ def prepare_source(source,destination,revision=3):
                             'new_pixels_sha256':hashlib.sha256(after.tobytes()).hexdigest(),
                             'original_file_sha256':hashlib.sha256(original.read_bytes()).hexdigest(),
                             'new_file_sha256':hashlib.sha256(output.read_bytes()).hexdigest()})
-    if revision==4:
-        for relative,image in revision4_images(source).items():
+    if revision>=4:
+        images=revision6_images(source) if revision==6 else (revision5_images(source) if revision==5 else revision4_images(source))
+        for relative,image in images.items():
             output=destination/'firmware'/relative;output.parent.mkdir(parents=True,exist_ok=True)
             image.save(output)
         patches.append({'revision4':'dimmed hands, rim second pointer, date separator and twelve numeric month images'})
@@ -106,7 +183,7 @@ def prepare_source(source,destination,revision=3):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--source',required=True,type=Path)
-    p.add_argument('--destination',required=True,type=Path);p.add_argument('--revision',type=int,choices=[3,4],default=3);a=p.parse_args()
+    p.add_argument('--destination',required=True,type=Path);p.add_argument('--revision',type=int,choices=[3,4,5,6],default=3);a=p.parse_args()
     try:print(json.dumps(prepare_source(a.source,a.destination,a.revision),indent=2));return 0
     except (OSError,ValueError,KeyError,TypeError) as exc:
         print(json.dumps({'error_type':type(exc).__name__}));return 2

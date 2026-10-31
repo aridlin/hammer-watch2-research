@@ -109,3 +109,17 @@ pivots/ranges, dims hour/minute/hub RGB to 24%, and replaces the 32×288 seconds
 sprites with an 11-pixel segment near radius 225. The compiler preserves reviewed
 pixels; RGB565 AOD comparisons use decoded quantized original pixels. JSON/image
 checks do not establish live firmware rendering or sensor refresh.
+
+## Weather-font and Polish date variants
+
+Revisions 5/6 retain source pointer pivots and the outer ADVENTURER compass model.
+Weather Time glyphs are copied exactly, with 48×58 digits and a 20×58 colon.
+Weekday bitmaps use a full transparent 466×466 array canvas with lettering placed
+on the lower inner arc. Native day data feeds the curved renderer; lower-arc glyphs
+are preflipped for upright orientation. Runtime position/order is still an explicit
+hardware acceptance check, not established by compiler success. The weather
+source contains day and curved widgets separately; this combination is new.
+
+Revision 6 uses Monday-first Polish labels, verified against the actual weather
+array order. DejaVu Sans Bold Oblique supplies letters unavailable in the original
+English weekday bitmaps. Numeric date and time retain actual weather glyphs.

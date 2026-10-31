@@ -26,6 +26,8 @@ def status_keys(revision):
     if revision==1:return 'standalone_test_entry_present','active_is_standalone_test'
     if revision==3:return 'revision3_test_entry_present','active_is_revision3_test'
     if revision==4:return 'revision4_test_entry_present','active_is_revision4_test'
+    if revision==5:return 'revision5_test_entry_present','active_is_revision5_test'
+    if revision==6:return 'revision6_test_entry_present','active_is_revision6_test'
     raise ValueError('Unsupported physical test revision')
 
 
@@ -37,12 +39,14 @@ def prepare(candidate,original,revision=1):
     original_model=next(r['json'] for r in source['resources'] if r['name']=='dial.json')
     expected,_=transform(original_model,standalone=True,revision=revision)
     if report['name']!=TEST_NAMES[revision] or model!=expected:raise ValueError('Only the reviewed standalone digital layout is accepted')
-    from .adventurer_source import PATCH_PATHS,clean_meter_background,revision4_images
+    from .adventurer_source import PATCH_PATHS,clean_meter_background,revision4_images,revision5_images,revision6_images
     changed=set(PATCH_PATHS) if revision==3 else set()
     expected_images={}
-    if revision==4:
-        expected_images={Path(k).name:v for k,v in revision4_images(ROOT/'faces/local/adventurer/source').items()}
+    if revision>=4:
+        image_transform=revision6_images if revision==6 else (revision5_images if revision==5 else revision4_images)
+        expected_images={Path(k).name:v for k,v in image_transform(ROOT/'faces/local/adventurer/source').items()}
         for name in PATCH_PATHS:
+            if revision>=5 and name=='bg_0888.bmp':continue
             expected_images[name]=clean_meter_background(decode_image(original,name),name)
             if name!='bg_0888.bmp':expected_images[name].paste((0,0,0),(211,287,255,329))
         changed=set(expected_images)
@@ -52,7 +56,7 @@ def prepare(candidate,original,revision=1):
     preserved=0
     for name,new in new_resources.items():
         if name in changed:
-            expected_image=expected_images[name] if revision==4 else clean_meter_background(decode_image(original,name),name)
+            expected_image=expected_images[name] if revision>=4 else clean_meter_background(decode_image(original,name),name)
             actual_image=decode_image(candidate,name)
             if expected_image.convert('RGBA').tobytes()!=actual_image.convert('RGBA').tobytes():raise ValueError('Image change exceeds reviewed source transform')
         elif old_resources[name]['sha256']!=new['sha256']:raise ValueError('Non-layout resource differs')
@@ -188,7 +192,7 @@ def execute(data,target,destination,resume=False,revision=1):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--revision',type=int,choices=[1,3,4],default=1)
+    p.add_argument('--revision',type=int,choices=[1,3,4,5,6],default=1)
     p.add_argument('--candidate',required=True,type=Path)
     p.add_argument('--original',type=Path,default=Path('faces/local/adventurer/official-green.bin'))
     p.add_argument('--resume-reviewed-test',action='store_true',help='Only continue an already-approved partial test after verifying receiver prefix CRC; no new D1')

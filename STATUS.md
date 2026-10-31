@@ -9,7 +9,9 @@ custom face is **not accepted as complete**: compass refresh is still broken.
 | 1 (`ewr24digital`) | Installed; time overlaps fixed meter icons; compass catches up on minute changes |
 | 2 (`ewr24dig02`) | Offline experiment, never installed |
 | 3 (`ewr24dig03`) | Installed and active; user confirms seconds work but compass still freezes; meters removed |
-| 4 (`ewr24dig04`) | Installed and active; factory retained; runtime feedback pending (reports/revision4-installation.json) |
+| 4 (`ewr24dig04`) | Installed; user confirms compass still broken. Weather font/date and badge removal requested. |
+| 5 (`ewr24dig05`) | Installed; weather font, curved orange date without badge, weather heading widgets; runtime result pending |
+| 6 (`ewr24dig06`) | Installed and active; Polish weekdays; factory retained; runtime observation pending |
 
 Revision 4 restores the factory hour/minute/second pointer geometry, dims the
 hour/minute/hub sprites, and changes the second sprite to a short outer marker.
@@ -20,7 +22,7 @@ remaining “white texture” report has no new close-up, so complete removal is
 not yet claimed. Compass widgets themselves are unchanged. Retaining pointers is
 a redraw hypothesis, not a proven fix. The host upload never modifies firmware.
 
-Offline checks: **146 passed**, including actual source/compiler image guards.
+Offline checks: **153 passed**, including actual source/compiler image guards.
 Real sample tests skip when proprietary local samples are absent. Final acceptance
 requires checking date, time, rim position, absence of unwanted graphics, and
 continuous compass rotation on the physical watch. Earlier sections below retain
@@ -144,3 +146,29 @@ Use `tools/git-project` for metadata in ignored `private/git` because this works
 reserves read-only `.git`. No remote/publication exists. See [README](README.md),
 [protocol](protocol.md), [research](research.md), [format](format.md) and
 [emulator lab](emulator.md).
+
+## Revision 5 experiment
+
+Actual time glyphs come from the acquired weather face unchanged (48×58 digits,
+20×58 colon). Its weekday/day glyphs are colored orange. Weekday images bend along
+the lower inner edge; day uses the existing curved renderer with the native day
+binding. That combination is newly tested and its runtime behavior is unverified.
+The heart badge is removed using a bounded row-gradient reconstruction.
+
+The weather face's observed `icon/compass_icon` and `text/angle` bindings are added
+alongside the original outer compass widgets. This tests whether the native
+heading renderer activates sensor updates. There is no verified face-level
+refresh interval; no undocumented device setting is sent. A moving heading with a
+frozen outer ring would isolate the defect to the custom compass renderer.
+
+Revision 6 localizes the Monday-first weather weekday array to `pon`, `wt`, `śr`,
+`czw`, `pt`, `sob`, `ndz`. Source weekday indices 0..6 were visually verified as
+MON..SUN. Numeric time/day glyphs remain from the weather face. Its English
+weekday bitmap alphabet lacks some Polish letters, so only weekday labels use
+local DejaVu Sans Bold Oblique; install that font to rebuild this revision.
+
+The revision 6 dial list spans three ATT notifications; each fragment was delivered
+twice through the observed host path. The inquiry parser now keeps raw and
+adjacent-duplicate-suppressed interpretations and accepts only a CRC-valid message.
+A fresh read confirms 15 installed faces, revision 6 active, and factory ADVENTURER
+present. The initial unassembled reply was not evidence of missing/deleted faces.

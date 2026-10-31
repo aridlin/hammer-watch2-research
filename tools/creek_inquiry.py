@@ -22,6 +22,29 @@ WRITE='00000001-0000-1000-8000-00805f9b34fb'
 NOTIFY='00000002-0000-1000-8000-00805f9b34fb'
 
 
+class CheckedInquiryAssembler:
+    """Accept only CRC-valid raw or adjacent-duplicate-suppressed assemblies.
+
+    Actual BlueZ notifications duplicated an intermediate C2 fragment once the
+    dial list grew past two ATT values. Keep both interpretations so legitimately
+    identical continuation payloads are not silently discarded.
+    """
+    def __init__(self):
+        self.raw=Reassembler();self.deduplicated=Reassembler();self.previous=None
+
+    def feed(self,packet):
+        candidates=[]
+        for assembler,enabled in ((self.raw,True),(self.deduplicated,packet!=self.previous)):
+            if not enabled:continue
+            try:complete=assembler.feed(packet)
+            except ValueError:continue
+            if complete and len(complete)>=13 and binascii.crc_hqx(complete[:-2],0xffff)==int.from_bytes(complete[-2:],'little'):
+                candidates.append(complete)
+        self.previous=packet
+        if len(set(candidates))>1:raise ValueError('Ambiguous CRC-valid inquiry assemblies')
+        return candidates[0] if candidates else None
+
+
 def request_for(operation):
     if operation not in REQUESTS:raise ValueError('Only recovered read-only inquiries are allowed')
     return REQUESTS[operation]
@@ -87,6 +110,10 @@ def summarize_response(operation,packet,verify_crc=True):
         result['active_is_revision3_test']=canonical(nested.get(14,[b''])[0])==b'ewr24dig03'
         result['revision4_test_entry_present']=any(any(canonical(n)==b'ewr24dig04' for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))
         result['active_is_revision4_test']=canonical(nested.get(14,[b''])[0])==b'ewr24dig04'
+        result['revision5_test_entry_present']=any(any(canonical(n)==b'ewr24dig05' for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))
+        result['active_is_revision5_test']=canonical(nested.get(14,[b''])[0])==b'ewr24dig05'
+        result['revision6_test_entry_present']=any(any(canonical(n)==b'ewr24dig06' for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))
+        result['active_is_revision6_test']=canonical(nested.get(14,[b''])[0])==b'ewr24dig06'
         result['standalone_test_entry_present']=any(any(canonical(n)==b'ewr24digital' for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))
         result['active_is_standalone_test']=canonical(nested.get(14,[b''])[0])==b'ewr24digital'
         result['adventurer_entry_present']=any(any(canonical(n)==target for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))
@@ -115,7 +142,7 @@ def run(operation,target,destination):
     if WRITE not in chars or NOTIFY not in chars:raise ValueError('Expected actual physical Creek characteristics')
     notify=dbus.Interface(bus.get_object('org.bluez',chars[NOTIFY]),'org.bluez.GattCharacteristic1')
     write=dbus.Interface(bus.get_object('org.bluez',chars[WRITE]),'org.bluez.GattCharacteristic1')
-    result=None;count=0;assembler=Reassembler();loop=GLib.MainLoop()
+    result=None;count=0;assembler=CheckedInquiryAssembler();loop=GLib.MainLoop()
     with os.fdopen(os.open(destination,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600),'w') as log:
         def record(data):log.write(json.dumps(data)+'\n');log.flush()
         def changed(interface,values,invalidated):

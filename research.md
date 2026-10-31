@@ -159,3 +159,10 @@ Date schema evidence: `circlePhoto/firmware/dial.json` uses `text/day` and the
 second acquired compiler reference uses `array/month` with count 12. Revision 4
 uses those observed widget types with existing Data glyphs to generate twelve
 numeric month images. Indexing and locale behavior remain hardware checks.
+
+Revision 4 feedback: compass still freezes despite restored original pointers.
+Revision 5 borrows actual weather fonts and its `compass_icon`/`text angle` sensor
+widgets, retaining outer-ring widget dictionaries. This is a renderer experiment;
+no verified refresh-rate option has been found. Curved weekday is a bitmap layout
+change; `curved/day` is a new combination of known widget and data binding and
+requires physical confirmation. No claim of a working compass is made.

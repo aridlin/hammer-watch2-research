@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-31",
+  "labels_monday_first": [
+    "pon",
+    "wt",
+    "\u015br",
+    "czw",
+    "pt",
+    "sob",
+    "ndz"
+  ],
+  "source_index_evidence": "All seven actual weather weekday bitmaps viewed; MON TUE WED THU FRI SAT SUN",
+  "time_day_font": "Actual acquired weather glyphs",
+  "weekday_font": "DejaVu Sans Bold Oblique",
+  "weekday_font_sha256": "ec93b91f398f68f5522d227afd5ed8e84b9cb0c6ad56c1172dcb1035a1542a80",
+  "curved_day_runtime": "New combination of known curved renderer and day binding; hardware observation required",
+  "sensor_refresh_interval": "No verified configurable interval; known native weather heading renderer added as diagnostic"
+}

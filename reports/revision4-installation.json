@@ -39,5 +39,5 @@
   },
   "firmware_modified": false,
   "factory_overwritten": false,
-  "runtime_acceptance": "Awaiting user observation"
+  "runtime_acceptance": "Rejected: user confirms compass remains broken; requests weather-face font/date, orange curved date without badge and more frequent updates"
 }
