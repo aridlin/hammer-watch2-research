@@ -1,3 +1,7 @@
+> **Live installation suspended:** revision 7 has a reported reboot, skipped
+> seconds and slow compass. Keep the factory face active for a stability baseline.
+> Revision 8 is an offline-only crop correction, not an accepted installable build.
+
 # Face resources
 
 Proprietary samples and generated vendor assets stay under ignored `faces/local/`.

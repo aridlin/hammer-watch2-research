@@ -3,18 +3,16 @@
 Evidence-led reverse engineering of HAMMER Watch 2, its Android companion app
 `com.hammerup.app`, Creek watch-face resources and Bluetooth transfers.
 
-**Current result (2026-10-31):** We acquired ADVENTURER through the official app,
-reproduced its original binary byte-for-byte with an isolated SDK, and installed
-separately named custom faces on a real model 2039 running firmware 2.0.12.
-Uploads and digital seconds work. **The custom compass still freezes**, despite
-working normally on the untouched factory face. Successful installation is not
-full functional compatibility.
+**Current status (2026-10-31): physical testing suspended.** Custom faces install,
+but the latest user report includes irregular/skipped seconds, a slow compass and
+one watch reboot. Select untouched factory ADVENTURER for a stability baseline.
+The live uploader is disabled; passing offline checks is not runtime acceptance.
 
-Revision 4 adds dim analog hands behind `HH:MM:SS`, replaces heart rate with
-`DD.MM`, removes pressure/altitude meters, and uses the factory second-pointer
-widget for a short rim marker completing one lap per minute. This also tests
-whether retaining the factory pointer model restores compass redraws. The user confirms the compass still freezes with these pointers restored.
-Revision 5 uses weather-face font/date and its native heading renderer. Revision 6 adds Polish weekday labels and is installed/active; the user confirms its compass is still broken. Revision 7 tests factory-style naming alongside a tiny clock reduction and lower date.
+We acquired ADVENTURER through the official app and reproduced its original binary
+byte-for-byte with an isolated SDK. Later custom layouts introduced unnecessarily
+large weekday sprites: about 5.8 MiB of decoded weekday pixels alone. Offline
+revision 8 crops them without changing displayed pixels. Resource pressure is
+plausible; no crash cause, stable custom build or compass fix is established.
 
 See [current status](STATUS.md), [research](research.md), [format](format.md),
 [protocol](protocol.md), [field feedback](reports/field-feedback-and-revision3.json)

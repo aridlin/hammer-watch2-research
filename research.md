@@ -177,3 +177,19 @@ between two acquired samples, not proof of a firmware rule. No firmware code has
 established name-based activation. Existing sensor widget dictionaries remain
 unchanged from revision 6. Tiny time scaling and lower weekday placement are
 independent user-requested cosmetic changes included in the same candidate.
+
+## Stability failure and decoded image audit — 2026-10-31
+
+User reports irregular/skipped seconds, slow compass and one reboot on the latest
+custom face. Their suggestion of exhausted resources is a hypothesis. Inspection
+confirms a tooling mistake: seven weekday images were full-screen RGBA canvases,
+6,080,368 decoded bytes combined versus 56,448 for original weather weekdays.
+Revision 7 total image-pixel sum is 9,349,444 bytes, original ADVENTURER 3,177,836.
+The published 8 MB RAM specification makes this worth investigating, but image
+sums are not measured peak RAM and do not establish an out-of-memory reboot.
+
+Offline revision 8 crops weekday assets to 61×33 and updates the array widget
+origin, preserving every composited pixel. No watch upload occurs. Live execution
+is suspended. Required evidence: whether untouched factory face remains stable,
+reboot timing/trigger, and (if legitimately obtainable) crash/reset diagnostics.
+No firmware changes or undocumented diagnostic commands are attempted.

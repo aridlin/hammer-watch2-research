@@ -48,6 +48,6 @@
   },
   "firmware_modified": false,
   "factory_overwritten": false,
-  "runtime_acceptance": "Awaiting visual check; no compass fix claimed",
+  "runtime_acceptance": "Rejected: user reports sloppy/skipped seconds, compass too slow and one reboot; root cause unconfirmed",
   "tests_passed": 156
 }

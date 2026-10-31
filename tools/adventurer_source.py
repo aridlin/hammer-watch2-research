@@ -159,6 +159,18 @@ def revision7_images(source):
     return result
 
 
+def revision8_images(source):
+    """Offline-only cropped weekday arrays; no new installation support."""
+    result=revision7_images(source);bounds=(181,338,242,371)
+    for i in range(7):
+        name=f'WWeek/WWeek_{i}_8888.png';image=result[name]
+        box=image.getbbox()
+        if not box or not (bounds[0]<=box[0] and bounds[1]<=box[1] and box[2]<=bounds[2] and box[3]<=bounds[3]):
+            raise ValueError('Weekday exceeds reviewed crop; check local font provenance')
+        result[name]=image.crop(bounds)
+    return result
+
+
 def prepare_source(source,destination,revision=3):
     from PIL import Image
     source,model=validate_source(source)
@@ -181,7 +193,7 @@ def prepare_source(source,destination,revision=3):
                             'original_file_sha256':hashlib.sha256(original.read_bytes()).hexdigest(),
                             'new_file_sha256':hashlib.sha256(output.read_bytes()).hexdigest()})
     if revision>=4:
-        images={4:revision4_images,5:revision5_images,6:revision6_images,7:revision7_images}[revision](source)
+        images={4:revision4_images,5:revision5_images,6:revision6_images,7:revision7_images,8:revision8_images}[revision](source)
         for relative,image in images.items():
             output=destination/'firmware'/relative;output.parent.mkdir(parents=True,exist_ok=True)
             image.save(output)
@@ -192,7 +204,7 @@ def prepare_source(source,destination,revision=3):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--source',required=True,type=Path)
-    p.add_argument('--destination',required=True,type=Path);p.add_argument('--revision',type=int,choices=[3,4,5,6,7],default=3);a=p.parse_args()
+    p.add_argument('--destination',required=True,type=Path);p.add_argument('--revision',type=int,choices=[3,4,5,6,7,8],default=3);a=p.parse_args()
     try:print(json.dumps(prepare_source(a.source,a.destination,a.revision),indent=2));return 0
     except (OSError,ValueError,KeyError,TypeError) as exc:
         print(json.dumps({'error_type':type(exc).__name__}));return 2

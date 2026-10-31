@@ -1,8 +1,15 @@
 # Project status
 
-Updated **2026-10-31**. Physical installation works, including separately named
-faces and digital seconds. The factory ADVENTURER remains intact. The requested
-custom face is **not accepted as complete**: compass refresh is still broken.
+Updated **2026-10-31**. **Physical testing suspended after a reported reboot.**
+User reports irregular/skipped seconds, compass updates too slow, and one reboot
+on the latest test. Factory ADVENTURER should be selected for a stability baseline.
+The user suggests resource exhaustion; this remains a hypothesis, not a diagnosis.
+No crash log or confirmation of stable factory behavior is available yet.
+
+`tools.watch_face_install` now refuses live execution before loading target files,
+creating output or accessing Bluetooth. There is no CLI override. Offline parsing,
+source construction, protocol fixtures and simulated sender tests remain available.
+Revision 8 is an offline-only resource correction and is not accepted for upload.
 
 | Revision | Physical result |
 |---|---|
@@ -12,7 +19,7 @@ custom face is **not accepted as complete**: compass refresh is still broken.
 | 4 (`ewr24dig04`) | Installed; user confirms compass still broken. Weather font/date and badge removal requested. |
 | 5 (`ewr24dig05`) | Installed; weather font, curved orange date without badge, weather heading widgets; runtime result pending |
 | 6 (`ewr24dig06`) | Installed and active; Polish weekdays; compass still broken per user; weekday too high |
-| 7 (`ewrcompass_24d07@LC`) | Installed and active; smaller clock/lower weekday; compass behavior pending |
+| 7 (`ewrcompass_24d07@LC`) | Installed; rejected: skipped seconds, slow compass, one reported reboot |
 
 Revision 4 restores the factory hour/minute/second pointer geometry, dims the
 hour/minute/hub sprites, and changes the second sprite to a short outer marker.
@@ -23,7 +30,7 @@ remaining “white texture” report has no new close-up, so complete removal is
 not yet claimed. Compass widgets themselves are unchanged. Retaining pointers is
 a redraw hypothesis, not a proven fix. The host upload never modifies firmware.
 
-Offline checks: **156 passed**, including actual source/compiler image guards.
+Offline checks: **160 passed**, including actual source/compiler image guards.
 Real sample tests skip when proprietary local samples are absent. Final acceptance
 requires checking date, time, rim position, absence of unwanted graphics, and
 continuous compass rotation on the physical watch. Earlier sections below retain
@@ -189,3 +196,19 @@ sensor activation is an unverified hypothesis. Compass and pointer widget dicts
 are identical to revision 6; no refresh-rate setting is invented. Cosmetics change
 in the same iteration, so this is not a strict naming-only control. Physical
 transfer and fresh metadata confirmation are recorded in reports/revision7-installation.json.
+
+## Resource-budget audit after the reboot report
+
+The full-screen weekday assets introduced in revision 5 were a significant design
+mistake: 7 × 466 × 466 × 4 = 6,080,368 decoded pixel bytes. Original weather weekday
+assets total 56,448 bytes. Original ADVENTURER image pixel sum is 3,177,836 bytes;
+revision 7 image pixel sum is 9,349,444 bytes. These are sums of decoded assets,
+**not measured peak firmware RAM**. Loading/caching and renderer scheduling remain
+unknown, so an out-of-memory crash or watchdog has not been established.
+
+Offline revision 8 crops weekdays to 61×33, moving their existing widget origin to
+(181,338) so displayed pixels remain exactly identical. Weekday decoded pixel sum
+becomes 56,364 bytes, a 99.07% reduction. This addresses demonstrable wasted image
+storage; no claim of fixed seconds, compass or stability follows from it. Native
+curved/day behavior and mixed compass renderer workload still require investigation.
+No new face is sent to the watch. [Budget evidence](reports/decoded-image-budgets.json).

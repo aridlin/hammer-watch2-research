@@ -72,6 +72,7 @@ def test_dbus_sender_full_flow_query_and_duplicate_notifications(tmp_path,monkey
     import sys,types
     import tools.watch_face_install as install
     from tools.creek_inquiry import SERVICE,WRITE,NOTIFY
+    monkeypatch.setattr(install,'LIVE_EXECUTION_SUSPENDED',False) # Explicit simulated D-Bus only.
     address='01:02:03:04:05:06';device='/lab/device';service=device+'/service';wp=service+'/write';np=service+'/notify'
     data=bytes(range(256))*3;received=bytearray(data[:180] if resume else b'');sent=[]
     state={'callback':None,'last_ack':None,'dial_reads':0}
@@ -155,3 +156,14 @@ def test_revision3_preparation_allows_only_reviewed_meter_removal():
     assert plan['preserved_non_layout_resources']==124
     assert len(plan['patched_meter_backgrounds'])==3
     with pytest.raises(ValueError):prepare(data,original,revision=1)
+
+
+def test_reboot_quarantine_blocks_before_radio_or_files(tmp_path,monkeypatch):
+    import tools.watch_face_install as install
+    assert install.LIVE_EXECUTION_SUSPENDED
+    monkeypatch.setattr(install,'load_target',lambda _:pytest.fail('Target must not be read'))
+    monkeypatch.setattr(install,'inquire',lambda *a,**k:pytest.fail('Radio must not be used'))
+    destination=tmp_path/'must-not-exist'
+    with pytest.raises(install.InstallationSuspended):
+        install.execute(b'not-read',tmp_path/'absent',destination,revision=7)
+    assert not destination.exists()

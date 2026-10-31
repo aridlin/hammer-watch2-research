@@ -22,6 +22,20 @@ FILENAME=(TEST_NAME+'.bin').encode()
 ORIGINAL_SHA='bcb39cc699ffc6289009ef5b23431b76bfa23bbffb6d099afe4c0da095fab84e'
 
 
+# Suspended after physical reports of skipped seconds, slow compass and a reboot.
+# No CLI override: resume only after an offline stability review and new approval.
+LIVE_EXECUTION_SUSPENDED=True
+
+
+class InstallationSuspended(RuntimeError):
+    pass
+
+
+def require_live_execution():
+    if LIVE_EXECUTION_SUSPENDED:
+        raise InstallationSuspended('Custom face installations suspended after reported watch reboot; offline analysis remains available')
+
+
 def status_keys(revision):
     if revision==1:return 'standalone_test_entry_present','active_is_standalone_test'
     if revision==3:return 'revision3_test_entry_present','active_is_revision3_test'
@@ -116,6 +130,7 @@ def check_metadata(device,dial,mtu,size,resume=False,revision=1):
 
 
 def execute(data,target,destination,resume=False,revision=1):
+    require_live_execution()
     present_key,active_key=status_keys(revision)
     import dbus
     from dbus.mainloop.glib import DBusGMainLoop
@@ -201,11 +216,14 @@ def main():
     p.add_argument('--target',type=Path);p.add_argument('--destination',type=Path)
     a=p.parse_args()
     try:
+        if a.execute:require_live_execution()
         data=read_binary(a.candidate);plan=prepare(data,read_binary(a.original),a.revision)
         if not a.execute:print(json.dumps(plan,indent=2));return 0
         if a.confirm_sha256!=plan['sha256'] or a.target is None or a.destination is None:
             raise ValueError('Execution requires reviewed hash, private target and new log destination')
         print(json.dumps(execute(data,a.target,a.destination,resume=a.resume_reviewed_test,revision=a.revision),indent=2));return 0
+    except InstallationSuspended as exc:
+        print(json.dumps({'error_type':'InstallationSuspended','reason':str(exc),'no_device_access':True}));return 2
     except Exception as exc:
         print(json.dumps({'error_type':type(exc).__name__,'details_omitted':True,'no_automatic_retry':True}));return 2
 

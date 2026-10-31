@@ -1,0 +1,729 @@
+{
+  "original": {
+    "sha256": "bcb39cc699ffc6289009ef5b23431b76bfa23bbffb6d099afe4c0da095fab84e",
+    "container_bytes": 427972,
+    "image_count": 127,
+    "decoded_image_bytes_sum": 3177836,
+    "largest_images": [
+      {
+        "name": "bg_0888.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 12,
+        "stored_bytes": 196177,
+        "decoded_pixel_bytes": 651468
+      },
+      {
+        "name": "Fade_bg_0_0565.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 4,
+        "stored_bytes": 19891,
+        "decoded_pixel_bytes": 434312
+      },
+      {
+        "name": "Fade_bg_1_0565.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 4,
+        "stored_bytes": 19356,
+        "decoded_pixel_bytes": 434312
+      },
+      {
+        "name": "preview_0_0565.bmp",
+        "width": 256,
+        "height": 256,
+        "format_marker": 4,
+        "stored_bytes": 40158,
+        "decoded_pixel_bytes": 131072
+      },
+      {
+        "name": "preview_1_0565.bmp",
+        "width": 256,
+        "height": 256,
+        "format_marker": 4,
+        "stored_bytes": 36693,
+        "decoded_pixel_bytes": 131072
+      },
+      {
+        "name": "angles_0_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1212,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_1_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1768,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_2_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1448,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_3_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1747,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_4_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1196,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_5_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1790,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_6_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1446,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_7_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1760,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "Sec_8888.png",
+        "width": 32,
+        "height": 288,
+        "format_marker": 24,
+        "stored_bytes": 5785,
+        "decoded_pixel_bytes": 36864
+      },
+      {
+        "name": "second_0_8888.png",
+        "width": 32,
+        "height": 288,
+        "format_marker": 24,
+        "stored_bytes": 5789,
+        "decoded_pixel_bytes": 36864
+      },
+      {
+        "name": "second_1_8888.png",
+        "width": 32,
+        "height": 288,
+        "format_marker": 24,
+        "stored_bytes": 5807,
+        "decoded_pixel_bytes": 36864
+      }
+    ],
+    "weekday_images": [],
+    "unknown_image_headers": [],
+    "limitation": "Sum of image pixel storage is NOT peak RAM. Decoder caching, widget invalidation, sensor scheduling and firmware crash cause are unknown."
+  },
+  "weather": {
+    "sha256": "89ee0c25fe59aaf0b126a8fb54824b33b20ac7cc71942db172afa1b3b125d8c7",
+    "container_bytes": 259331,
+    "image_count": 173,
+    "decoded_image_bytes_sum": 1986072,
+    "largest_images": [
+      {
+        "name": "Fade_bg_0_0565.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 4,
+        "stored_bytes": 9622,
+        "decoded_pixel_bytes": 434312
+      },
+      {
+        "name": "Fade_bg_1_0565.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 4,
+        "stored_bytes": 9606,
+        "decoded_pixel_bytes": 434312
+      },
+      {
+        "name": "preview_0_0565.bmp",
+        "width": 256,
+        "height": 256,
+        "format_marker": 4,
+        "stored_bytes": 21563,
+        "decoded_pixel_bytes": 131072
+      },
+      {
+        "name": "preview_1_0565.bmp",
+        "width": 256,
+        "height": 256,
+        "format_marker": 4,
+        "stored_bytes": 19133,
+        "decoded_pixel_bytes": 131072
+      },
+      {
+        "name": "ring_8888.png",
+        "width": 96,
+        "height": 96,
+        "format_marker": 24,
+        "stored_bytes": 1522,
+        "decoded_pixel_bytes": 36864
+      },
+      {
+        "name": "scal_8888.png",
+        "width": 96,
+        "height": 96,
+        "format_marker": 24,
+        "stored_bytes": 2839,
+        "decoded_pixel_bytes": 36864
+      },
+      {
+        "name": "Workout_8888.png",
+        "width": 64,
+        "height": 64,
+        "format_marker": 24,
+        "stored_bytes": 1342,
+        "decoded_pixel_bytes": 16384
+      },
+      {
+        "name": "Fade_Time_0_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 1902,
+        "decoded_pixel_bytes": 11136
+      },
+      {
+        "name": "Fade_Time_1_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 1207,
+        "decoded_pixel_bytes": 11136
+      },
+      {
+        "name": "Fade_Time_2_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 1719,
+        "decoded_pixel_bytes": 11136
+      },
+      {
+        "name": "Fade_Time_3_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 1948,
+        "decoded_pixel_bytes": 11136
+      },
+      {
+        "name": "Fade_Time_4_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 1211,
+        "decoded_pixel_bytes": 11136
+      },
+      {
+        "name": "Fade_Time_5_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 1546,
+        "decoded_pixel_bytes": 11136
+      },
+      {
+        "name": "Fade_Time_6_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 1913,
+        "decoded_pixel_bytes": 11136
+      },
+      {
+        "name": "Fade_Time_7_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 1141,
+        "decoded_pixel_bytes": 11136
+      },
+      {
+        "name": "Fade_Time_8_8888.png",
+        "width": 48,
+        "height": 58,
+        "format_marker": 24,
+        "stored_bytes": 2033,
+        "decoded_pixel_bytes": 11136
+      }
+    ],
+    "weekday_images": [
+      {
+        "name": "week_0_8888.png",
+        "width": 72,
+        "height": 28,
+        "format_marker": 24,
+        "stored_bytes": 1633,
+        "decoded_pixel_bytes": 8064
+      },
+      {
+        "name": "week_1_8888.png",
+        "width": 72,
+        "height": 28,
+        "format_marker": 24,
+        "stored_bytes": 1056,
+        "decoded_pixel_bytes": 8064
+      },
+      {
+        "name": "week_2_8888.png",
+        "width": 72,
+        "height": 28,
+        "format_marker": 24,
+        "stored_bytes": 1501,
+        "decoded_pixel_bytes": 8064
+      },
+      {
+        "name": "week_3_8888.png",
+        "width": 72,
+        "height": 28,
+        "format_marker": 24,
+        "stored_bytes": 1115,
+        "decoded_pixel_bytes": 8064
+      },
+      {
+        "name": "week_4_8888.png",
+        "width": 72,
+        "height": 28,
+        "format_marker": 24,
+        "stored_bytes": 1030,
+        "decoded_pixel_bytes": 8064
+      },
+      {
+        "name": "week_5_8888.png",
+        "width": 72,
+        "height": 28,
+        "format_marker": 24,
+        "stored_bytes": 1454,
+        "decoded_pixel_bytes": 8064
+      },
+      {
+        "name": "week_6_8888.png",
+        "width": 72,
+        "height": 28,
+        "format_marker": 24,
+        "stored_bytes": 1532,
+        "decoded_pixel_bytes": 8064
+      }
+    ],
+    "unknown_image_headers": [],
+    "limitation": "Sum of image pixel storage is NOT peak RAM. Decoder caching, widget invalidation, sensor scheduling and firmware crash cause are unknown."
+  },
+  "revision7": {
+    "sha256": "563dd20443e16bccabeea4cc0c05119a696daf730b0a8e214c371916c8945574",
+    "container_bytes": 473562,
+    "image_count": 157,
+    "decoded_image_bytes_sum": 9349444,
+    "largest_images": [
+      {
+        "name": "WWeek_0_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 6314,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_1_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 5504,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_2_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 5191,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_3_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 6209,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_4_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 5377,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_5_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 6429,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_6_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 6331,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "bg_0888.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 12,
+        "stored_bytes": 187131,
+        "decoded_pixel_bytes": 651468
+      },
+      {
+        "name": "Fade_bg_0_0565.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 4,
+        "stored_bytes": 14929,
+        "decoded_pixel_bytes": 434312
+      },
+      {
+        "name": "Fade_bg_1_0565.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 4,
+        "stored_bytes": 14367,
+        "decoded_pixel_bytes": 434312
+      },
+      {
+        "name": "preview_0_0565.bmp",
+        "width": 256,
+        "height": 256,
+        "format_marker": 4,
+        "stored_bytes": 40158,
+        "decoded_pixel_bytes": 131072
+      },
+      {
+        "name": "preview_1_0565.bmp",
+        "width": 256,
+        "height": 256,
+        "format_marker": 4,
+        "stored_bytes": 36693,
+        "decoded_pixel_bytes": 131072
+      },
+      {
+        "name": "angles_0_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1212,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_1_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1768,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_2_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1448,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_3_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1747,
+        "decoded_pixel_bytes": 96512
+      }
+    ],
+    "weekday_images": [
+      {
+        "name": "WWeek_0_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 6314,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_1_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 5504,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_2_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 5191,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_3_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 6209,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_4_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 5377,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_5_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 6429,
+        "decoded_pixel_bytes": 868624
+      },
+      {
+        "name": "WWeek_6_8888.png",
+        "width": 466,
+        "height": 466,
+        "format_marker": 24,
+        "stored_bytes": 6331,
+        "decoded_pixel_bytes": 868624
+      }
+    ],
+    "unknown_image_headers": [],
+    "limitation": "Sum of image pixel storage is NOT peak RAM. Decoder caching, widget invalidation, sensor scheduling and firmware crash cause are unknown."
+  },
+  "offline_revision8": {
+    "sha256": "edc6cdd31b8e1808d29f3b05c59996278ce3c3e03480bb115b703d14ac044293",
+    "container_bytes": 450320,
+    "image_count": 157,
+    "decoded_image_bytes_sum": 3325440,
+    "largest_images": [
+      {
+        "name": "bg_0888.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 12,
+        "stored_bytes": 187131,
+        "decoded_pixel_bytes": 651468
+      },
+      {
+        "name": "Fade_bg_0_0565.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 4,
+        "stored_bytes": 14929,
+        "decoded_pixel_bytes": 434312
+      },
+      {
+        "name": "Fade_bg_1_0565.bmp",
+        "width": 466,
+        "height": 466,
+        "format_marker": 4,
+        "stored_bytes": 14367,
+        "decoded_pixel_bytes": 434312
+      },
+      {
+        "name": "preview_0_0565.bmp",
+        "width": 256,
+        "height": 256,
+        "format_marker": 4,
+        "stored_bytes": 40158,
+        "decoded_pixel_bytes": 131072
+      },
+      {
+        "name": "preview_1_0565.bmp",
+        "width": 256,
+        "height": 256,
+        "format_marker": 4,
+        "stored_bytes": 36693,
+        "decoded_pixel_bytes": 131072
+      },
+      {
+        "name": "angles_0_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1212,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_1_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1768,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_2_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1448,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_3_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1747,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_4_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1196,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_5_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1790,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_6_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1446,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "angles_7_8888.png",
+        "width": 58,
+        "height": 416,
+        "format_marker": 24,
+        "stored_bytes": 1760,
+        "decoded_pixel_bytes": 96512
+      },
+      {
+        "name": "Sec_8888.png",
+        "width": 32,
+        "height": 288,
+        "format_marker": 24,
+        "stored_bytes": 5785,
+        "decoded_pixel_bytes": 36864
+      },
+      {
+        "name": "second_0_8888.png",
+        "width": 32,
+        "height": 288,
+        "format_marker": 24,
+        "stored_bytes": 183,
+        "decoded_pixel_bytes": 36864
+      },
+      {
+        "name": "second_1_8888.png",
+        "width": 32,
+        "height": 288,
+        "format_marker": 24,
+        "stored_bytes": 183,
+        "decoded_pixel_bytes": 36864
+      }
+    ],
+    "weekday_images": [
+      {
+        "name": "WWeek_0_8888.png",
+        "width": 61,
+        "height": 33,
+        "format_marker": 24,
+        "stored_bytes": 3083,
+        "decoded_pixel_bytes": 8052
+      },
+      {
+        "name": "WWeek_1_8888.png",
+        "width": 61,
+        "height": 33,
+        "format_marker": 24,
+        "stored_bytes": 2165,
+        "decoded_pixel_bytes": 8052
+      },
+      {
+        "name": "WWeek_2_8888.png",
+        "width": 61,
+        "height": 33,
+        "format_marker": 24,
+        "stored_bytes": 1803,
+        "decoded_pixel_bytes": 8052
+      },
+      {
+        "name": "WWeek_3_8888.png",
+        "width": 61,
+        "height": 33,
+        "format_marker": 24,
+        "stored_bytes": 2918,
+        "decoded_pixel_bytes": 8052
+      },
+      {
+        "name": "WWeek_4_8888.png",
+        "width": 61,
+        "height": 33,
+        "format_marker": 24,
+        "stored_bytes": 2044,
+        "decoded_pixel_bytes": 8052
+      },
+      {
+        "name": "WWeek_5_8888.png",
+        "width": 61,
+        "height": 33,
+        "format_marker": 24,
+        "stored_bytes": 3084,
+        "decoded_pixel_bytes": 8052
+      },
+      {
+        "name": "WWeek_6_8888.png",
+        "width": 61,
+        "height": 33,
+        "format_marker": 24,
+        "stored_bytes": 3012,
+        "decoded_pixel_bytes": 8052
+      }
+    ],
+    "unknown_image_headers": [],
+    "limitation": "Sum of image pixel storage is NOT peak RAM. Decoder caching, widget invalidation, sensor scheduling and firmware crash cause are unknown."
+  }
+}

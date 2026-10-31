@@ -286,3 +286,13 @@ the existing assembler, and accepts only a CRC16-valid complete response. Keepin
 the raw interpretation avoids assuming identical continuation bytes are always
 duplicates. A synthetic doubled-fragment test and actual captured response pass.
 A fresh CRC-valid inquiry confirms revision 6 active and factory retained.
+
+## Live testing suspended after stability report
+
+The user reports irregular seconds, slow compass and one reboot on revision 7.
+All live uploader entry points are now blocked before device or target access;
+there is no command-line override. Transport ACK/reassembly validation remains
+valid evidence of received bytes, not face runtime safety. The isolated sender
+unit tests explicitly disable this guard only inside their simulated D-Bus scope.
+Offline resource budgeting identifies excessive full-screen weekday canvases;
+revision 8 is compiled offline only and is not enabled in the installer.

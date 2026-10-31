@@ -7,7 +7,7 @@ from .creek_bin import parse,read_binary,replace_json
 
 TARGET='ewrcompass_0819@LC'
 TEST_NAME='ewr24digital'
-TEST_NAMES={1:TEST_NAME,2:'ewr24dig02',3:'ewr24dig03',4:'ewr24dig04',5:'ewr24dig05',6:'ewr24dig06',7:'ewrcompass_24d07@LC'}
+TEST_NAMES={1:TEST_NAME,2:'ewr24dig02',3:'ewr24dig03',4:'ewr24dig04',5:'ewr24dig05',6:'ewr24dig06',7:'ewrcompass_24d07@LC',8:'ewrcompass_24d08@LC'}
 METER_TYPES={'air_pressure','altitude','altitude_min','altitude_max','altitude_unit'}
 METER_PICTURES={'Unit_2_8888.png','air_0_8888.png','air_1_8888.png','PA1_8888.png','PB1_8888.png','PA2_8888.png','PB2_8888.png'}
 CLOCK_TYPES={'hour','min','second'}
@@ -105,12 +105,18 @@ def transform(model,palette_index=None,standalone=False,revision=1):
                  'centerx':10,'centery':138,'angle':166,'angle_space':-10,'total_count':2,
                  'fontnum':10,'font':'WDay','min_numwidth':2,'color':'#F67F31'}])
             out[layer]=items
-    if revision==7:
+    if revision>=7:
         for layer in ('item','fade_item'):
             for item in out[layer]:
                 if item.get('type')=='time':item.update(x=72 if layer=='item' else 129,y=176,w=208,h=57)
                 if item.get('picture')=='Time_10_8888.png':item.update(x=280,y=176,w=20,h=57)
                 if item.get('widget')=='text' and item.get('type')=='second':item.update(x=300,y=176,w=94,h=57)
+    if revision==8:
+        # Union of nontransparent weekday bounds, checked by source builder.
+        for layer in ('item','fade_item'):
+            for item in out[layer]:
+                if item.get('type')=='week' and item.get('array_img')=='WWeek':
+                    item.update(x=181,y=338,w=61,h=33)
     if palette_index is not None:
         out['cur_sn']=palette_index
         for layer in ('item','fade_item'):
