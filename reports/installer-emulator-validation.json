@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-31",
+  "target": "Dedicated Android35 debug emulator + fixed Netsim synthetic receiver; no physical watch",
+  "android_runtime_tests": {
+    "passed": 2,
+    "tests": [
+      "Tampered package rejected",
+      "Complete transfer, duplicate notifications and active-face verification"
+    ]
+  },
+  "exact_received_bytes": 143415,
+  "received_sha256": "91690bc88ea62d6e1e2a162fc7bbeb06b5ceca543f3ecf8e985263960e46df8d",
+  "matches_packaged_face": true,
+  "data_frames": 797,
+  "simulation_log_sha256": "87dd2c8425e032d559c9f78b0e6877a0dc7dbad96f5fac9a2a430a62da661dea",
+  "test_output_sha256": "eef7f4efd264172f655e56ca9acc9a948f299e7937269ae102aa0d020eda369e",
+  "release_contains_matching_face": true,
+  "release_contains_private_keys": false,
+  "watch_firmware_emulated": false,
+  "physical_phone_watch_validation": false,
+  "fixes_found_during_testing": [
+    "Ignore any previously validated delayed data ACK, not only the latest duplicate",
+    "Do not feed unrelated ACKs into fragmented metadata assembly",
+    "Respect 512-byte attribute value maximum in virtual reply fragmentation"
+  ]
+}

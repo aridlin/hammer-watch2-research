@@ -1,0 +1,20 @@
+{
+  "retrieved": "2026-10-31",
+  "requires_fresh_official_catalog_authorization": true,
+  "artifacts": [
+    {
+      "suggested_private_path": "private/sources/scifi-timer-source.zip",
+      "url": "https://s3-get.creekcould.com/manager/dial/PGSMqLn3SHIchMaZTpwzDUXRsNx7XmMOCWR05G236121.zip",
+      "sha256": "ff7845b972d7999f22149e6370ebde4bb6ed214de3b2dfcbd36cfa32f7399c8e",
+      "bytes": 488961,
+      "access": "Signed query omitted. Obtain a fresh authorized URL through the official app; this unsigned path may not be downloadable."
+    },
+    {
+      "suggested_private_path": "private/sources/scifi-timer-preview.png",
+      "url": "https://s3-get.creekcould.com/manager/dial/c3Qr9rTSMnBE6N0ypreview0565.png",
+      "sha256": "ae7bb08a11e74d3d3426104e69dddfec612106b2003f1ec6c86f8b4e31f7dbee",
+      "bytes": 48279,
+      "access": "Signed query omitted. Obtain a fresh authorized URL through the official app; this unsigned path may not be downloadable."
+    }
+  ]
+}

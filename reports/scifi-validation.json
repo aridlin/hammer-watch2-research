@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-31",
+  "original_compiled_sha256": "a3bfcb94d6a14f8fa49671a0d99bf65aa2ac65c54a1108fc00c8370a336e7493",
+  "modified_compiled_sha256": "91690bc88ea62d6e1e2a162fc7bbeb06b5ceca543f3ecf8e985263960e46df8d",
+  "modified_bytes": 143415,
+  "crc_valid": true,
+  "resource_count": 126,
+  "preserved_original_resources": 93,
+  "changed_original_resources": [
+    "dial.json",
+    "Week_0_8888.png",
+    "Week_1_8888.png",
+    "Week_2_8888.png",
+    "Week_3_8888.png",
+    "Week_4_8888.png",
+    "Week_5_8888.png",
+    "Week_6_8888.png",
+    "background_0_0565.bmp"
+  ],
+  "added_compass_resources": 24,
+  "decoded_image_bytes_sum": 1459304,
+  "hardware_validation": "Not performed; compass behavior and stability unverified",
+  "static_preview": "Composited actual assets with illustrative values, not watch-firmware emulation"
+}

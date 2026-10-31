@@ -55,7 +55,8 @@ def fragment_reply(packet, att_mtu):
     """Experimental app-style C1 / C2 / C3 framing from seedData assembly."""
     if not 23 <= att_mtu <= 517 or len(packet) > 4096:
         raise ValueError('Invalid bounded virtual packet/MTU')
-    size=att_mtu-3
+    # ATT attribute values are capped at 512 bytes even at negotiated MTU517.
+    size=min(att_mtu-3,512)
     if len(packet)<=size:return [packet]
     out=[packet[:size]]
     tail=packet[size:]

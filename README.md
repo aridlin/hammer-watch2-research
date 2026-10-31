@@ -3,25 +3,26 @@
 Evidence-led reverse engineering of HAMMER Watch 2, its Android companion app
 `com.hammerup.app`, Creek watch-face resources and Bluetooth transfers.
 
-**Current status (2026-10-31): physical testing suspended.** Custom faces install,
-but the latest user report includes irregular/skipped seconds, a slow compass and
-one watch reboot. Select untouched factory ADVENTURER for a stability baseline.
-The live uploader is disabled; passing offline checks is not runtime acceptance.
+**Latest deliverable (2026-10-31): orange Sci-Fi Timer with the side slogans and
+SPORT arrows removed, Polish weekdays, and the corner analog clock replaced by
+the weather face's native compass widgets.** Original main time/date/battery and
+activity font assets are preserved. Normal-frame compass behavior and stability
+remain unverified on a real watch.
 
-We acquired ADVENTURER through the official app and reproduced its original binary
-byte-for-byte with an isolated SDK. Later custom layouts introduced unnecessarily
-large weekday sprites: about 5.8 MiB of decoded weekday pixels alone. Offline
-revision 8 crops them without changing displayed pixels. Resource pressure is
-plausible; no crash cause, stable custom build or compass fix is established.
+A separately signed **Android installer APK** is built locally in `dist/`, with the
+face included. It reuses the recovered protocol, needs no HAMMER login/Internet,
+and imports signed `.hface` packages for future faces. See
+[mobile installer](mobile-installer.md), [face validation](reports/scifi-validation.json)
+and [Android emulator tests](reports/installer-emulator-validation.json).
+Vendor resources and built APKs are local artifacts, not committed to this repo.
 
-Continued work is offline: three diagnostic controls now compile and pass exact
-model/resource checks. They isolate renamed factory behavior, an added seconds
-widget, and the extra weather heading widgets. They have no installation support
-and are not watch-firmware emulations. See [validation](reports/offline-controls-validation.json).
-
-See [current status](STATUS.md), [research](research.md), [format](format.md),
-[protocol](protocol.md), [field feedback](reports/field-feedback-and-revision3.json)
-and [revision 4 checks](reports/revision4-install-plan.json).
+Earlier ADVENTURER tests had slow/skipped updates and one reported reboot.
+**Desktop live uploads remain suspended; the watch stays unpaired from the PC.**
+The installer is an explicit user-controlled experimental client, not a claim of
+physical validation. It rejects the earlier unstable ADVENTURER test packages.
+The cropped ADVENTURER fix and three diagnostic controls remain offline only.
+See [current status](STATUS.md), [research](research.md), [format](format.md) and
+[protocol](protocol.md). Earlier sections below retain chronological evidence.
 
 Public content contains original tooling, sanitized evidence and acquisition
 instructions. APKs, vendor face assets/binaries, raw traffic, account material,

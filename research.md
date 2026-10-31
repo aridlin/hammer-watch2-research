@@ -216,3 +216,38 @@ acquisition path but do not supply a matching firmware image. No request was mad
 Embedded transport authorization is omitted and unused; no log service or watch
 command was invoked. Sanitized method locations and source hashes are recorded
 in [diagnostic evidence](reports/offline-diagnostic-leads.json).
+
+## Orange Sci-Fi Timer and standalone installer — 2026-10-31
+
+The official app's local catalog cache identifies **Sci-Fi Timer** as
+`CWR05G_23612`, version 5. Its signed resource link yielded a source ZIP; the public
+report omits temporary URL signature queries and synthetic peer identifiers.
+Within the ZIP, `app/app.json` lists colors and `app/color_picture/#B87F44` supplies
+the actual orange background. Root source says `ats3085s`, 466×466, frame 1, dial
+version 5, dial type 6. This source label does not change the published physical
+ATS3089C chipset finding. The existing JX_3085S/ARM64 compiler handles both the
+original and edited source successfully. [Acquisition](reports/scifi-acquisition.json),
+[compiles](reports/scifi-compile.json).
+
+Slogans and arrows are part of the background bitmap. Five explicit masks clear
+EXPLORE, BE PROACTIVE, COLLABORATE, INNOVATE and SPORT with its arrows. A circle
+mask removes the old corner dial. The native hour/minute/second pointers and hub
+are removed; six actual weather compass widgets are translated to center
+(341,135), using 24 copied small assets. Weekday source images visually verify
+MON..SUN order; Polish replacements remain 56×20. Other main time, seconds, date,
+battery and activity assets/widgets are unchanged. All edits are reproducible in
+`tools.scifi_source`, with pixel bounds and preserved-resource tests.
+
+The user requested a phone installer if it required little additional RE. A native
+Android client reuses the already recovered inquiries/transfer, without vendor
+SDK, login, Internet permission, delete/resume/activation/firmware commands. Signed
+local `.hface` packaging authenticates our deliverables; it does not bypass vendor
+cryptography. APK signing/package keys are private and distinct from vendor keys.
+
+Two Android emulator runtime tests pass: tamper rejection and complete GATT
+transfer of the exact 143,415 face bytes to a synthetic receiver, including delayed
+duplicates and final active-entry verification. Tests uncovered delayed ACK
+handling and a simulator's oversized 514-byte attribute at MTU517; synthetic
+fragmentation now caps value length at 512. This is neither watch firmware
+emulation nor hardware validation. No real watch or phone was used in this phase.
+[Installer evidence](reports/installer-emulator-validation.json).

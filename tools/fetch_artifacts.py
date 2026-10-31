@@ -10,7 +10,7 @@ from urllib.request import urlopen, Request
 ALLOWED_HOSTS = {'raw.githubusercontent.com', 'github.com', 'd.apkpure.net',
                  'dl.google.com', 'download.mptech.eu', 'hammerphones.com',
                  'play.google.com', 'fccid.io', 'manuals.plus', 'apps.apple.com',
-                 'codeload.github.com', 'creekwearable.github.io'}
+                 'codeload.github.com', 'creekwearable.github.io', 's3-get.creekcould.com'}
 LIMIT = 512 * 1024 * 1024
 
 

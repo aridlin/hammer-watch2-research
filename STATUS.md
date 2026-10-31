@@ -1,15 +1,22 @@
 # Project status
 
-Updated **2026-10-31**. **Physical testing suspended after a reported reboot.**
-User reports irregular/skipped seconds, compass updates too slow, and one reboot
-on the latest test. Factory ADVENTURER should be selected for a stability baseline.
-The user suggests resource exhaustion; this remains a hypothesis, not a diagnosis.
-No crash log or confirmation of stable factory behavior is available yet.
+Updated **2026-10-31**. The current requested face is **Sci-Fi Timer (orange)**.
+The edit removes EXPLORE, BE PROACTIVE, COLLABORATE, INNOVATE and SPORT plus arrows,
+localizes weekdays to Polish, and replaces the small corner analog clock with
+native compass widgets copied from the acquired weather face. It compiles and
+passes offline resource/model checks. Hardware responsiveness/stability is unknown.
 
-`tools.watch_face_install` now refuses live execution before loading target files,
-creating output or accessing Bluetooth. There is no CLI override. Offline parsing,
-source construction, protocol fixtures and simulated sender tests remain available.
-Revision 8 is an offline-only resource correction and is not accepted for upload.
+The requested Android installer is built and signed, with this face included.
+It uses the already recovered GATT protocol, has no Internet/vendor SDK dependency,
+and requires explicit user selection/Apply. Two emulator runtime tests pass,
+including complete transfer with active-entry verification. No physical watch or
+phone is used; desktop live installation remains blocked after the prior reboot.
+The watch remains unpaired from the PC. See [installer](mobile-installer.md).
+
+Prior ADVENTURER findings remain below. Revision 8 and diagnostic controls are
+not enabled for installation. A single reported reboot is not a proven resource
+exhaustion diagnosis. The new Sci-Fi edit totals 1,459,304 decoded image bytes,
+versus 1,338,856 for its original; these sums are not peak firmware RAM.
 
 | Revision | Physical result |
 |---|---|
@@ -30,7 +37,7 @@ remaining “white texture” report has no new close-up, so complete removal is
 not yet claimed. Compass widgets themselves are unchanged. Retaining pointers is
 a redraw hypothesis, not a proven fix. The host upload never modifies firmware.
 
-Offline checks: **165 passed**, including actual source/compiler image guards.
+Offline checks: **173 passed**, including actual source/compiler image guards.
 Real sample tests skip when proprietary local samples are absent. Final acceptance
 requires checking date, time, rim position, absence of unwanted graphics, and
 continuous compass rotation on the physical watch. Earlier sections below retain
@@ -244,3 +251,29 @@ and diagnostics, not recovered firmware or crash evidence. No service was querie
 embedded authorization used or logging command sent. See
 [controls](reports/offline-controls-validation.json) and
 [diagnostic leads](reports/offline-diagnostic-leads.json).
+
+## Sci-Fi Timer source and installer evidence
+
+The official cached catalog identifies `CWR05G_23612`, version 5. Its archive
+contains actual color variants under `app/color_picture`, including the requested
+orange `#B87F44`. The candidate keeps source platform `ats3085s`, frame 1, dial
+version 5 and dial type 6. Only layout JSON, seven 56×20 weekday images and the
+orange background differ among the 102 original compiled resources; all other
+93 original resources remain byte-identical. Twenty-four small compass assets
+are copied from the weather face. Three pointers and their hub are replaced by
+six native weather widgets, translated to center (341,135). No full-screen weekday
+sprites or new curved-date bindings are introduced.
+
+The final BIN is 143,415 bytes, 126 resources, valid CRC32. Both original/modified
+sources compile under the already confirmed JX_3085S platform argument. The APK
+is signed separately from the vendor app and embeds only a package public key and
+the modified face package, not credentials or signing secrets. Source/cache signed
+URL queries are omitted from all public reports.
+
+The synthetic Android run receives exactly all 143,415 bytes in 797 data frames.
+It confirms the new face entry active in synthetic metadata, and rejects a tampered
+signed package. This proves the Android transport/package path only. It does not
+validate firmware rendering, compass freshness, counters or stability. Release
+lint has no issues and Google apksig verifies the APK. Local deliverables and
+checksums are in dist/; public evidence is in reports/scifi-*.json and
+reports/installer-*.json.

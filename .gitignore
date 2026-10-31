@@ -17,3 +17,6 @@
 /lab/android/local.properties
 
 /.codex-attachments/
+
+/dist/
+*.hface

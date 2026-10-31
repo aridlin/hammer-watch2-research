@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "reviewed_snapshot_files": 126,
+  "reviewed_snapshot_files": 158,
   "excluded": [
     "proprietary APK/SDK/face binaries and images",
     "raw captures",
@@ -11,12 +11,18 @@
   ],
   "scan_result": "No personal identifiers or credentials in reviewed snapshot; address matches are synthetic fixtures; apparent emails are factory/test face filenames.",
   "local_tests": {
-    "passed": 165,
+    "passed": 173,
     "skipped": 0
   },
   "clean_snapshot_tests": {
-    "passed": 130,
-    "skipped": 35,
-    "reason": "Real samples/captures deliberately excluded"
-  }
+    "passed": 134,
+    "skipped": 39,
+    "reason": "Private face/compiler samples and captures deliberately excluded"
+  },
+  "android_emulator_tests": {
+    "passed": 2,
+    "physical_watch_used": false
+  },
+  "release_apk_lint": "No issues found",
+  "signed_catalog_query_values": "Redacted; not published"
 }

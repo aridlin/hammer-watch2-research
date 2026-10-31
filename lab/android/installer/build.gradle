@@ -1,0 +1,23 @@
+plugins { id 'com.android.application' }
+android {
+    useLibrary 'android.test.runner', false
+    useLibrary 'android.test.base', false
+    useLibrary 'android.test.mock', false
+    namespace 'local.hammer.installer'
+    compileSdk 35
+    defaultConfig { applicationId 'local.hammer.installer'; minSdk 26; targetSdk 35; versionCode 1; versionName '0.1'; testInstrumentationRunner 'android.test.InstrumentationTestRunner' }
+    def releaseSecrets = new Properties()
+    def secretsFile = rootProject.file('../../private/installer/signing.properties')
+    if (secretsFile.exists()) secretsFile.withInputStream { releaseSecrets.load(it) }
+    signingConfigs {
+        privateRelease {
+            storeFile rootProject.file('../../private/installer/app-release.keystore')
+            storePassword releaseSecrets.getProperty('storePassword')
+            keyAlias releaseSecrets.getProperty('keyAlias')
+            keyPassword releaseSecrets.getProperty('keyPassword')
+        }
+    }
+    buildTypes { release { signingConfig signingConfigs.privateRelease }; debug { signingConfig signingConfigs.privateRelease } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    sourceSets { main { assets.srcDir('../../../private/installer/assets') } }
+}

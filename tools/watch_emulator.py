@@ -57,6 +57,12 @@ async def run(args):
             device=Device.with_hci(args.name,Address(f'F2:F1:F0:00:00:{args.lab_identity:02X}'),transport.source,transport.sink)
             from tools.virtual_watch_protocol import Reassembler
             requests=Reassembler()
+            installer=None
+            if args.installer_test_face:
+                from tools.installer_simulator import InstallerReceiver
+                from tools.creek_bin import parse,read_binary
+                fixture=read_binary(args.installer_test_face);name=parse(fixture)['name']+'.bin'
+                installer=InstallerReceiver(fixture,name)
             tasks=set()
             def finished(task):
                 tasks.discard(task)
@@ -66,18 +72,33 @@ async def run(args):
                 await asyncio.sleep(0.2)
                 if args.synthetic_device_info:
                     from tools.virtual_watch_protocol import device_reply,fragment_reply,setup_reply
-                    reply=(setup_reply(bytes(value),args.lab_dial_framework,args.lab_platform,args.lab_device_color,args.lab_identity) if args.synthetic_setup
-                           else device_reply(bytes(value),args.reply_control,args.minimal_device_info,args.lab_platform,args.lab_device_color,args.lab_identity))
+                    reply=(installer.inquiry_reply(bytes(value)) if installer else (setup_reply(bytes(value),args.lab_dial_framework,args.lab_platform,args.lab_device_color,args.lab_identity) if args.synthetic_setup
+                           else device_reply(bytes(value),args.reply_control,args.minimal_device_info,args.lab_platform,args.lab_device_color,args.lab_identity)))
                     if reply is not None:
                         event('subscription_state',cccd=device.gatt_server.read_cccd(connection,notify).hex())
                         parts=fragment_reply(reply,connection.att_mtu)
                         for part in parts:
                             await device.notify_subscriber(connection,notify,part)
+                            if installer:
+                                await asyncio.sleep(0.02)
+                                await device.notify_subscriber(connection,notify,part)
                             await asyncio.sleep(0.03)
                         event('synthetic_reply',size=len(reply),command_main=value[5],command_sub=value[4],fragments=len(parts),att_mtu=connection.att_mtu)
 
             def received(connection,value):
                 event('gatt_write',size=len(value),hex=bytes(value).hex())
+                if installer and value and value[0] in (0xd1,0xd2,0xd4):
+                    try:reply=installer.file_reply(bytes(value))
+                    except ValueError:
+                        event('synthetic_transfer_rejected');return
+                    if reply:
+                        async def acknowledge():
+                            await device.notify_subscriber(connection,notify,reply)
+                            await asyncio.sleep(0.01)
+                            await device.notify_subscriber(connection,notify,reply)
+                            if installer.completed:event('synthetic_installer_complete',size=len(installer.data))
+                        task=asyncio.create_task(acknowledge());tasks.add(task);task.add_done_callback(finished)
+                    return
                 if args.synthetic_device_info:
                     try:message=requests.feed(bytes(value))
                     except ValueError:
@@ -114,6 +135,7 @@ def main():
     p.add_argument('--name',default='HW2')
     p.add_argument('--duration',type=int,default=300)
     p.add_argument('--log',type=Path,required=True)
+    p.add_argument('--installer-test-face',type=Path,help='Opt-in exact fixture receiver on local Netsim only, never hardware')
     p.add_argument('--synthetic-device-info',action='store_true',help='Local-only experimental protobuf device response; capabilities are synthetic')
     p.add_argument('--minimal-device-info',action='store_true',help='Probe only ID/version in a single 20-byte reply')
     p.add_argument('--synthetic-setup',action='store_true',help='Opt-in schema-based virtual setup replies; never physical capability evidence')
@@ -123,7 +145,7 @@ def main():
     p.add_argument('--lab-identity',type=int,choices=range(1,255),default=2)
     p.add_argument('--reply-control',type=int,choices=[1,2],default=2)
     a=p.parse_args()
-    if a.synthetic_setup:a.synthetic_device_info=True
+    if a.synthetic_setup or a.installer_test_face:a.synthetic_device_info=True
     try:
         with exclusive_peer(Path(__file__).resolve().parents[1]/'private/emulator/peer.lock'):
             asyncio.run(run(a))

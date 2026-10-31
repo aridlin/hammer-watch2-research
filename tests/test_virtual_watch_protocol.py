@@ -113,3 +113,11 @@ def test_lab_profile_uses_confirmed_numeric_metadata_without_real_identifiers():
     assert selected_varints(data,{1,6,21})=={1:2039,6:3,21:72}
     for values in [dict(lab_platform=4),dict(lab_color=256),dict(lab_identity=0)]:
         with pytest.raises(ValueError):device_info(**values)
+
+
+def test_mtu517_keeps_attribute_values_at_most512():
+    from tools.virtual_watch_protocol import fragment_reply
+    packet=b'\xc1\xbc'+bytes(900)
+    parts=fragment_reply(packet,517)
+    assert all(len(p)<=512 for p in parts)
+    assert parts[0]+b''.join(p[2:] for p in parts[1:])==packet

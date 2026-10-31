@@ -130,3 +130,23 @@ Weekday bitmap baseline radius increases from 130 to 138; native numeric date
 radius stays 138. Native compass/pointer bindings remain identical to revision 6.
 The separate candidate name preserves `ewrcompass_` and `@LC` as a naming hypothesis,
 without changing the original entry or asserting a firmware naming rule.
+
+## Sci-Fi Timer orange edit
+
+Official source `CWR05G_23612` declares `ats3085s`, dial type 6, with theme resources
+outside `firmware` under `app/color_picture`. The orange variant is the original
+`#B87F44/background_0_0565.bmp`; no orange palette is guessed or substituted.
+Bitmap slogans are removed by fixed masks, with exact pixel preservation outside
+those masks/corner-clock mask. Weekday arrays remain seven 56×20 RGBA images.
+The retained time/date/battery/activity font resource hashes are unchanged.
+
+The corner compass copies the weather face's native ring, scale, compass_icon,
+angle text, compass_pos and calibration-hint widget structure, with coordinates
+translated and explicit orange coloring. This preserves native sensor binding
+intent; compilation does not establish functioning compass updates on hardware.
+
+The final compiled container is 143,415 bytes with 126 resources, valid CRC32, and
+1,459,304 total decoded image bytes (not peak firmware RAM). A static preview is
+composited from real assets with fixed illustrative values; it is not a renderer
+or sensor emulator. Local `.hface` distribution wraps this BIN with a bounded,
+signed manifest; see mobile-installer.md for that independent package format.

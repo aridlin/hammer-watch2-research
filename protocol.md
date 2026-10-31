@@ -306,3 +306,30 @@ fields in its response model. This is not a new executed API client. Likewise,
 and payload are not approved for use, implemented or sent here. No crash-log
 availability is claimed. See reports/offline-diagnostic-leads.json for code
 addresses and hashes. The public repository excludes embedded authorization.
+
+## Native Android installer, reusing the recovered protocol
+
+`lab/android/installer` implements the same service and characteristic UUIDs,
+fixed device/dial/MTU inquiries, CRC16/CCITT-FALSE metadata verification, and
+D1/D2/D4 transfer used by the PC prototype. Android first negotiates MTU and enables
+the notification CCCD. Fresh target profile/capacity checks precede file writes;
+existing destination filenames are refused. File chunks are at most 180 bytes.
+No new binding/activation/delete/firmware command has been reverse-engineered or
+introduced. The phone user must explicitly connect and Apply.
+
+The asynchronous Android state machine waits for custom receiver ACKs and avoids
+sending another GATT request while Android reports a write in flight. It ignores
+any older DATA ACK only if that offset/CRC was previously committed, so a delayed
+duplicate cannot abort a later block or advance the stream. Unrelated notifications
+are filtered before feeding the requested fragmented metadata assembly. File
+transfer failures stop without retry/resume. D4 acceptance is recorded separately
+from subsequent list/active verification, so final verification failure does not
+falsely imply the file was never accepted.
+
+Emulator testing uses an exact-fixture receiver confined to Android Netsim. Its
+response fragments cap attribute values at 512 even if negotiated MTU is 517;
+the previous synthetic 514-byte notification was not delivered by Android. This
+was a simulator defect, not evidence of a new HAMMER command. The receiver
+validates every data byte and rolling CRC against the selected local fixture.
+The instrumentation APK refuses non-emulator targets and is separate from the
+release installer. [Runtime proof](reports/installer-emulator-validation.json).

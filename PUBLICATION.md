@@ -17,3 +17,9 @@ stage; STATUS.md identifies superseded hypotheses and present blockers.
 Verification details and exact snapshot file counts are recorded in
 reports/publication-review.json. Real-sample and live capture tests skip in public
 checkouts because their private inputs are deliberately excluded.
+
+The native installer source, simulator tests, signed-URL-redacted Sci-Fi findings
+and APK/package hashes are public. Installable APKs, bundled vendor resources,
+`.hface` packages, previews and all private signing keys remain local in `dist/`,
+`faces/local` or `private`. The app is unofficial and its hardware behavior remains
+unverified; the public repository does not claim a production-safe custom face.

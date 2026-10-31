@@ -1,0 +1,55 @@
+{
+  "source_name": "CWR05G_23612",
+  "candidate_name": "CWR05G_compassPL01",
+  "orange_source_sha256": "217b429105e71240347d8414246aa89b4e24057bb43a760aff97ab0d5a8c4f8d",
+  "removed_text_masks": {
+    "explore": [
+      145,
+      24,
+      320,
+      55
+    ],
+    "be_proactive": [
+      74,
+      152,
+      220,
+      173
+    ],
+    "collaborate": [
+      0,
+      145,
+      35,
+      322
+    ],
+    "innovate": [
+      434,
+      145,
+      466,
+      299
+    ],
+    "sport_and_arrows": [
+      124,
+      423,
+      342,
+      466
+    ]
+  },
+  "removed_corner_clock_widgets": 4,
+  "added_native_weather_widgets": 6,
+  "weekday_dimensions": [
+    56,
+    20
+  ],
+  "polish_weekdays": [
+    "pon",
+    "wt",
+    "\u015br",
+    "czw",
+    "pt",
+    "sob",
+    "ndz"
+  ],
+  "compass_runtime": "Unverified on hardware",
+  "live_upload_attempted": false,
+  "stability": "Unverified; source compilation is not runtime acceptance"
+}

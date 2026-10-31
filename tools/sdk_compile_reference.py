@@ -22,8 +22,8 @@ def adb(*args,check=True):
 def validate_source(source):
     source=Path(source).resolve()
     model=json.loads((source/'firmware/dial.json').read_bytes())
-    if model.get('platform') not in {'ats3085c','ats3089C'} or model.get('resolution_ratio')!='466x466':
-        raise ValueError('This fixed oracle accepts only observed ats3085c/ats3089C 466x466 packs')
+    if model.get('platform') not in {'ats3085c','ats3085s','ats3089C'} or model.get('resolution_ratio')!='466x466':
+        raise ValueError('This fixed oracle accepts only observed ats3085c/ats3085s/ats3089C 466x466 packs')
     # Do not push symlinks or out-of-root paths into the emulator.
     for path in source.rglob('*'):
         if path.is_symlink():raise ValueError('Reference source must not contain symlinks')

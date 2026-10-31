@@ -1,0 +1,16 @@
+{
+  "package": "local.hammer.installer",
+  "version": "0.1",
+  "min_sdk": "26",
+  "target_sdk": "35",
+  "permissions": [
+    "android.permission.BLUETOOTH_CONNECT",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.BLUETOOTH"
+  ],
+  "has_internet_permission": false,
+  "has_vendor_native_libraries": false,
+  "bundled_face": true,
+  "debuggable": "false",
+  "uses_libraries": []
+}
