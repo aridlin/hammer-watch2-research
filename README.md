@@ -3,7 +3,12 @@
 Evidence-led reverse engineering of HAMMER Watch 2, its Android companion app
 `com.hammerup.app`, Creek watch-face resources and Bluetooth transfers.
 
-**Latest offline variant: full-screen orange Sci-Fi Timer, with readouts enlarged
+**Latest revision:** the LCD-themed compass is aligned within its upper-right
+panel, with black markings and connected divider lines. Import the local
+`Sci-Fi-Timer-Orange-PL-LCD.hface` using installer 0.2. Hardware validation remains
+pending. See [LCD revision validation](reports/scifi-lcd-validation.json).
+
+**Full-screen orange Sci-Fi Timer has readouts enlarged
 14% and the drawn outer frames removed.** Import the signed
 `Sci-Fi-Timer-Orange-PL-Fullscreen.hface` into the existing installer 0.2.
 The original smaller face is preserved; this variant has not been installed or

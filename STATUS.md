@@ -326,3 +326,20 @@ The signed package was copied to the phone's
 SHA-256. Import and installation remain explicit user actions. See
 [validation](reports/scifi-fullscreen-validation.json) and
 [delivery](reports/scifi-fullscreen-delivery.json).
+
+## Full-screen LCD alignment revision — 2026-10-31
+
+`tools/scifi_lcd.py` prepares `CWR05G_compassPL03`, keeping the 14% enlarged
+readouts. The native compass group moves 10 pixels left and 9 pixels up to
+center (345,112), wholly inside the upper-right panel. Its bitmap RGB and native
+widget tint are black, with alpha preserved; the black background disk is removed.
+The battery divider meets a new vertical panel boundary at x=270. The ALR/MUTE
+separator reaches the date-band boundary, whose line continues across the display.
+No native sensor binding, pointer pivot or refresh scheduling is changed.
+
+The new package has a distinct filename, preserves both preceding packages and
+imports into installer 0.2. Container CRC, compiled native layout, actual compass
+asset pixels, divider joins and package signature were verified offline. The
+preview is a fixed-value composition, not a real-watch test. No watch installation
+was attempted. Source assets and signed binary remain local/private; sanitized
+evidence is in `reports/scifi-lcd-*.json`.

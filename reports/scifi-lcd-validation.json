@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-31",
+  "name": "CWR05G_compassPL03",
+  "bytes": 296880,
+  "sha256": "a4e700f4dcc700b6aca6976e5f10e301e71c6182ba3b09b452dce232d7493a31",
+  "crc_valid": true,
+  "resource_count": 126,
+  "decoded_image_bytes_sum": 1724424,
+  "package_signature_verified": true,
+  "hardware_tested": false,
+  "watch_installation_attempted": false,
+  "preview": "Static composition with illustrative values; not firmware emulation"
+}

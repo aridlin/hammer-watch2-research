@@ -1,0 +1,14 @@
+{
+  "name": "CWR05G_compassPL03",
+  "base_name": "CWR05G_compassPL01",
+  "scale": 1.14,
+  "compass_center": [
+    345,
+    112
+  ],
+  "compass_theme": "Black LCD ink on the continuous orange background",
+  "compass_images_recolored": 24,
+  "dividers": "Battery and ALR/MUTE dividers join the panel boundaries; right panel reaches screen edge",
+  "native_bindings_changed": false,
+  "physical_upload_attempted": false
+}

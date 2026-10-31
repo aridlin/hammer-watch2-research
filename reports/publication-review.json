@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "reviewed_snapshot_files": 168,
+  "reviewed_snapshot_files": 173,
   "excluded": [
     "proprietary APK/SDK/face binaries and images",
     "raw captures",
@@ -11,12 +11,12 @@
   ],
   "scan_result": "No personal identifiers or credentials in reviewed snapshot; address matches are synthetic fixtures; apparent emails are factory/test face filenames.",
   "local_tests": {
-    "passed": 177,
+    "passed": 179,
     "skipped": 0
   },
   "clean_snapshot_tests": {
-    "passed": 136,
-    "skipped": 41,
+    "passed": 137,
+    "skipped": 42,
     "reason": "Private samples/compiler/captures excluded"
   },
   "android_emulator_tests": {
@@ -32,5 +32,6 @@
     "full_checkpoint_finalization": true
   },
   "real_phone_recovery": "User-approved recovery succeeded; app reported active and user confirmed the face visible. No identifiers or raw phone captures published.",
-  "fullscreen_variant": "Offline source/container/signature validation; package delivered to phone Downloads; no watch installation"
+  "fullscreen_variant": "Offline source/container/signature validation; package delivered to phone Downloads; no watch installation",
+  "lcd_revision": "Aligned black-on-orange native compass and joined dividers; offline validated; not installed"
 }
