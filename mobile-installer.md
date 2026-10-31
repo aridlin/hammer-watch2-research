@@ -8,7 +8,7 @@ published in Git.
 
 ## Use
 
-1. Install `dist/HAMMER-Face-Installer-0.1.apk` on an Android 8+ phone.
+1. Install `dist/HAMMER-Face-Installer-0.2.apk` on an Android 8+ phone.
 2. Ensure HW2 is paired in Android Bluetooth settings. Close/disconnect the
    official HAMMER app so it does not occupy the connection.
 3. Open **HAMMER Face Installer**, allow Nearby devices when requested, select
@@ -16,21 +16,31 @@ published in Git.
 4. For future faces, choose **Import face** and select the project's signed
    `.hface` package; the APK does not need to change for each new face.
 
-Keep the app open during transfer. It keeps the screen awake. A failed file
-transfer is not automatically retried or resumed. A partial face can remain on the
-watch; check its face list through the official app before another attempt.
+Version 0.2 preserves the transferring activity across orientation/screen-size
+changes, so rotating the phone does not disconnect GATT. Keep the app open; it
+keeps the screen awake. If a transfer was interrupted, reconnect and choose
+**Recover interrupted transfer** with the same face selected. Recovery requires
+exactly one matching watch entry and a nonzero, bounded receiver offset whose
+CRC16 matches the local prefix. It sends D3 then only the remaining bytes and D4;
+no new D1, overwrite or delete is sent. Full-length prefixes can be finalized
+without retransmitting data. An already-active face is reported without any file
+write. Mismatched/zero/unaligned checkpoints stop before any continuation data.
+A failed file transfer is never automatically retried or blindly restarted.
 
 This version supports the verified HW2 model 2039 / firmware 2.0.12 / platform 3 /
 orange device color 72 / face framework 8 and LZ4 compression 4. It refuses other
 profiles, existing destination filenames, full storage/slots, invalid checksums
 and packages not signed for this installer. It does not erase, overwrite, activate
 with an undocumented command, bind/unbind, flash firmware or send arbitrary files.
-Only known device/dial/MTU inquiries and D1/D2/D4 face-transfer frames are used.
+Only known device/dial/MTU inquiries and D1/D2/D3/D4 face-transfer operations are used;
+D3 is the previously recovered receiver-position query, not a new file start.
 
 The included face is **experimental**. Emulator transport success does not verify
 watch rendering, compass responsiveness or stability. The earlier unstable
 ADVENTURER variants are explicitly rejected by the package importer. Desktop live
-installation remains disabled. No real watch was used to test this app.
+installation remains disabled. Version 0.2 recovery has now completed on the user’s actual phone/watch, and the
+user confirmed the new face visible. Compass freshness and long-term stability
+remain unverified.
 
 ## Source and package format
 
@@ -116,3 +126,19 @@ The signed APK is `lab/android/installer/build/outputs/apk/release/installer-rel
 
 The simulator is a transport receiver, not watch firmware or a sensor emulator.
 See reports/installer-emulator-validation.json and reports/installer-apk-signature.json.
+
+## Version 0.2 recovery validation
+
+Three emulator regression runs pass: full transfer with mid-stream rotation;
+resume from byte 36,000 with rotation and no D1; and finalization from the full
+143,415-byte prefix with no D1 or D2. Host tests reject invalid/mismatched offsets
+and CRCs and verify that recovery can use an already-reserved slot even if no free
+slots/storage remain. Read-only already-active detection is covered separately.
+
+The user's installed 0.1 APK and the 0.2 update contain identical face package bytes
+and share the same APK signing certificate. The in-place phone update and explicit
+Recover action succeeded; the app reported the new face active, and the user
+confirmed the watch left its installing screen. No real-phone HCI trace/offset
+was captured. Evidence: reports/installer-v02-phone-recovery.json and
+reports/installer-recovery-emulator-validation.json. The installer connection was
+closed afterward without unpairing.

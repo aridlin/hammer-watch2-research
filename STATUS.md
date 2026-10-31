@@ -4,13 +4,15 @@ Updated **2026-10-31**. The current requested face is **Sci-Fi Timer (orange)**.
 The edit removes EXPLORE, BE PROACTIVE, COLLABORATE, INNOVATE and SPORT plus arrows,
 localizes weekdays to Polish, and replaces the small corner analog clock with
 native compass widgets copied from the acquired weather face. It compiles and
-passes offline resource/model checks. Hardware responsiveness/stability is unknown.
+passes offline resource/model checks. The user now confirms the face visible after recovery; sensor responsiveness and
+long-term stability remain unknown.
 
 The requested Android installer is built and signed, with this face included.
 It uses the already recovered GATT protocol, has no Internet/vendor SDK dependency,
 and requires explicit user selection/Apply. Two emulator runtime tests pass,
-including complete transfer with active-entry verification. No physical watch or
-phone is used; desktop live installation remains blocked after the prior reboot.
+including complete transfer with active-entry verification. After a reported rotation interruption, version 0.2 was installed on the user’s
+ADB-connected phone and successfully recovered the actual transfer. Desktop live
+installation remains blocked after the prior ADVENTURER reboot.
 The watch remains unpaired from the PC. See [installer](mobile-installer.md).
 
 Prior ADVENTURER findings remain below. Revision 8 and diagnostic controls are
@@ -37,7 +39,7 @@ remaining “white texture” report has no new close-up, so complete removal is
 not yet claimed. Compass widgets themselves are unchanged. Retaining pointers is
 a redraw hypothesis, not a proven fix. The host upload never modifies firmware.
 
-Offline checks: **173 passed**, including actual source/compiler image guards.
+Offline checks: **174 passed**, including actual source/compiler image guards.
 Real sample tests skip when proprietary local samples are absent. Final acceptance
 requires checking date, time, rim position, absence of unwanted graphics, and
 continuous compass rotation on the physical watch. Earlier sections below retain
@@ -277,3 +279,26 @@ validate firmware rendering, compass freshness, counters or stability. Release
 lint has no issues and Google apksig verifies the APK. Local deliverables and
 checksums are in dist/; public evidence is in reports/scifi-*.json and
 reports/installer-*.json.
+
+## Installer 0.2: real recovery after rotation interruption
+
+The user reported a mid-transfer interruption around phone auto-rotation and a
+watch stuck on its installing screen. Inspection confirmed that version 0.1
+allowed Activity recreation on rotation, whose onDestroy disconnected GATT.
+Original failure logs are unavailable; this is a verified interruption mechanism
+consistent with the report, not an independently captured original crash cause.
+
+Version 0.2 handles orientation/screen-size changes without Activity destruction.
+A separate explicit recovery mode requires a matching existing filename and D3
+receiver offset/CRC matching a nonzero local prefix. It sends only remaining data
+and D4, never a new D1 or deletion. It also handles a fully received file and a
+read-only already-active result. Fresh installs still refuse overwriting.
+
+Three emulator regression runs pass, including rotation mid-transfer and
+mid-resume. The original phone APK's bundled face is byte-identical to the update;
+APK signer identity is unchanged. The phone was updated in place without clearing
+data or unpairing. After the user explicitly authorized recovery, the app reported
+"Face applied and reported active"; the user confirmed the new face showing and
+the installing screen gone. No phone HCI trace or actual checkpoint value was
+captured. The installer connection was then disconnected, preserving pairing.
+No additional face changes, firmware writes, reset, delete or overwrite occurred.

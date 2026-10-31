@@ -251,3 +251,25 @@ handling and a simulator's oversized 514-byte attribute at MTU517; synthetic
 fragmentation now caps value length at 512. This is neither watch firmware
 emulation nor hardware validation. No real watch or phone was used in this phase.
 [Installer evidence](reports/installer-emulator-validation.json).
+
+## Real-phone interruption and successful recovery — 2026-10-31
+
+The user reported the Sci-Fi transfer stopping around phone auto-rotation, leaving
+an installing screen and an existing filename. Code inspection identifies a
+specific v0.1 lifecycle defect: orientation recreation invokes onDestroy and closes
+the GATT connection. No original failure trace is available, so this explains a
+credible interruption mechanism rather than proving the original event sequence.
+
+Version 0.2 handles orientation/screen-size changes, and adds explicit continuation
+using the already recovered D3 offset/CRC query. Normal overwrite prevention is
+preserved; recovery requires a matching nonzero prefix and sends no new D1. Tests
+cover mid-stream rotation, partial-prefix resume, full-length finalization,
+mismatches, already-active detection and already-reserved capacity.
+
+The phone's installed v0.1 APK was verified to contain exactly the same face
+package as v0.2. Signer identity matches; ADB updated in place without clearing data
+or unpairing. The user explicitly authorized the recovery action. The updated app
+reported the face active, and the user confirmed the new face showing. Appearance
+is now user-confirmed. Compass freshness, other dynamic values and longer-term
+stability have not yet been confirmed. Protocol tests are not substituted for
+those observations. The installer was disconnected after the recovery.

@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "reviewed_snapshot_files": 158,
+  "reviewed_snapshot_files": 162,
   "excluded": [
     "proprietary APK/SDK/face binaries and images",
     "raw captures",
@@ -11,11 +11,11 @@
   ],
   "scan_result": "No personal identifiers or credentials in reviewed snapshot; address matches are synthetic fixtures; apparent emails are factory/test face filenames.",
   "local_tests": {
-    "passed": 173,
+    "passed": 174,
     "skipped": 0
   },
   "clean_snapshot_tests": {
-    "passed": 134,
+    "passed": 135,
     "skipped": 39,
     "reason": "Private face/compiler samples and captures deliberately excluded"
   },
@@ -24,5 +24,12 @@
     "physical_watch_used": false
   },
   "release_apk_lint": "No issues found",
-  "signed_catalog_query_values": "Redacted; not published"
+  "signed_catalog_query_values": "Redacted; not published",
+  "android_v02_recovery_regressions": {
+    "passed": 3,
+    "normal_transfer_with_rotation": true,
+    "partial_resume_with_rotation": true,
+    "full_checkpoint_finalization": true
+  },
+  "real_phone_recovery": "User-approved recovery succeeded; app reported active and user confirmed the face visible. No identifiers or raw phone captures published."
 }

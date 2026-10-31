@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-31",
+  "installer_version": "0.2",
+  "incident": {
+    "user_report": "Transfer interrupted around phone auto-rotation; watch remains on installing and app refuses existing filename",
+    "initial_failure_log_available": false,
+    "code_finding": "Version0.1 recreated Activity on rotation; onDestroy disconnected GATT",
+    "cause_confidence": "Consistent with user report; interruption mechanism verified by code and rotation regression"
+  },
+  "update": {
+    "in_place": true,
+    "same_signing_certificate": true,
+    "same_bundled_face_as_v01": true,
+    "data_cleared": false,
+    "unpaired": false
+  },
+  "recovery": {
+    "user_explicitly_approved_phone_recovery": true,
+    "action": "Recover interrupted transfer",
+    "app_status": "Face applied and reported active. Check its appearance and behavior on the watch.",
+    "user_confirmed_watch_left_install_screen": true,
+    "user_confirmed_new_face_visible": true,
+    "remote_offset_not_recorded": true,
+    "phone_hci_capture_obtained": false,
+    "prefix_verification": "Enforced by the recovery code; no independent HCI replay of this real-phone attempt",
+    "new_start_or_delete_command_supported_in_recovery": false,
+    "installer_disconnected_after_success": true
+  },
+  "sensor_acceptance": {
+    "compass_responsiveness": "Not yet confirmed",
+    "long_term_stability": "Not yet confirmed"
+  },
+  "private_evidence_hashes": {
+    "phone-recovery-status-after-wait.xml": "1e83d9abb6ea14664fb307ce37686a29389223adb08fc5ed2924d10d1d1c524e",
+    "phone-recovery-complete-idle.xml": "f678d2b7a3955342af15f32c3af348dfc7a92a83bceeea8721d2f5ba1830de1b"
+  }
+}

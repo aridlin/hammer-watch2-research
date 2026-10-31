@@ -5,7 +5,7 @@ android {
     useLibrary 'android.test.mock', false
     namespace 'local.hammer.installer'
     compileSdk 35
-    defaultConfig { applicationId 'local.hammer.installer'; minSdk 26; targetSdk 35; versionCode 1; versionName '0.1'; testInstrumentationRunner 'android.test.InstrumentationTestRunner' }
+    defaultConfig { applicationId 'local.hammer.installer'; minSdk 26; targetSdk 35; versionCode 2; versionName '0.2'; testInstrumentationRunner 'android.test.InstrumentationTestRunner' }
     def releaseSecrets = new Properties()
     def secretsFile = rootProject.file('../../private/installer/signing.properties')
     if (secretsFile.exists()) secretsFile.withInputStream { releaseSecrets.load(it) }

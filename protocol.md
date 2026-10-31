@@ -307,7 +307,7 @@ and payload are not approved for use, implemented or sent here. No crash-log
 availability is claimed. See reports/offline-diagnostic-leads.json for code
 addresses and hashes. The public repository excludes embedded authorization.
 
-## Native Android installer, reusing the recovered protocol
+## Native Android installer 0.1, reusing the recovered protocol
 
 `lab/android/installer` implements the same service and characteristic UUIDs,
 fixed device/dial/MTU inquiries, CRC16/CCITT-FALSE metadata verification, and
@@ -333,3 +333,28 @@ was a simulator defect, not evidence of a new HAMMER command. The receiver
 validates every data byte and rolling CRC against the selected local fixture.
 The instrumentation APK refuses non-emulator targets and is separate from the
 release installer. [Runtime proof](reports/installer-emulator-validation.json).
+
+## Android 0.2: rotation-safe, explicitly verified recovery
+
+The phone user reported an interruption around rotation. Version 0.1's Activity
+could be recreated, and its onDestroy disconnected GATT. Version 0.2 handles
+orientation/screen-size configuration changes without destroying the transferring
+Activity. Rotation during both a normal transfer and a resumed transfer passes
+Android runtime regression tests.
+
+Explicit Recover mode keeps normal no-overwrite checks intact. Fresh device/dial/
+MTU reads must identify the same supported profile and exactly one matching face
+entry. Recovery reuses the previously recovered two-byte D3 position query. Its
+11-byte success reply must contain a nonzero offset no greater than the file,
+aligned to the data chunk or equal to full length, and a CRC16(init 0) matching the
+local prefix. Only then are remaining D2 frames and D4 sent. Recovery sends no new
+D1 and does not allocate another slot, delete, reset, or start another file. A
+full-length checkpoint sends only D4 after verification. An already-active matching
+entry is reported read-only, with no file operation.
+
+On the user's actual ADB-connected phone, the in-place update succeeded using the
+same signer and identical face package. After explicit permission to recover, the
+app completed and reported the face active; the user confirmed the watch exited
+its installing screen and showed the new face. No HCI trace or actual resume
+offset was captured from this phone. The installer's GATT session was disconnected
+afterward, without unpairing. See reports/installer-v02-phone-recovery.json.

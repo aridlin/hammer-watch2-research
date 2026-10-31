@@ -1,0 +1,45 @@
+{
+  "version": "0.2",
+  "cases": {
+    "rotation": {
+      "passed": true,
+      "seeded_offset": 0,
+      "transferred_suffix_bytes": 143415,
+      "data_frames": 797,
+      "new_start_frames": 1,
+      "resume_queries": 0,
+      "end_frames": 1,
+      "suffix_exactly_matches": true,
+      "rotation_during_stream": true,
+      "watch_firmware_emulated": false,
+      "private_log_sha256": "d6527a317f1370673435f968ed431c3b3570e32b219ad0d069573faa80a7717e"
+    },
+    "resume": {
+      "passed": true,
+      "seeded_offset": 36000,
+      "transferred_suffix_bytes": 107415,
+      "data_frames": 597,
+      "new_start_frames": 0,
+      "resume_queries": 1,
+      "end_frames": 1,
+      "suffix_exactly_matches": true,
+      "rotation_during_stream": true,
+      "watch_firmware_emulated": false,
+      "private_log_sha256": "eb7d226f0f9f2751975c2176b93dd2ec4c026922e956b8c7ac35cd2d581118f1"
+    },
+    "finalize": {
+      "passed": true,
+      "seeded_offset": 143415,
+      "transferred_suffix_bytes": 0,
+      "data_frames": 0,
+      "new_start_frames": 0,
+      "resume_queries": 1,
+      "end_frames": 1,
+      "suffix_exactly_matches": true,
+      "rotation_during_stream": false,
+      "watch_firmware_emulated": false,
+      "private_log_sha256": "713b721686955cfa2643368ad11db415caa13141f0ad1baccff80a4cb6a1db88"
+    }
+  },
+  "physical_device_used": false
+}

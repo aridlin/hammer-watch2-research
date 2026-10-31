@@ -63,6 +63,7 @@ async def run(args):
                 from tools.creek_bin import parse,read_binary
                 fixture=read_binary(args.installer_test_face);name=parse(fixture)['name']+'.bin'
                 installer=InstallerReceiver(fixture,name)
+                if args.installer_resume_offset:installer.seed_prefix(args.installer_resume_offset)
             tasks=set()
             def finished(task):
                 tasks.discard(task)
@@ -87,7 +88,7 @@ async def run(args):
 
             def received(connection,value):
                 event('gatt_write',size=len(value),hex=bytes(value).hex())
-                if installer and value and value[0] in (0xd1,0xd2,0xd4):
+                if installer and value and value[0] in (0xd1,0xd2,0xd3,0xd4):
                     try:reply=installer.file_reply(bytes(value))
                     except ValueError:
                         event('synthetic_transfer_rejected');return
@@ -135,6 +136,7 @@ def main():
     p.add_argument('--name',default='HW2')
     p.add_argument('--duration',type=int,default=300)
     p.add_argument('--log',type=Path,required=True)
+    p.add_argument('--installer-resume-offset',type=int,default=0,help='Seed an exact synthetic fixture prefix for recovery testing only')
     p.add_argument('--installer-test-face',type=Path,help='Opt-in exact fixture receiver on local Netsim only, never hardware')
     p.add_argument('--synthetic-device-info',action='store_true',help='Local-only experimental protobuf device response; capabilities are synthetic')
     p.add_argument('--minimal-device-info',action='store_true',help='Probe only ID/version in a single 20-byte reply')
@@ -145,6 +147,7 @@ def main():
     p.add_argument('--lab-identity',type=int,choices=range(1,255),default=2)
     p.add_argument('--reply-control',type=int,choices=[1,2],default=2)
     a=p.parse_args()
+    if a.installer_resume_offset and not a.installer_test_face:p.error('Resume fixture requires installer-test-face')
     if a.synthetic_setup or a.installer_test_face:a.synthetic_device_info=True
     try:
         with exclusive_peer(Path(__file__).resolve().parents[1]/'private/emulator/peer.lock'):

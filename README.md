@@ -9,17 +9,23 @@ the weather face's native compass widgets.** Original main time/date/battery and
 activity font assets are preserved. Normal-frame compass behavior and stability
 remain unverified on a real watch.
 
-A separately signed **Android installer APK** is built locally in `dist/`, with the
+A separately signed **Android installer APK (version 0.2)** is built locally in `dist/`, with the
 face included. It reuses the recovered protocol, needs no HAMMER login/Internet,
 and imports signed `.hface` packages for future faces. See
 [mobile installer](mobile-installer.md), [face validation](reports/scifi-validation.json)
 and [Android emulator tests](reports/installer-emulator-validation.json).
 Vendor resources and built APKs are local artifacts, not committed to this repo.
 
+Version 0.2 fixes rotation interrupting transfers and adds explicit, offset/CRC
+verified recovery without overwriting. An interrupted transfer has now been
+recovered using the user's phone; the user confirmed the face visible. The APK
+update preserves app data, pairing, signing identity and face bytes.
+[Phone recovery evidence](reports/installer-v02-phone-recovery.json).
+
 Earlier ADVENTURER tests had slow/skipped updates and one reported reboot.
 **Desktop live uploads remain suspended; the watch stays unpaired from the PC.**
-The installer is an explicit user-controlled experimental client, not a claim of
-physical validation. It rejects the earlier unstable ADVENTURER test packages.
+The installer is an explicit user-controlled experimental client. Phone recovery
+and face appearance are now confirmed; compass performance/stability are not. It rejects the earlier unstable ADVENTURER test packages.
 The cropped ADVENTURER fix and three diagnostic controls remain offline only.
 See [current status](STATUS.md), [research](research.md), [format](format.md) and
 [protocol](protocol.md). Earlier sections below retain chronological evidence.

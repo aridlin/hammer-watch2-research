@@ -18,7 +18,7 @@ import java.util.*;
 public final class MainActivity extends Activity {
     static final UUID SERVICE=UUID.fromString("00000ff0-0000-1000-8000-00805f9b34fb"), WRITE=UUID.fromString("00000001-0000-1000-8000-00805f9b34fb"), NOTIFY=UUID.fromString("00000002-0000-1000-8000-00805f9b34fb"), CCCD=UUID.fromString("00002902-0000-1000-8000-00805f9b34fb");
     final Handler main=new Handler(Looper.getMainLooper());
-    TextView faceText,status;Button choose,connect,apply;ProgressBar progress;
+    TextView faceText,status;Button choose,connect,apply,recover;ProgressBar progress;
     FacePackage face;BluetoothGatt gatt;BluetoothGattCharacteristic write;
     TransferSession session;boolean ready=false,writing=false,loading=false,closed=false;
     int mtu=23;byte[] queued;Runnable deadline;
@@ -36,13 +36,14 @@ public final class MainActivity extends Activity {
         choose=button(root,"Import face",v->{if(busy())return;Intent intent=new Intent(Intent.ACTION_OPEN_DOCUMENT);intent.addCategory(Intent.CATEGORY_OPENABLE);intent.setType("*/*");startActivityForResult(intent,100);});
         connect=button(root,"Connect watch",v->{if(busy())return;if(gatt!=null){disconnect();message("Disconnected.");}else selectWatch();});
         apply=button(root,"Apply face",v->{if(face==null||!ready||busy())return;new AlertDialog.Builder(this).setTitle("Apply "+face.title+"?").setMessage("This is an experimental face, not yet validated on the watch. It is written as a separate entry; existing faces are kept. Keep this app open during transfer.").setNegativeButton("Cancel",null).setPositiveButton("Apply",(dialog,which)->begin()).show();});
+        recover=button(root,"Recover interrupted transfer",v->{if(face==null||!ready||busy())return;new AlertDialog.Builder(this).setTitle("Recover interrupted transfer?").setMessage("Continue the existing transfer only if the watch returns a saved position and checksum matching this face. No overwrite or delete command is sent.").setNegativeButton("Cancel",null).setPositiveButton("Recover",(dialog,which)->beginRecovery()).show();});
         progress=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);progress.setMax(100);root.addView(progress,new LinearLayout.LayoutParams(-1,dp(16)));
         status=new TextView(this);status.setTextSize(16);status.setPadding(0,dp(20),0,0);root.addView(status);refresh();
     }
     Button button(LinearLayout root,String text,View.OnClickListener click){Button b=new Button(this);b.setText(text);b.setOnClickListener(click);root.addView(b,new LinearLayout.LayoutParams(-1,dp(56)));return b;}
     int dp(int n){return Math.round(n*getResources().getDisplayMetrics().density);}
     boolean busy(){return session!=null&&session.stage!=TransferSession.Stage.DONE&&session.stage!=TransferSession.Stage.FAILED;}
-    void refresh(){if(apply==null)return;choose.setEnabled(!busy()&&!loading);connect.setEnabled(!busy()&&!loading);connect.setText(gatt==null?"Connect watch":"Disconnect");apply.setEnabled(face!=null&&ready&&!busy()&&!loading);}
+    void refresh(){if(apply==null)return;choose.setEnabled(!busy()&&!loading);connect.setEnabled(!busy()&&!loading);connect.setText(gatt==null?"Connect watch":"Disconnect");apply.setEnabled(face!=null&&ready&&!busy()&&!loading);if(recover!=null)recover.setEnabled(face!=null&&ready&&!busy()&&!loading);}
     void message(String s){status.setText(s);refresh();}
     void loadFace(Uri uri){if(busy())return;loading=true;refresh();new Thread(()->{
         try(InputStream in=uri==null?getAssets().open("scifi-orange-pl-compass.hface"):getContentResolver().openInputStream(uri);InputStream key=getAssets().open("face-signing-public.der")){
@@ -67,7 +68,9 @@ public final class MainActivity extends Activity {
     void connectDevice(BluetoothDevice device){disconnect();message("Connecting…");try{gatt=device.connectGatt(this,false,callbacks,BluetoothDevice.TRANSPORT_LE);refresh();timeout("Connection timed out",20000);}catch(SecurityException e){fail("Nearby-device permission is required");}catch(RuntimeException e){fail("Could not connect");}}
     void timeout(String text,int ms){cancelDeadline();deadline=()->fail(text);main.postDelayed(deadline,ms);}
     void cancelDeadline(){if(deadline!=null)main.removeCallbacks(deadline);deadline=null;}
-    void begin(){try{session=new TransferSession(face.data,face.filename,mtu);progress.setProgress(0);getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);message("Checking watch compatibility and free space…");send(session.first());}catch(RuntimeException e){fail(safe(e));}}
+    void begin(){begin(false);}
+    void beginRecovery(){begin(true);}
+    void begin(boolean recovery){try{session=new TransferSession(face.data,face.filename,mtu,recovery);progress.setProgress(0);getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);message(recovery?"Checking the interrupted transfer…":"Checking watch compatibility and free space…");send(session.first());}catch(RuntimeException e){fail(safe(e));}}
     void send(byte[] bytes){if(bytes==null)return;if(writing){if(queued!=null){fail("Bluetooth write queue conflict");return;}queued=bytes;timeout("Bluetooth write completion timed out",12000);return;}
         if(gatt==null||write==null||bytes.length>mtu-3){fail("Bluetooth connection is not ready");return;}
         try{writing=true;write.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);write.setValue(bytes);if(!gatt.writeCharacteristic(write)){writing=false;fail("Bluetooth refused the write; no retry was sent");return;}timeout("Watch response timed out; transfer stopped without retry",12000);}catch(SecurityException e){writing=false;fail("Nearby-device permission was revoked");}catch(RuntimeException e){writing=false;fail("Bluetooth write failed; transfer stopped");}
@@ -78,7 +81,7 @@ public final class MainActivity extends Activity {
             progress.setProgress((int)(100L*session.offset/session.data.length));
             if(session.stage==TransferSession.Stage.DATA||session.stage==TransferSession.Stage.END)message("Applying face… "+progress.getProgress()+"%");
             if(session.stage==TransferSession.Stage.VERIFY)message("Transfer accepted. Checking the face list…");
-            if(session.stage==TransferSession.Stage.DONE){cancelDeadline();getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);progress.setProgress(100);message(session.activeVerified?"Face applied and reported active. Check its appearance and behavior on the watch.":"Transfer accepted. Select the new face on the watch if needed; active selection was not confirmed.");}
+            if(session.stage==TransferSession.Stage.DONE){cancelDeadline();getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);progress.setProgress(100);message(session.alreadyActive?"The watch already reports this face active. No transfer was sent. Check its display.":session.activeVerified?"Face applied and reported active. Check its appearance and behavior on the watch.":"Transfer accepted. Select the new face on the watch if needed; active selection was not confirmed.");}
         }catch(RuntimeException e){fail(safe(e));}
     }
     void fail(String reason){boolean accepted=session!=null&&session.transferAccepted;

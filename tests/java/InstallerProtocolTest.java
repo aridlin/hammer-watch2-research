@@ -49,6 +49,27 @@ public class InstallerProtocolTest {
         while(cursor<verify.length){int count=Math.min(238,verify.length-cursor);byte[] part=new byte[count+2];part[0]=(byte)(cursor+count==verify.length?0xc3:0xc2);part[1]=verify[1];System.arraycopy(verify,cursor,part,2,count);verifyParts.add(part);cursor+=count;}
         for(byte[] part:verifyParts){late.accept(part);late.accept(ack(0xd2,180,c180));late.accept(part);}
         check(late.stage==TransferSession.Stage.DONE&&late.activeVerified&&late.transferAccepted);
+        // Explicit prefix recovery never starts/overwrites the existing file.
+        TransferSession resume=new TransferSession(large,"test_face01.bin",247,true);
+        resume.accept(reply(Wire.DEVICE,device(2039)));
+        byte[] fullSlot=concat(integer(3,8),integer(15,4),integer(18,1),integer(11,0),bytes(10,bytes(4,"test_face01.bin".getBytes())));
+        check(Arrays.equals(resume.accept(reply(Wire.DIAL,fullSlot)),Wire.MTU));
+        check(Arrays.equals(resume.accept(reply(Wire.MTU,integer(2,244))),new byte[]{(byte)0xd3,0}));
+        byte[] position=ack(0xd2,360,c360);position[0]=(byte)0xd3;
+        byte[] rest=resume.accept(position);check(rest[0]==(byte)0xd2&&resume.resumedFrom==360&&resume.offset==360);
+        check(Arrays.equals(Arrays.copyOfRange(rest,2,rest.length),Arrays.copyOfRange(large,360,540)));
+        for(int end=540;end<large.length;end+=180)resume.accept(ack(0xd2,end,Wire.crc16(large,0,end,0)));
+        check(resume.accept(ack(0xd2,large.length,Wire.crc16(large,0,large.length,0)))[0]==(byte)0xd4);
+        resume.accept(ack(0xd4,0,0));resume.accept(reply(Wire.DIAL,dial("test_face01.bin",true)));check(resume.activeVerified);
+        for(int badOffset:new int[]{0,181,801,360}){
+            TransferSession mismatch=new TransferSession(large,"test_face01.bin",247,true);mismatch.accept(reply(Wire.DEVICE,device(2039)));mismatch.accept(reply(Wire.DIAL,dial("test_face01.bin",false)));mismatch.accept(reply(Wire.MTU,integer(2,244)));
+            byte[] pos=ack(0xd2,badOffset,0);pos[0]=(byte)0xd3;rejects(()->mismatch.accept(pos));check(mismatch.stage==TransferSession.Stage.FAILED);
+        }
+        TransferSession finalizeOnly=new TransferSession(large,"test_face01.bin",247,true);finalizeOnly.accept(reply(Wire.DEVICE,device(2039)));finalizeOnly.accept(reply(Wire.DIAL,dial("test_face01.bin",false)));finalizeOnly.accept(reply(Wire.MTU,integer(2,244)));
+        byte[] fullPosition=ack(0xd2,large.length,Wire.crc16(large,0,large.length,0));fullPosition[0]=(byte)0xd3;
+        check(finalizeOnly.accept(fullPosition)[0]==(byte)0xd4&&finalizeOnly.offset==large.length);
+        TransferSession already=new TransferSession(large,"test_face01.bin",247,true);already.accept(reply(Wire.DEVICE,device(2039)));
+        check(already.accept(reply(Wire.DIAL,dial("test_face01.bin",true)))==null&&already.stage==TransferSession.Stage.DONE&&already.alreadyActive&&!already.transferAccepted);
         // Fragmented inquiry with duplicate intermediate notifications.
         byte[] full=reply(Wire.DIAL,bytes(40,new byte[620]));List<byte[]> fragments=new ArrayList<>();fragments.add(Arrays.copyOfRange(full,0,240));int off=240;
         while(off<full.length){int count=Math.min(238,full.length-off);byte[] part=new byte[count+2];part[0]=(byte)(off+count==full.length?0xc3:0xc2);part[1]=full[1];System.arraycopy(full,off,part,2,count);fragments.add(part);off+=count;}
