@@ -30,7 +30,7 @@ remaining “white texture” report has no new close-up, so complete removal is
 not yet claimed. Compass widgets themselves are unchanged. Retaining pointers is
 a redraw hypothesis, not a proven fix. The host upload never modifies firmware.
 
-Offline checks: **160 passed**, including actual source/compiler image guards.
+Offline checks: **165 passed**, including actual source/compiler image guards.
 Real sample tests skip when proprietary local samples are absent. Final acceptance
 requires checking date, time, rim position, absence of unwanted graphics, and
 continuous compass rotation on the physical watch. Earlier sections below retain
@@ -212,3 +212,35 @@ becomes 56,364 bytes, a 99.07% reduction. This addresses demonstrable wasted ima
 storage; no claim of fixed seconds, compass or stability follows from it. Native
 curved/day behavior and mixed compass renderer workload still require investigation.
 No new face is sent to the watch. [Budget evidence](reports/decoded-image-budgets.json).
+
+## Continued offline work; watch remains disconnected
+
+The user authorized continued work without their watch. No Bluetooth discovery,
+pairing, connection, inquiry or write is performed in this offline stage. Live
+installation remains disabled. The isolated Android emulator compiler is the only
+device-like target used; it is not a simulation of the watch firmware.
+
+Three source controls were built with `tools.offline_experiments`, compiled and
+validated against their base models:
+
+| Control | Difference under study | Non-layout resources |
+|---|---|---|
+| Renamed factory | Only JSON/container name changes from original | All 127 preserved |
+| Factory plus seconds | Adds one existing-font text/second widget; name differs | All 127 preserved |
+| Cropped original compass | Removes only the two added weather heading widgets from revision 8; name differs | All 157 preserved |
+
+All have valid container CRCs and exact expected model dictionaries. Original
+assets remain local/private. These controls have no uploader integration and have
+not been tested on hardware. A future comparison of the renamed clone with the
+seconds-added clone can isolate the added text widget; cropped revision 8 versus
+the third control compares the extra weather heading widgets. Different names
+remain an unavoidable confound until firmware name handling is understood.
+
+Offline static APK analysis also identified `DeviceUpgradeRequest.path`
+(`0x2dd2048`), `DeviceUpgradeRequestModel.toJson` (`0x247178c`), firmware URL/version
+response keys, and `FirmwareLogSyn.firmwareLog` (`0x2300a18`) calling SDK
+`CreekDown.startLog` (`0x2300bf4`). These are leads for legitimate image acquisition
+and diagnostics, not recovered firmware or crash evidence. No service was queried,
+embedded authorization used or logging command sent. See
+[controls](reports/offline-controls-validation.json) and
+[diagnostic leads](reports/offline-diagnostic-leads.json).

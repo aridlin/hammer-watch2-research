@@ -14,6 +14,11 @@ large weekday sprites: about 5.8 MiB of decoded weekday pixels alone. Offline
 revision 8 crops them without changing displayed pixels. Resource pressure is
 plausible; no crash cause, stable custom build or compass fix is established.
 
+Continued work is offline: three diagnostic controls now compile and pass exact
+model/resource checks. They isolate renamed factory behavior, an added seconds
+widget, and the extra weather heading widgets. They have no installation support
+and are not watch-firmware emulations. See [validation](reports/offline-controls-validation.json).
+
 See [current status](STATUS.md), [research](research.md), [format](format.md),
 [protocol](protocol.md), [field feedback](reports/field-feedback-and-revision3.json)
 and [revision 4 checks](reports/revision4-install-plan.json).

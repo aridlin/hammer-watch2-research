@@ -1,0 +1,37 @@
+{
+  "kind": "offline_control_sources",
+  "controls": {
+    "renamed_factory": {
+      "name": "ewrcompass_ctl01@LC",
+      "asset_count": 128,
+      "source_model_sha256": "6e6d0995bef3846bbeda89a8fcafa7ef2bd4f677b231c8164eaf135bd241e257",
+      "control_model_sha256": "61d1cdbe54c9498d4b120bbaa1999a4b882dafe7152ed901f1efa8ab644f3a76",
+      "normal_widget_count": 50,
+      "aod_widget_count": 5,
+      "assets_preserved_relative_to_control_base": true,
+      "installation_supported": false
+    },
+    "factory_plus_seconds": {
+      "name": "ewrcompass_ctl02@LC",
+      "asset_count": 128,
+      "source_model_sha256": "6e6d0995bef3846bbeda89a8fcafa7ef2bd4f677b231c8164eaf135bd241e257",
+      "control_model_sha256": "b4eff845d07d04c1674349437eacc219df0276f56e72dd005beffc27bfddf5f2",
+      "normal_widget_count": 51,
+      "aod_widget_count": 5,
+      "assets_preserved_relative_to_control_base": true,
+      "installation_supported": false
+    },
+    "cropped_original_compass": {
+      "name": "ewrcompass_ctl03@LC",
+      "asset_count": 158,
+      "source_model_sha256": "4f8e6e558f2a941bd46b9e6d8728e828a527205b5b2b105b29f00498916a0902",
+      "control_model_sha256": "5eb84b7fe4c76bc0f969c348d712233e76f8719de479d0bf1f04bffb05b2df1c",
+      "normal_widget_count": 39,
+      "aod_widget_count": 7,
+      "assets_preserved_relative_to_control_base": true,
+      "installation_supported": false
+    }
+  },
+  "physical_device_access": false,
+  "runtime_results": "Unknown; compile/structural checks do not emulate watch firmware"
+}

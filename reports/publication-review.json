@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "reviewed_snapshot_files": 119,
+  "reviewed_snapshot_files": 126,
   "excluded": [
     "proprietary APK/SDK/face binaries and images",
     "raw captures",
@@ -11,12 +11,12 @@
   ],
   "scan_result": "No personal identifiers or credentials in reviewed snapshot; address matches are synthetic fixtures; apparent emails are factory/test face filenames.",
   "local_tests": {
-    "passed": 160,
+    "passed": 165,
     "skipped": 0
   },
   "clean_snapshot_tests": {
-    "passed": 128,
-    "skipped": 32,
+    "passed": 130,
+    "skipped": 35,
     "reason": "Real samples/captures deliberately excluded"
   }
 }

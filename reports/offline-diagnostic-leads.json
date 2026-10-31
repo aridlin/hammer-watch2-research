@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-31",
+  "evidence": "Static Blutter annotated ARM64 AOT; no server or watch request performed",
+  "upgrade": {
+    "request_class": "DeviceUpgradeRequest",
+    "path": "/service-device/v1/upgrade",
+    "path_getter_address": "0x2dd2048",
+    "request_model_toJson": "0x247178c",
+    "request_keys": [
+      "appName",
+      "appVersion",
+      "firmwareId",
+      "firmwareVersion",
+      "libraryVersion",
+      "macId",
+      "phoneModel",
+      "phoneSystem",
+      "recoverFlag",
+      "appFrameVersion",
+      "popupNum",
+      "upgradeType"
+    ],
+    "result_model_fromJson": "0x247072c",
+    "result_keys": [
+      "firmwareUrl",
+      "firmwareVersion",
+      "libraryUrl",
+      "libraryVersion",
+      "extendJson",
+      "strategyId"
+    ],
+    "limits": "No matched firmware response or image obtained. Field types/selection requirements and real target response remain to be verified."
+  },
+  "logs": {
+    "app_method": "FirmwareLogSyn.firmwareLog",
+    "app_address": "0x2300a18",
+    "sdk_method": "CreekDown.startLog",
+    "sdk_address": "0x2300bf4",
+    "limits": "Collection implementation exists; payload content and inclusion of reset reasons/crash stacks are unknown. No command generated or sent, no log service contacted. Embedded authorization material omitted and unused."
+  },
+  "analysis_hashes": {
+    "creek_app/app/synchronization/firmwareLog_syn.dart": "acd14975488822204c24ddf8d302150d646a0cc2634cc9eff86e9b987bf2d30f",
+    "creek_blue_manage/creek_blue.dart": "bf38a89d15d06b62580945dc251d19754ca87ac4548e1a50eb2fd1c85645e201",
+    "creek_app/app/datas/manager/network/request/device/device_upgrade.dart": "ed7ed4a5de8083bbc1c05e4c680fd1dc3c76b8818342b47f292fe2ae4ae9c642",
+    "creek_app/app/datas/model/device/upgrade.dart": "274a72690928cd97ff68c929d58487dfcc4b722599db4f2824e3046f2d77ae83"
+  }
+}

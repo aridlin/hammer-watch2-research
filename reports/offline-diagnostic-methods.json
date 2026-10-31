@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "evidence": "Blutter annotated disassembly, not original Dart source",
+  "files": [
+    {
+      "package": "package:creek_app/app/synchronization/firmwareLog_syn.dart",
+      "analysis_file_sha256": "acd14975488822204c24ddf8d302150d646a0cc2634cc9eff86e9b987bf2d30f",
+      "methods": [
+        {
+          "method": "_ firmwareLog(/* No info */) async",
+          "address_hex": "0x2300a18",
+          "size_hex": "0x1dc"
+        },
+        {
+          "method": "[closure] Null <anonymous closure>(dynamic)",
+          "address_hex": "0x23010ec",
+          "size_hex": "0x78"
+        },
+        {
+          "method": "[closure] Null <anonymous closure>(dynamic)",
+          "address_hex": "0x2301164",
+          "size_hex": "0xf8"
+        },
+        {
+          "method": "static _ _getInstance(/* No info */)",
+          "address_hex": "0x23016d4",
+          "size_hex": "0x38"
+        }
+      ]
+    },
+    {
+      "package": "package:creek_app/app/datas/manager/network/request/device/device_upgrade.dart",
+      "analysis_file_sha256": "ed7ed4a5de8083bbc1c05e4c680fd1dc3c76b8818342b47f292fe2ae4ae9c642",
+      "methods": [
+        {
+          "method": "get _ path(/* No info */)",
+          "address_hex": "0x2dd2048",
+          "size_hex": "0xc"
+        }
+      ]
+    },
+    {
+      "package": "package:creek_app/app/datas/model/device/upgrade.dart",
+      "analysis_file_sha256": "274a72690928cd97ff68c929d58487dfcc4b722599db4f2824e3046f2d77ae83",
+      "methods": [
+        {
+          "method": "Map<String, dynamic> toJson(FirmwareRuleInfo)",
+          "address_hex": "0x2471138",
+          "size_hex": "0x48"
+        },
+        {
+          "method": "Map<String, dynamic> toJson(FirmwareRuleInfo)",
+          "address_hex": "0x24711d4",
+          "size_hex": "0x80"
+        },
+        {
+          "method": "factory _ FirmwareRuleInfo.fromJson(/* No info */)",
+          "address_hex": "0x2471624",
+          "size_hex": "0xfc"
+        },
+        {
+          "method": "_ toString(/* No info */)",
+          "address_hex": "0x332bf20",
+          "size_hex": "0x7c"
+        },
+        {
+          "method": "Map<String, dynamic> toJson(FirmwareConfigInfo)",
+          "address_hex": "0x2470ee0",
+          "size_hex": "0x240"
+        },
+        {
+          "method": "Map<String, dynamic> toJson(FirmwareConfigInfo)",
+          "address_hex": "0x24711a4",
+          "size_hex": "0x48"
+        },
+        {
+          "method": "factory _ FirmwareConfigInfo.fromJson(/* No info */)",
+          "address_hex": "0x2471260",
+          "size_hex": "0x2c0"
+        },
+        {
+          "method": "[closure] static Null <anonymous closure>(dynamic, dynamic)",
+          "address_hex": "0x247152c",
+          "size_hex": "0xf8"
+        },
+        {
+          "method": "_ toString(/* No info */)",
+          "address_hex": "0x332be5c",
+          "size_hex": "0xc4"
+        },
+        {
+          "method": "factory _ DeviceUpgradeResultModel.fromJson(/* No info */)",
+          "address_hex": "0x247072c",
+          "size_hex": "0x5e8"
+        },
+        {
+          "method": "Map<String, dynamic> toJson(DeviceUpgradeResultModel)",
+          "address_hex": "0x2470d2c",
+          "size_hex": "0x48"
+        },
+        {
+          "method": "Map<String, dynamic> toJson(DeviceUpgradeResultModel)",
+          "address_hex": "0x2470d5c",
+          "size_hex": "0x184"
+        },
+        {
+          "method": "_ toString(/* No info */)",
+          "address_hex": "0x332bd38",
+          "size_hex": "0x124"
+        },
+        {
+          "method": "Map<String, dynamic> toJson(DeviceUpgradeRequestModel)",
+          "address_hex": "0x247175c",
+          "size_hex": "0x48"
+        },
+        {
+          "method": "Map<String, dynamic> toJson(DeviceUpgradeRequestModel)",
+          "address_hex": "0x247178c",
+          "size_hex": "0x2d8"
+        }
+      ]
+    }
+  ]
+}

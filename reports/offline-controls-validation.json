@@ -1,0 +1,35 @@
+{
+  "renamed_factory": {
+    "sha256": "7da2fc8e39f7b66287b6a762d689b9bf2d474ae8499c08d92d2896ec81d31c2a",
+    "bytes": 430980,
+    "crc_valid": true,
+    "resource_count": 128,
+    "preserved_non_layout_resources": 127,
+    "control_model_matches": true,
+    "decoded_image_bytes_sum": 3177836,
+    "watch_runtime_tested": false,
+    "live_installation_supported": false
+  },
+  "factory_plus_seconds": {
+    "sha256": "f9a6b54a7bec41b65633821955733a094363714dd7a2d639ce5ab0e04a9e6ff0",
+    "bytes": 431217,
+    "crc_valid": true,
+    "resource_count": 128,
+    "preserved_non_layout_resources": 127,
+    "control_model_matches": true,
+    "decoded_image_bytes_sum": 3177836,
+    "watch_runtime_tested": false,
+    "live_installation_supported": false
+  },
+  "cropped_original_compass": {
+    "sha256": "40b3277abff3389ba68197b84516c3de0fa50825f20bc9117051ec52732c54d5",
+    "bytes": 449819,
+    "crc_valid": true,
+    "resource_count": 158,
+    "preserved_non_layout_resources": 157,
+    "control_model_matches": true,
+    "decoded_image_bytes_sum": 3325440,
+    "watch_runtime_tested": false,
+    "live_installation_supported": false
+  }
+}

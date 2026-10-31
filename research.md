@@ -193,3 +193,26 @@ origin, preserving every composited pixel. No watch upload occurs. Live executio
 is suspended. Required evidence: whether untouched factory face remains stable,
 reboot timing/trigger, and (if legitimately obtainable) crash/reset diagnostics.
 No firmware changes or undocumented diagnostic commands are attempted.
+
+## Offline controls and diagnostic acquisition leads — 2026-10-31
+
+With the watch disconnected, three diagnostic controls were compiled using the
+permission-stripped SDK harness. The renamed factory clone and factory plus
+seconds retain all 127 original non-layout resource hashes. The third preserves
+all 157 non-layout resources of the cropped build while removing exactly the two
+added weather heading widgets. All expected JSON models and CRCs validate.
+Future naming differences can still confound a physical comparison; no sensor or
+stability result is inferred from these controls. [Validation](reports/offline-controls-validation.json).
+
+AOT static analysis ties `DeviceUpgradeRequest.path` at `0x2dd2048` to
+`/service-device/v1/upgrade`. `DeviceUpgradeRequestModel.toJson` at `0x247178c`
+serializes firmware identity/version and other compatibility fields, including
+`macId`. `DeviceUpgradeResultModel.fromJson` at `0x247072c` reads `firmwareUrl`,
+`firmwareVersion`, `libraryUrl` and `libraryVersion`. These identify the legitimate
+acquisition path but do not supply a matching firmware image. No request was made.
+
+`FirmwareLogSyn.firmwareLog` at `0x2300a18` calls `CreekDown.startLog` at
+`0x2300bf4`. Log payload structure and presence of reset reasons remain unknown.
+Embedded transport authorization is omitted and unused; no log service or watch
+command was invoked. Sanitized method locations and source hashes are recorded
+in [diagnostic evidence](reports/offline-diagnostic-leads.json).

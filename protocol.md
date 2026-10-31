@@ -296,3 +296,13 @@ valid evidence of received bytes, not face runtime safety. The isolated sender
 unit tests explicitly disable this guard only inside their simulated D-Bus scope.
 Offline resource budgeting identifies excessive full-screen weekday canvases;
 revision 8 is compiled offline only and is not enabled in the installer.
+
+## Static diagnostic leads while disconnected
+
+The official app exposes a firmware upgrade request at
+`/service-device/v1/upgrade` through `DeviceUpgradeRequest.path`, and firmware URL
+fields in its response model. This is not a new executed API client. Likewise,
+`FirmwareLogSyn.firmwareLog` reaches `CreekDown.startLog`, but its transport command
+and payload are not approved for use, implemented or sent here. No crash-log
+availability is claimed. See reports/offline-diagnostic-leads.json for code
+addresses and hashes. The public repository excludes embedded authorization.

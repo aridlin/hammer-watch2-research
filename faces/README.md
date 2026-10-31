@@ -47,3 +47,18 @@ Current revision 7 source preparation (private samples required):
 These commands prepare, compile and validate only. They do not install. Existing
 destinations are refused. Original samples, font dependency and offline emulator
 setup remain necessary; vendor assets are not supplied by this repository.
+
+Generate the disconnected diagnostic controls (local original/weather sources
+and the Polish font dependency required):
+
+```sh
+.venv/bin/python -m tools.offline_experiments \
+  --source faces/local/adventurer/source \
+  --destination faces/local/adventurer/offline-controls-rebuild
+```
+
+This creates three source packs only below ignored `faces/local`, rejects existing
+destinations, preserves base asset hashes, and does not access an emulator or
+Bluetooth. To compile a selected control, pass its source directory to the existing
+isolated `tools.sdk_compile_reference` command. Do not install the resulting
+artifacts: runtime investigation is suspended pending a later stability review.
