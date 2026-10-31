@@ -1,0 +1,1450 @@
+{
+  "name": "CWR05G_compassPL02",
+  "base_name": "CWR05G_compassPL01",
+  "scale": 1.14,
+  "display": [
+    466,
+    466
+  ],
+  "background": "Orange to the round screen edge; grey outer frames removed; native compass retains dark disk",
+  "changed_images": [
+    {
+      "resource": "Date_10_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Fade_BG_8888.png",
+      "from": [
+        360,
+        130
+      ],
+      "to": [
+        410,
+        148
+      ]
+    },
+    {
+      "resource": "Hour_8888.png",
+      "from": [
+        18,
+        48
+      ],
+      "to": [
+        21,
+        55
+      ]
+    },
+    {
+      "resource": "icon1_8888.png",
+      "from": [
+        14,
+        14
+      ],
+      "to": [
+        16,
+        16
+      ]
+    },
+    {
+      "resource": "icon2_8888.png",
+      "from": [
+        48,
+        22
+      ],
+      "to": [
+        55,
+        25
+      ]
+    },
+    {
+      "resource": "Min_8888.png",
+      "from": [
+        18,
+        66
+      ],
+      "to": [
+        21,
+        75
+      ]
+    },
+    {
+      "resource": "Second_8888.png",
+      "from": [
+        18,
+        72
+      ],
+      "to": [
+        21,
+        82
+      ]
+    },
+    {
+      "resource": "Compass_ring_8888.png",
+      "from": [
+        96,
+        96
+      ],
+      "to": [
+        109,
+        109
+      ]
+    },
+    {
+      "resource": "Compass_scal_8888.png",
+      "from": [
+        96,
+        96
+      ],
+      "to": [
+        109,
+        109
+      ]
+    },
+    {
+      "resource": "Compass_angle_8888.png",
+      "from": [
+        8,
+        12
+      ],
+      "to": [
+        9,
+        14
+      ]
+    },
+    {
+      "resource": "Compass_Warning_8888.png",
+      "from": [
+        24,
+        24
+      ],
+      "to": [
+        27,
+        27
+      ]
+    },
+    {
+      "resource": "Apm_0_8888.png",
+      "from": [
+        52,
+        30
+      ],
+      "to": [
+        59,
+        34
+      ]
+    },
+    {
+      "resource": "Apm_1_8888.png",
+      "from": [
+        52,
+        30
+      ],
+      "to": [
+        59,
+        34
+      ]
+    },
+    {
+      "resource": "Apm_2_8888.png",
+      "from": [
+        52,
+        30
+      ],
+      "to": [
+        59,
+        34
+      ]
+    },
+    {
+      "resource": "Batteries_0_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_1_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_2_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_3_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_4_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_5_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_6_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_7_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_8_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Batteries_9_8888.png",
+      "from": [
+        16,
+        22
+      ],
+      "to": [
+        18,
+        25
+      ]
+    },
+    {
+      "resource": "Data_0_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_10_8888.png",
+      "from": [
+        6,
+        20
+      ],
+      "to": [
+        7,
+        23
+      ]
+    },
+    {
+      "resource": "Data_11_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_12_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_13_8888.png",
+      "from": [
+        6,
+        20
+      ],
+      "to": [
+        7,
+        23
+      ]
+    },
+    {
+      "resource": "Data_1_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_2_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_3_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_4_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_5_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_6_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_7_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_8_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Data_9_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_0_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_1_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_2_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_3_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_4_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_5_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_6_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_7_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_8_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Date_9_8888.png",
+      "from": [
+        14,
+        20
+      ],
+      "to": [
+        16,
+        23
+      ]
+    },
+    {
+      "resource": "Second_0_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_1_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_2_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_3_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_4_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_5_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_6_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_7_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_8_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Second_9_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Time_0_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_10_8888.png",
+      "from": [
+        22,
+        82
+      ],
+      "to": [
+        25,
+        93
+      ]
+    },
+    {
+      "resource": "Time_1_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_2_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_3_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_4_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_5_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_6_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_7_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_8_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Time_9_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Unit_0_8888.png",
+      "from": [
+        28,
+        20
+      ],
+      "to": [
+        32,
+        23
+      ]
+    },
+    {
+      "resource": "Unit_1_8888.png",
+      "from": [
+        28,
+        20
+      ],
+      "to": [
+        32,
+        23
+      ]
+    },
+    {
+      "resource": "Week_0_8888.png",
+      "from": [
+        56,
+        20
+      ],
+      "to": [
+        64,
+        23
+      ]
+    },
+    {
+      "resource": "Week_1_8888.png",
+      "from": [
+        56,
+        20
+      ],
+      "to": [
+        64,
+        23
+      ]
+    },
+    {
+      "resource": "Week_2_8888.png",
+      "from": [
+        56,
+        20
+      ],
+      "to": [
+        64,
+        23
+      ]
+    },
+    {
+      "resource": "Week_3_8888.png",
+      "from": [
+        56,
+        20
+      ],
+      "to": [
+        64,
+        23
+      ]
+    },
+    {
+      "resource": "Week_4_8888.png",
+      "from": [
+        56,
+        20
+      ],
+      "to": [
+        64,
+        23
+      ]
+    },
+    {
+      "resource": "Week_5_8888.png",
+      "from": [
+        56,
+        20
+      ],
+      "to": [
+        64,
+        23
+      ]
+    },
+    {
+      "resource": "Week_6_8888.png",
+      "from": [
+        56,
+        20
+      ],
+      "to": [
+        64,
+        23
+      ]
+    },
+    {
+      "resource": "Compass_data_0_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_1_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_2_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_3_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_4_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_5_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_6_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_7_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_8_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_9_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_10_8888.png",
+      "from": [
+        18,
+        28
+      ],
+      "to": [
+        21,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_data_11_8888.png",
+      "from": [
+        10,
+        28
+      ],
+      "to": [
+        11,
+        32
+      ]
+    },
+    {
+      "resource": "Compass_direction_0_8888.png",
+      "from": [
+        36,
+        18
+      ],
+      "to": [
+        41,
+        21
+      ]
+    },
+    {
+      "resource": "Compass_direction_1_8888.png",
+      "from": [
+        36,
+        18
+      ],
+      "to": [
+        41,
+        21
+      ]
+    },
+    {
+      "resource": "Compass_direction_2_8888.png",
+      "from": [
+        36,
+        18
+      ],
+      "to": [
+        41,
+        21
+      ]
+    },
+    {
+      "resource": "Compass_direction_3_8888.png",
+      "from": [
+        36,
+        18
+      ],
+      "to": [
+        41,
+        21
+      ]
+    },
+    {
+      "resource": "Compass_direction_4_8888.png",
+      "from": [
+        36,
+        18
+      ],
+      "to": [
+        41,
+        21
+      ]
+    },
+    {
+      "resource": "Compass_direction_5_8888.png",
+      "from": [
+        36,
+        18
+      ],
+      "to": [
+        41,
+        21
+      ]
+    },
+    {
+      "resource": "Compass_direction_6_8888.png",
+      "from": [
+        36,
+        18
+      ],
+      "to": [
+        41,
+        21
+      ]
+    },
+    {
+      "resource": "Compass_direction_7_8888.png",
+      "from": [
+        36,
+        18
+      ],
+      "to": [
+        41,
+        21
+      ]
+    },
+    {
+      "resource": "Fade_Apm_0_8888.png",
+      "from": [
+        52,
+        30
+      ],
+      "to": [
+        59,
+        34
+      ]
+    },
+    {
+      "resource": "Fade_Apm_1_8888.png",
+      "from": [
+        52,
+        30
+      ],
+      "to": [
+        59,
+        34
+      ]
+    },
+    {
+      "resource": "Fade_Apm_2_8888.png",
+      "from": [
+        52,
+        30
+      ],
+      "to": [
+        59,
+        34
+      ]
+    },
+    {
+      "resource": "Fade_Sec_0_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_1_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_2_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_3_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_4_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_5_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_6_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_7_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_8_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Sec_9_8888.png",
+      "from": [
+        25,
+        36
+      ],
+      "to": [
+        28,
+        41
+      ]
+    },
+    {
+      "resource": "Fade_Time_0_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_10_8888.png",
+      "from": [
+        22,
+        82
+      ],
+      "to": [
+        25,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_1_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_2_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_3_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_4_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_5_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_6_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_7_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_8_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "Fade_Time_9_8888.png",
+      "from": [
+        56,
+        82
+      ],
+      "to": [
+        64,
+        93
+      ]
+    },
+    {
+      "resource": "background_0_0565.bmp",
+      "from": [
+        466,
+        466
+      ],
+      "to": [
+        466,
+        466
+      ]
+    }
+  ],
+  "readout_bounds": [
+    {
+      "layer": "item",
+      "type": "week",
+      "outermost_corner_radius": 202.299
+    },
+    {
+      "layer": "item",
+      "type": "time",
+      "outermost_corner_radius": 212.009
+    },
+    {
+      "layer": "item",
+      "type": "day",
+      "outermost_corner_radius": 94.895
+    },
+    {
+      "layer": "item",
+      "type": "month",
+      "outermost_corner_radius": 57.801
+    },
+    {
+      "layer": "item",
+      "type": "step",
+      "outermost_corner_radius": 190.801
+    },
+    {
+      "layer": "item",
+      "type": "apm",
+      "outermost_corner_radius": 211.123
+    },
+    {
+      "layer": "item",
+      "type": "calorie",
+      "outermost_corner_radius": 215.564
+    },
+    {
+      "layer": "item",
+      "type": "sleep",
+      "outermost_corner_radius": 229.652
+    },
+    {
+      "layer": "item",
+      "type": "distance",
+      "outermost_corner_radius": 192.608
+    },
+    {
+      "layer": "item",
+      "type": "second",
+      "outermost_corner_radius": 192.865
+    },
+    {
+      "layer": "item",
+      "type": "battery",
+      "outermost_corner_radius": 176.774
+    },
+    {
+      "layer": "item",
+      "type": "units",
+      "outermost_corner_radius": 212.869
+    },
+    {
+      "layer": "item",
+      "type": "angle",
+      "outermost_corner_radius": 208.581
+    },
+    {
+      "layer": "item",
+      "type": "compass_pos",
+      "outermost_corner_radius": 175.573
+    },
+    {
+      "layer": "fade_item",
+      "type": "time",
+      "outermost_corner_radius": 184.816
+    },
+    {
+      "layer": "fade_item",
+      "type": "apm",
+      "outermost_corner_radius": 182.88
+    }
+  ],
+  "native_bindings_changed": false,
+  "physical_upload_attempted": false,
+  "rendering": "Offline static preview is not watch-firmware validation"
+}

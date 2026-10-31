@@ -142,3 +142,12 @@ confirmed the watch left its installing screen. No real-phone HCI trace/offset
 was captured. Evidence: reports/installer-v02-phone-recovery.json and
 reports/installer-recovery-emulator-validation.json. The installer connection was
 closed afterward without unpairing.
+
+## Full-screen variant
+
+The local `dist/Sci-Fi-Timer-Orange-PL-Fullscreen.hface` is signed for the existing
+installer 0.2. On the phone, choose **Import face**, select the package from
+**Downloads/HAMMER-Faces**, then connect/apply when ready. No APK update is needed.
+Its distinct wire filename `CWR05G_compassPL02.bin` preserves the earlier face.
+This larger variant has only offline validation; physical rendering and stability
+remain unverified. The generated preview uses fixed sample values.

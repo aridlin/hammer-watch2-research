@@ -8,7 +8,7 @@ def test_native_installer_protocol_on_host_java(tmp_path):
     source=Path('lab/android/installer/src/main/java/local/hammer/installer')
     result=subprocess.run([javac,'-d',str(tmp_path),str(source/'Wire.java'),str(source/'TransferSession.java'),'tests/java/InstallerProtocolTest.java'],capture_output=True,text=True)
     assert result.returncode==0,result.stderr
-    samples=[str(p) for p in [Path('faces/local/scifi/original.bin'),Path('faces/local/scifi/modified-final.bin')] if p.exists()]
+    samples=[str(p) for p in [Path('faces/local/scifi/original.bin'),Path('faces/local/scifi/modified-final.bin'),Path('faces/local/scifi/fullscreen-pl02.bin')] if p.exists()]
     result=subprocess.run([java,'-cp',str(tmp_path),'InstallerProtocolTest',*samples],capture_output=True,text=True)
     assert result.returncode==0,result.stderr
     assert result.stdout.startswith('PASS:')

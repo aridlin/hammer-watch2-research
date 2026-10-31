@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-31",
+  "candidate_name": "CWR05G_compassPL02",
+  "bytes": 301363,
+  "sha256": "4a252dd1a39372615433d3963a548d45c2a1282d6409006f66ca3bdbc461ef28",
+  "crc_valid": true,
+  "resource_count": 126,
+  "scale": 1.14,
+  "max_native_readout_corner_radius": 229.652,
+  "round_screen_radius": 233,
+  "decoded_image_bytes_sum": 1724424,
+  "signed_for_existing_installer_v02": true,
+  "old_face_filename_preserved": true,
+  "bindings": "Same native types, ordering and data references; geometry/bitmap sizes changed",
+  "physical_installation_attempted": false,
+  "preview": "Static composed sample, not watch-firmware emulation",
+  "compile": {
+    "result": "compiled_offline_no_upload",
+    "platform_argument": "JX_3085S_PLATFORM",
+    "process_abi": "arm64-v8a",
+    "target_compatibility": "unverified",
+    "source_platform": "ats3085s",
+    "sha256": "4a252dd1a39372615433d3963a548d45c2a1282d6409006f66ca3bdbc461ef28",
+    "bytes": 301363,
+    "crc_valid": true,
+    "resource_count": 126
+  }
+}

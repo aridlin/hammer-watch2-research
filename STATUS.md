@@ -302,3 +302,27 @@ data or unpairing. After the user explicitly authorized recovery, the app report
 the installing screen gone. No phone HCI trace or actual checkpoint value was
 captured. The installer connection was then disconnected, preserving pairing.
 No additional face changes, firmware writes, reset, delete or overwrite occurred.
+
+## Full-screen Sci-Fi variant — 2026-10-31
+
+`tools/scifi_fullscreen.py` derives `CWR05G_compassPL02` from the cleaned PL01
+source. Native widgets and bitmap glyphs are enlarged by 14% around (233,233);
+the background fills the circular display and omits the old raised outer frames.
+Useful labels, counters, Polish weekdays and weather compass bindings remain.
+The compass keeps its dark disk for contrast. No sensor binding or refresh
+behavior was changed. The original PL01 filename and package remain intact.
+
+Compilation produced a 301,363-byte, 126-resource container with a valid CRC.
+Decoded images total 1,724,424 bytes; this is an asset-size measurement, not a
+firmware runtime-memory measurement. Readout rectangles fit within radius 232
+on the radius-233 display (maximum corner radius 229.652). Tests compare actual
+compiled assets and native model fields against the transformed source.
+The static preview does not establish hardware rendering, compass freshness or
+stability. No watch installation was attempted.
+
+The package signature verifies against installer 0.2's embedded public key.
+The signed package was copied to the phone's
+`Downloads/HAMMER-Faces/Sci-Fi-Timer-Orange-PL-Fullscreen.hface`, with matching
+SHA-256. Import and installation remain explicit user actions. See
+[validation](reports/scifi-fullscreen-validation.json) and
+[delivery](reports/scifi-fullscreen-delivery.json).

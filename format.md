@@ -150,3 +150,13 @@ The final compiled container is 143,415 bytes with 126 resources, valid CRC32, a
 composited from real assets with fixed illustrative values; it is not a renderer
 or sensor emulator. Local `.hface` distribution wraps this BIN with a bounded,
 signed manifest; see mobile-installer.md for that independent package format.
+
+## Full-screen Sci-Fi geometry
+
+`tools/scifi_fullscreen.py` scales existing native widget geometry and source
+images by 1.14, preserving widget types, order and data references. Time and
+seconds widths account for independently rounded glyph dimensions. The background
+is rebuilt without the old raised frames, with ghost segments aligned to the
+enlarged glyph grid. The compiler creates the container; no manual container
+patching or protocol change is involved. Real-sample regression tests are in
+`tests/test_scifi_fullscreen.py`; the generic transform test uses synthetic data.
