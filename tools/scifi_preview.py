@@ -6,7 +6,7 @@ from .creek_bin import decode_image,read_binary,parse
 
 def preview(data):
     from PIL import Image
-    if parse(data)['name'] in {'CWR05G_compassPL02','CWR05G_compassPL03'}:return preview_fullscreen(data)
+    if parse(data)['name'] in {'CWR05G_compassPL02','CWR05G_compassPL03','CWR05G_compassPL04'}:return preview_fullscreen(data)
     if parse(data)['name']!='CWR05G_compassPL01':raise ValueError('Unexpected preview source')
     image=decode_image(data,'background_0_0565.bmp').convert('RGBA')
     def paste(name,x,y,tint=None):
@@ -39,7 +39,7 @@ def preview_fullscreen(data):
     """Asset-based native-layout illustration, with fixed example values."""
     from PIL import Image,ImageDraw
     report=parse(data);model=next(r['json'] for r in report['resources'] if r['name']=='dial.json')
-    image=decode_image(data,'background_0_0565.bmp').convert('RGBA');orange=(0,0,0,255) if report['name']=='CWR05G_compassPL03' else (246,127,49,255)
+    image=decode_image(data,'background_0_0565.bmp').convert('RGBA');orange=(0,0,0,255) if report['name'] in {'CWR05G_compassPL03','CWR05G_compassPL04'} else (246,127,49,255)
     def asset(name,tint=None):
         im=decode_image(data,name).convert('RGBA')
         if tint:

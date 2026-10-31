@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-31",
+  "name": "CWR05G_compassPL04",
+  "sha256": "077ac7400ff58f3bf270d2487494dbd570eb93ea5f2288ef0100115235da1eaa",
+  "bytes": 296837,
+  "crc_valid": true,
+  "package_signature_verified": true,
+  "left_ring_margin_px": 12,
+  "bottom_ring_margin_px": 12,
+  "translation_from_PL03": [
+    -9,
+    -10
+  ],
+  "hardware_tested": false,
+  "watch_installation_attempted": false
+}

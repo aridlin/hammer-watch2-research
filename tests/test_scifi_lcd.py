@@ -39,3 +39,16 @@ def test_real_lcd_container_and_divider_joins():
         if resource['name'].startswith('Compass_') and resource['name'].endswith('.png'):
             im = decode_image(data,resource['name']).convert('RGBA')
             assert all(lo==hi==0 for lo,hi in im.getextrema()[:3])
+
+
+def test_balanced_compass_has_equal_divider_margins():
+    path = Path('faces/local/scifi/fullscreen-pl04.bin')
+    previous = Path('faces/local/scifi/fullscreen-pl02.bin')
+    if not path.exists() or not previous.exists():
+        pytest.skip('Private compiled face samples absent')
+    report = parse(path.read_bytes())
+    model = next(r['json'] for r in report['resources'] if r['name']=='dial.json')
+    old = next(r['json'] for r in parse(previous.read_bytes())['resources'] if r['name']=='dial.json')
+    assert report['crc_valid'] and model == restyle(old, balanced=True)
+    ring = next(w for w in model['item'] if w.get('picture')=='Compass_ring_8888.png')
+    assert ring['x']-270 == 169-(ring['y']+ring['h']) == 12

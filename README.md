@@ -5,7 +5,8 @@ Evidence-led reverse engineering of HAMMER Watch 2, its Android companion app
 
 **Latest revision:** the LCD-themed compass is aligned within its upper-right
 panel, with black markings and connected divider lines. Import the local
-`Sci-Fi-Timer-Orange-PL-LCD.hface` using installer 0.2. Hardware validation remains
+`Sci-Fi-Timer-Orange-PL-Balanced.hface` using installer 0.2. The compass has
+matching 12-pixel margins against its left and bottom dividers. Hardware validation remains
 pending. See [LCD revision validation](reports/scifi-lcd-validation.json).
 
 **Full-screen orange Sci-Fi Timer has readouts enlarged

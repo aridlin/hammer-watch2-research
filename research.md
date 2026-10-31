@@ -314,3 +314,13 @@ asset pixels, divider joins and package signature were verified offline. The
 preview is a fixed-value composition, not a real-watch test. No watch installation
 was attempted. Source assets and signed binary remain local/private; sanitized
 evidence is in `reports/scifi-lcd-*.json`.
+
+## Equal compass margins — 2026-10-31
+
+`scifi_lcd --balanced` generates PL04 with the compass group shifted 9 pixels
+left and 10 up from PL03. Ring bounds are x=282,y=48,w=109,h=109, leaving
+12 pixels to the left divider x=270 and the bottom divider y=169. Native
+bindings, styling and other geometry remain unchanged. The package has a distinct
+filename and is signed for installer 0.2. CRC, actual compiled model geometry and
+package signature were checked offline; no watch installation was attempted.
+Local artifact: `dist/Sci-Fi-Timer-Orange-PL-Balanced.hface`.
