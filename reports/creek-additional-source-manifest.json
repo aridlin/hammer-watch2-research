@@ -1,0 +1,413 @@
+{
+  "retrieved": "2026-10-29",
+  "artifacts": [
+    {
+      "path": "private/sources/androidSDKDemo/README.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/README.md",
+      "sha256": "db7f6a0745547f0ba3b53726bff6d5bcdb5859eaf67ba64718faf1bda4bfe085",
+      "bytes": 3244
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/build.gradle.kts",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/build.gradle.kts",
+      "sha256": "17651a7ede3e73c62d338e73af3d8f8c34df6efc68a120810c8cc40c4e6fa53a",
+      "bytes": 2828
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/MainActivity.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/MainActivity.kt",
+      "sha256": "da4d30ed37f3e66fa1e38d72ef2ad2d7b7823cde9e5a022834473f14b152e914",
+      "bytes": 28787
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/WeatherCommand.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/WeatherCommand.kt",
+      "sha256": "c21952e289abfbe1249fbf73cbfa81b7c663b4c10158fe5d3fe3cb8e8e9044e8",
+      "bytes": 171180
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/WeatherModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/WeatherModel.kt",
+      "sha256": "1360fcd6d92a48ec64fdb88158080278c75b2d60c3820c66bb3b317fa542dde2",
+      "bytes": 3498
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/customDial/CustomDialScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/customDial/CustomDialScreen.kt",
+      "sha256": "e0c7c0d88a3471ca4f855f5dcb5117741dc924d013ce49fdcda8e650204f24bf",
+      "bytes": 19008
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/customDial/CustomDialScreenViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/customDial/CustomDialScreenViewModel.kt",
+      "sha256": "1dcf7c618b18bc9bb8d00a19a1f3776399f7f2cae0413c2d62350dd2c9471b5c",
+      "bytes": 6312
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/dial/DialScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/dial/DialScreen.kt",
+      "sha256": "3ccf61ed987b3600042bb5efd7aec1ac6646af74ffa150a4b4a1e83e32340d2d",
+      "bytes": 7521
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/dial/DialViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/dial/DialViewModel.kt",
+      "sha256": "ad9f4e0d7cfc150d3d6ccd28bdca510bfbe83aac1ae3ed508eb77b1b6d3ace4b",
+      "bytes": 1104
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/dial/music/MusicUploadScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/dial/music/MusicUploadScreen.kt",
+      "sha256": "099953b1dec118f0ec6ce0b540616fc92e5a4a532a065ff8c56c70f602a15223",
+      "bytes": 4293
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/dial/music/MusicUploadViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/dial/music/MusicUploadViewModel.kt",
+      "sha256": "818dd97c4134649010fec56aa6918b002b83616799db8e0901074717f8e6057a",
+      "bytes": 2923
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/healthMeasure/HealthMeasureScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/healthMeasure/HealthMeasureScreen.kt",
+      "sha256": "42523a957688e53d37c23f29f1c90e606ab87734ab7c2f934b9085a96684173e",
+      "bytes": 5274
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/healthMeasure/HealthMeasureViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/healthMeasure/HealthMeasureViewModel.kt",
+      "sha256": "461dd2b64bb04badddd8af88206b913fbd44d35ecfec55357b836be73aa1e6b7",
+      "bytes": 3873
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/navigation/Destinations.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/navigation/Destinations.kt",
+      "sha256": "7f556fc30fa09bfb9325659ad241cc37491b6627071e48730055101f87b4f4a3",
+      "bytes": 709
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/notification/CreekMediaControllerUtils.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/notification/CreekMediaControllerUtils.kt",
+      "sha256": "69451f2c70332ced183498368eef71aca2e9c8006ce263850c15096953289b17",
+      "bytes": 12619
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/notification/LocalPhoneStateListener.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/notification/LocalPhoneStateListener.kt",
+      "sha256": "952fc9261b8f8e0bc8b0a8d054cd37e259ebf493e1991fbbef45dd41c5016bbb",
+      "bytes": 10934
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/notification/MusicBean.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/notification/MusicBean.kt",
+      "sha256": "0415903569edd447f254f823f08335ab339a8c04d8c0bf386cbcdcac9e21e69b",
+      "bytes": 1726
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/notification/MyNotificationListenerService.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/notification/MyNotificationListenerService.kt",
+      "sha256": "56bc9f4fac1254b4b03e3212cc1f3c59deed708b8e597f91f559593647634396",
+      "bytes": 6323
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/notification/PhoneStateReceiver.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/notification/PhoneStateReceiver.kt",
+      "sha256": "f06865987e5e177b2f59ac47547e285739ff4090f7bf01caf35c7a8bf96a10d4",
+      "bytes": 1266
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/notification/RebootBroadcastReceiver.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/notification/RebootBroadcastReceiver.kt",
+      "sha256": "807f02e495797282edaefcb2c4fd0bf34806bb94c3f277f474f78cb2ea17ed8e",
+      "bytes": 631
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/notification/SessionCallbacks.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/notification/SessionCallbacks.kt",
+      "sha256": "c26cdf4e77c71cf6c7eb6d790648347efc2be059684b1f0418d9c15743dc9146",
+      "bytes": 3053
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/route/RouteUploadScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/route/RouteUploadScreen.kt",
+      "sha256": "9dd2f4c492eacbc0850c3b06b54c0892a9d47d01669eab16f6599139f52b2163",
+      "bytes": 3809
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/route/RouteUploadViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/route/RouteUploadViewModel.kt",
+      "sha256": "ff1be819677b8556e1502754fd70494f5ed5ad9bc0cdb9919875439b3413d1e8",
+      "bytes": 2243
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/scanDevice/ScanDeviceScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/scanDevice/ScanDeviceScreen.kt",
+      "sha256": "87c7d892a07afca84b6d224582f63b5f1385dffa2f8d3823fc7ac0b00578fade",
+      "bytes": 4292
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/scanDevice/ScanDeviceViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/scanDevice/ScanDeviceViewModel.kt",
+      "sha256": "2cd0ebfd6541aea1909ce1987de89e3ea990f803ce4f7bf33c4c62d67c80fddd",
+      "bytes": 1735
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sdkFunction/SdkFunctionScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sdkFunction/SdkFunctionScreen.kt",
+      "sha256": "969b8082c1d9e2a5e245ab55bea1f6cb06395ba80c557166a3e88ea47cab18ef",
+      "bytes": 3928
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sdkFunction/SdkFunctionViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sdkFunction/SdkFunctionViewModel.kt",
+      "sha256": "b51aff2a2985dda23183033231bc01f6d37679e8cb21879fd791220df9885887",
+      "bytes": 3757
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sendCommand/SendCommandScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sendCommand/SendCommandScreen.kt",
+      "sha256": "a01a59754b26a0eb461eb75c4c0a73d05e29a6108fd150f1bd75719602757ca5",
+      "bytes": 6109
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sendCommand/SendCommandViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sendCommand/SendCommandViewModel.kt",
+      "sha256": "c75bac3bcb3028d549c70e09ebdac0e16035c795d4d0f33cf421d3b4c510fcbb",
+      "bytes": 67253
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sportCourse/CourseUploadScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sportCourse/CourseUploadScreen.kt",
+      "sha256": "61c9da3cac2a8bc96367b9e2077e2729848d00ae3079320890b162e353fb2c21",
+      "bytes": 3826
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sportCourse/CourseUploadViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sportCourse/CourseUploadViewModel.kt",
+      "sha256": "99bde527324f3d7a288af80b058abdb46788554c5846a526fb3ab07fac97b69a",
+      "bytes": 2045
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sportLive/GlobalListenManager.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sportLive/GlobalListenManager.kt",
+      "sha256": "0726c5d83ace80a20e00ef0f4c7dfaeb2943764c19e75dfbee294437fa480120",
+      "bytes": 823
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sportLive/SportsLiveScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sportLive/SportsLiveScreen.kt",
+      "sha256": "adc1f84844bdd57d1767b29367c3b1f74995a1d19441d91cdb9b81b3ce33808f",
+      "bytes": 3936
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/sportLive/SportsLiveViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/sportLive/SportsLiveViewModel.kt",
+      "sha256": "2406492aab736e28d5b7d57a72112b699009476e457adcb30dd84f322a35f1e0",
+      "bytes": 2385
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/ui/theme/Color.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/ui/theme/Color.kt",
+      "sha256": "83b31b9c50523bcc50fd22fca5aec61c5a7c1397b597e1dbf9861f65be09e2b7",
+      "bytes": 278
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/ui/theme/Theme.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/ui/theme/Theme.kt",
+      "sha256": "6cea643767f8e6ca9ba131152cc4abcd084db7f304081afe48ea4fb48e400431",
+      "bytes": 2194
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/ui/theme/Type.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/ui/theme/Type.kt",
+      "sha256": "f5ab7e1d44c055304e9d883d7fe2051790d1bf5c94b207ee15bd21784ab8de5f",
+      "bytes": 983
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/videoDial/VideoDialScreen.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/videoDial/VideoDialScreen.kt",
+      "sha256": "57454baceeaf8f6e1faedb8885543a5c7aada6768d0260785730a16825e17cec",
+      "bytes": 18065
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/java/com/creek/dial/videoDial/VideoDialScreenViewModel.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/java/com/creek/dial/videoDial/VideoDialScreenViewModel.kt",
+      "sha256": "2b500c371e5be01c8bcb436c306dca7d04fd67d34e5993eb38578f246b763c1d",
+      "bytes": 7993
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/test/java/com/creek/dial/ExampleUnitTest.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/test/java/com/creek/dial/ExampleUnitTest.kt",
+      "sha256": "1069c1639620058fcc4b867f87bdc1fdfd21a535e2ba7601c835a34f16e2bb8e",
+      "bytes": 3198
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/test/java/com/creek/dial/SportTest.kt",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/test/java/com/creek/dial/SportTest.kt",
+      "sha256": "dc05255bf09df76f746e6e22d1f6932bdf0c29498b3d4cdd05a7072ab8abf462",
+      "bytes": 5419
+    },
+    {
+      "path": "private/sources/androidSDKDemo/build.gradle.kts",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/build.gradle.kts",
+      "sha256": "a60c11bc7b6c79ec5c870b0c182ab45e5315d27bf387a02176402907b1ef3256",
+      "bytes": 446
+    },
+    {
+      "path": "private/sources/androidSDKDemo/settings.gradle.kts",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/settings.gradle.kts",
+      "sha256": "2cc509c7863470379f9532de3a002d870300db3f622ac640a1dd05ba4bf02766",
+      "bytes": 706
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/android/device-connection.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/android/device-connection.md",
+      "sha256": "faceda41821cae119dd2c3b8ebfb063664e0c21b78e2c9778841baddb12b4c52",
+      "bytes": 3581
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/android/file-upload-error-codes.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/android/file-upload-error-codes.md",
+      "sha256": "d54efa65002440595813036e34dca73e3abd3832f54d6fac41bb705819e66b34",
+      "bytes": 798
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/android/firmware-information.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/android/firmware-information.md",
+      "sha256": "054ef84a1fd34850c5ff5bc4743b1c29af69078da2c273db6cfc0b94f4e263dd",
+      "bytes": 5559
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/android/function-table.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/android/function-table.md",
+      "sha256": "43548c43604a3b133f82e30a39f5a4c41e8d7c855a4f8e9417c10c2e80f4b558",
+      "bytes": 3823
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/android/getting-started.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/android/getting-started.md",
+      "sha256": "d54d616db6dda2a98c0fe7576c7e5c08854f58b756806addc972baa88f44979f",
+      "bytes": 783
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/android/time.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/android/time.md",
+      "sha256": "49190f814694da9263cb2c06d9e1a5a6e7ccf1dbe6f571e2ca09a430ca44ce39",
+      "bytes": 1366
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/android/watch-faces.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/android/watch-faces.md",
+      "sha256": "279c645d4d00d4b6983a341997cea5b11cb08a32ed4c53f74fb1cdd3b5213232",
+      "bytes": 3751
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/flutter/device-connection.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/flutter/device-connection.md",
+      "sha256": "26f603abf14054fc013060791335d327534efed9edc88ca80aeebeb85996c0a1",
+      "bytes": 5364
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/flutter/file-upload-errors.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/flutter/file-upload-errors.md",
+      "sha256": "4d510e2e1c667c005a92b52c1b0d15b1223983b6962325d801ee1c89bfdd0675",
+      "bytes": 1967
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/flutter/firmware-information.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/flutter/firmware-information.md",
+      "sha256": "e10d15763f6e69af718650c3eabc4f70e179072bbceec304b48c025e8cfbbce5",
+      "bytes": 11840
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/flutter/function-list.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/flutter/function-list.md",
+      "sha256": "abdcde7173db3d9e9556ced609d2690d2bda0406b78e158dabd6d44a88f857cb",
+      "bytes": 10192
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/flutter/getting-started.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/flutter/getting-started.md",
+      "sha256": "17194aa6e790f1f80c3a62b1432010e6c5c94e19df8f0646a217b32544edd56b",
+      "bytes": 361
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/flutter/health-realtime.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/flutter/health-realtime.md",
+      "sha256": "17b23a09666d95da39f39452a40847b9af64065035c07695a21d14d5a4c1a1b2",
+      "bytes": 5256
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/flutter/time.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/flutter/time.md",
+      "sha256": "d713992bebdd0c5485716152bdf3e12a46ea1e0b3dff28a989841163e7d1b2c0",
+      "bytes": 2940
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/flutter/watch-faces.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/flutter/watch-faces.md",
+      "sha256": "bc43ca389523b1abe5b354f3ad87e539e5c2ca9d18daedc8b387b05566ff6549",
+      "bytes": 7810
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/harmonyos/getting-started.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/harmonyos/getting-started.md",
+      "sha256": "d7b3ceb85cf597d941dbf01b0a8d2e6b543d5f60e88c6055c3392e08d476b934",
+      "bytes": 554
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/ios/device-connection.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/ios/device-connection.md",
+      "sha256": "7ed7fc3d2b7136afa8adffeae7e7f87e7db47a32a0e3dd97f96585dbdc74194f",
+      "bytes": 4323
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/ios/file-upload-errors.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/ios/file-upload-errors.md",
+      "sha256": "1854e16393138bd26ce7c643c8e46f3b30354e98f4b759059f535d0870c13c7b",
+      "bytes": 878
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/ios/firmware-information.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/ios/firmware-information.md",
+      "sha256": "baecf90ac19ce714ddb323af197f806ddccc773135056e41351d036a4b628f55",
+      "bytes": 6348
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/ios/function-table.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/ios/function-table.md",
+      "sha256": "920d6d2ffe77a978a03a38dee2a0e5829877a081bca37948ba1e744da5b1a624",
+      "bytes": 4116
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/ios/getting-started.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/ios/getting-started.md",
+      "sha256": "367b043a7989d8a958c8314df8f27fe74dd1c1f3cb78088ba133557112031b78",
+      "bytes": 919
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/ios/time.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/ios/time.md",
+      "sha256": "a744e5e3130d1ff82e34bd20fe582b7151a97f32bc0e61ced0fb9ebd1ab4adff",
+      "bytes": 1554
+    },
+    {
+      "path": "private/sources/CreekDeveloperGuide/content/en-US/ios/watch-faces.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekDeveloperGuide/f6fd1e1fce415e1822f39a09299b0cd09f938cf7/content/en-US/ios/watch-faces.md",
+      "sha256": "68a1ec33b323268eeceb85fb94776bbfcd883640f9453cc5989784ba7cee73a2",
+      "bytes": 4965
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/assets/a12345.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/assets/a12345.zip",
+      "sha256": "07b96193a3fd5389f75f3cb9f2552e889259cc24dfc8afd7cafb3f81dd5e081a",
+      "bytes": 328094
+    },
+    {
+      "path": "private/sources/androidSDKDemo/app/src/main/assets/S6L8UQJij6O78LFmcwr03gykzn02.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/androidSDKDemo/582d0732de9dd486fd0e8028aa16010deafb6c0d/app/src/main/assets/S6L8UQJij6O78LFmcwr03gykzn02.zip",
+      "sha256": "59ecc55c332b039a369b2b4c010ffc16ab522e3134cb8cdc3384b9e4d087f90f",
+      "bytes": 220799
+    }
+  ]
+}

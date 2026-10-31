@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "library_sha256": "c227b83c43150c9edf4b19737586543b6afbe0e50a27f55ac5d6c3593a2be377",
+  "evidence_type": "static byte-string occurrences; not executed call traces",
+  "observations": [
+    {
+      "literal": "https://app.hammerphones.com",
+      "file_offset": 2350140
+    },
+    {
+      "literal": "/service-parts/v1/dial/classify/isUpdate",
+      "file_offset": 10512120
+    },
+    {
+      "literal": "/service-parts/v1/dial/classify/pb/list",
+      "file_offset": 10686861
+    },
+    {
+      "literal": "/service-parts/v1/dial/listFirmware",
+      "file_offset": 11525891
+    },
+    {
+      "literal": "/service-parts/v1/dial/pages",
+      "file_offset": 11782657
+    },
+    {
+      "literal": "/service-parts/v1/dial/profile",
+      "file_offset": 16871503
+    },
+    {
+      "literal": "package:creek_dial_sdk/creek_custom_dial_sdk.dart",
+      "file_offset": 10541280
+    },
+    {
+      "literal": "package:creek_dial_sdk/creek_photo_dial_sdk.dart",
+      "file_offset": 16276800
+    },
+    {
+      "literal": "package:creek_dial_sdk/dial/model/dial_json_model.dart",
+      "file_offset": 11075993
+    },
+    {
+      "literal": "package:creek_dial_sdk/dial/dial_tool.dart",
+      "file_offset": 2636101
+    },
+    {
+      "literal": "package:creek_dial_sdk/byte_array/byte_array.dart",
+      "file_offset": 2822528
+    },
+    {
+      "literal": "package:creek_app/app/datas/manager/network/request/device/dial_list.dart",
+      "file_offset": 11186942
+    },
+    {
+      "literal": "dial.json",
+      "file_offset": 15231193
+    },
+    {
+      "literal": "00000FF0-0000-1000-8000-00805f9b34fb",
+      "file_offset": 6744045
+    },
+    {
+      "literal": "00002902-0000-1000-8000-00805f9b34fb",
+      "file_offset": 18429730
+    }
+  ],
+  "resource_library": {
+    "sha256": "580982c080f138da0de5b8346996a85d96b9d65bf78c6967981baa397a5f0ec5",
+    "jni_exports": [
+      {
+        "address_hex": "00000000000bf30c",
+        "name": "Java_com_actions_actres_ResBuilder_addPicture"
+      },
+      {
+        "address_hex": "00000000000bfd24",
+        "name": "Java_com_actions_actres_ResBuilder_addSinglePicture"
+      },
+      {
+        "address_hex": "00000000000bf5dc",
+        "name": "Java_com_actions_actres_ResBuilder_isNeedJpegCompress"
+      },
+      {
+        "address_hex": "00000000000bf754",
+        "name": "Java_com_actions_actres_ResBuilder_replacePicture"
+      }
+    ]
+  }
+}

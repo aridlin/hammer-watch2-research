@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-31",
+  "scope": "local Android Netsim; unchanged official app; synthetic peer; no physical radio",
+  "confirmed": [
+    "Chunked Frida Java observer attached and observed BLE notification event names/sizes",
+    "Setting response sequence bit 7 advanced app from device inquiry to Pairing and further setup requests"
+  ],
+  "implemented_not_yet_runtime_validated": [
+    "Normal-only synthetic binding response",
+    "MTU 30 advertised for effective frame budget 20",
+    "Watch-dial inquiry with explicit synthetic framework version"
+  ],
+  "remaining": [
+    "Pairing completion",
+    "Renewed user login in official app",
+    "Actual device dial framework metadata",
+    "ADVENTURER binary or source resources",
+    "Physical compatibility and complications"
+  ],
+  "artifacts": [
+    {
+      "private_artifact": "private/emulator/response-bit-01.jsonl",
+      "sha256": "a4f15d3d5a1d86349879db9ad8b329d10011dff2b570c040f1fed4f5c5b90b07",
+      "safe_event_counts": {
+        "advertising": 1,
+        "connection": 1,
+        "gatt_write": 53,
+        "subscription_state": 2,
+        "synthetic_device_info_reply": 2
+      }
+    },
+    {
+      "private_artifact": "private/emulator/setup-responder-02.jsonl",
+      "sha256": "45048ec55a8229b49feb670b00db4ca22980790d3fc6c878b101bdd413455bf0",
+      "safe_event_counts": {
+        "advertising": 1,
+        "connection": 1,
+        "gatt_write": 19,
+        "subscription_state": 12,
+        "synthetic_reply": 12,
+        "reply_main_1_sub_0": 2,
+        "reply_main_34_sub_0": 1,
+        "reply_main_30_sub_0": 4,
+        "reply_main_21_sub_0": 1,
+        "reply_main_42_sub_3": 1,
+        "reply_main_30_sub_1": 1,
+        "reply_main_4_sub_0": 2,
+        "stopped": 1
+      }
+    },
+    {
+      "private_artifact": "private/emulator/setup-responder-03.jsonl",
+      "sha256": "eadc3bea9e16841a0d6e716232b87e695c6744255bdf882a374f0f3f2d53e9fd",
+      "safe_event_counts": {
+        "advertising": 1
+      }
+    },
+    {
+      "private_artifact": "private/emulator/ble-observer-02.jsonl",
+      "sha256": "6f919113dcf300a826e581b965b109f1f5e3c9569fbef3b9a472a7bcde8cf0c0",
+      "safe_event_counts": {
+        "observer_ready": 1,
+        "DeviceState": 3,
+        "DiscoverServicesResult": 2,
+        "SetNotificationResponse": 2,
+        "WriteCharacteristicResponse": 54,
+        "OnCharacteristicChanged": 21
+      }
+    }
+  ]
+}

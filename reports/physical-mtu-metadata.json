@@ -1,0 +1,15 @@
+{
+  "operation": "mtu-info",
+  "response_code": 0,
+  "sequence_response_bit": true,
+  "response_bytes": 22,
+  "identifiers_omitted": true,
+  "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+  "crc16_valid": true,
+  "present_numeric_fields": {
+    "operate": 1,
+    "transfer_mtu": 244,
+    "bt_pairing": 1,
+    "bt_connected": 1
+  }
+}

@@ -1,0 +1,27 @@
+#!/bin/sh
+# Starts an isolated AVD; never attaches the user's physical Bluetooth adapter.
+set -eu
+project_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+sdk_root=${ANDROID_SDK_ROOT:-${ANDROID_HOME:-}}
+if [ -z "$sdk_root" ]; then
+    echo 'Set ANDROID_SDK_ROOT to an SDK with emulator and android-35/google_apis/x86_64.' >&2
+    exit 2
+fi
+export ANDROID_USER_HOME="$project_root/private/android-user"
+export ANDROID_AVD_HOME="$project_root/private/avd"
+export ANDROID_ADB_SERVER_PORT=5038
+mkdir -p "$ANDROID_USER_HOME" "$ANDROID_AVD_HOME" "$project_root/private/emulator"
+if [ ! -f "$ANDROID_AVD_HOME/hammer-re-debug.ini" ]; then
+    "$sdk_root/cmdline-tools/latest/bin/avdmanager" create avd --name hammer-re-debug \
+        --package 'system-images;android-35;google_apis;x86_64' \
+        --path "$ANDROID_AVD_HOME/hammer-re-debug.avd" --device pixel_6 --force </dev/null
+fi
+if [ "${1:-}" = '--window' ]; then
+    shift
+    exec "$sdk_root/emulator/emulator" -avd hammer-re-debug -port 5580 -no-audio \
+        -no-snapshot -gpu swiftshader_indirect -memory 4096 -cores 4 -no-boot-anim \
+        -camera-back none -camera-front none "$@"
+fi
+exec "$sdk_root/emulator/emulator" -avd hammer-re-debug -port 5580 -no-window -no-audio \
+    -no-snapshot -gpu swiftshader_indirect -memory 4096 -cores 4 -no-boot-anim \
+    -camera-back none -camera-front none "$@"

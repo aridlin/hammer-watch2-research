@@ -1,0 +1,26 @@
+{
+  "operation": "dial-info",
+  "response_code": 0,
+  "sequence_response_bit": true,
+  "response_bytes": 379,
+  "identifiers_omitted": true,
+  "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+  "crc16_valid": true,
+  "present_numeric_fields": {
+    "framework_version": 8,
+    "cloud_capacity_count": 24,
+    "cloud_used_count": 11,
+    "photo_capacity_count": 1,
+    "wallpaper_capacity_count": 1,
+    "total_bytes": 41943040,
+    "cloud_used_bytes": 3178496,
+    "compression": 4,
+    "photo_image_limit": 3,
+    "all_face_limit": 24
+  },
+  "face_entry_count": 11,
+  "active_is_acquired_adventurer": false,
+  "standalone_test_entry_present": true,
+  "active_is_standalone_test": true,
+  "adventurer_entry_present": true
+}

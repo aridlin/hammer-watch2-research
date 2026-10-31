@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-31",
+  "authorization": "User requested pairing with physical watch; face installation not authorized by this request",
+  "observations": [
+    "Unique HW2 advertisement observed",
+    "Advertised service UUID 00000ff0-0000-1000-8000-00805f9b34fb",
+    "Standard pairing attempts reported org.bluez.Error.ConnectionAttemptFailed",
+    "Connected, Paired, Bonded and ServicesResolved remained false",
+    "After competing phone Bluetooth was switched off, BlueZ reported Pairing successful",
+    "Actual state verified Paired=true and Bonded=true; subsequent disconnect was local BR/EDR disconnect",
+    "Physical watch advertised standard calling/media/HID profiles alongside Creek service 0ff0; GATT discovery not yet established",
+    "Subsequent standard connections established BLE GATT; six services discovered",
+    "Actual Creek service 0ff0 has write UUID 00000001-0000-1000-8000-00805f9b34fb and notify UUID 00000002-0000-1000-8000-00805f9b34fb; earlier virtual full UUIDs were only guesses"
+  ],
+  "pairing_complete": true,
+  "proprietary_commands_sent": false,
+  "firmware_or_face_writes": false,
+  "raw_artifacts": [
+    {
+      "private_path": "private/emulator/physical-scan-01.log",
+      "sha256": "668ad85eacf5bf013c838affba8c4d809c270108895925bd723dfe5b06d591c2"
+    },
+    {
+      "private_path": "private/emulator/physical-pair-01.txt",
+      "sha256": "76305d3ecf63642343f1888075542a39e58197d7380bcb5cc530a17a4284a83a"
+    },
+    {
+      "private_path": "private/emulator/physical-pair-02.txt",
+      "sha256": "abdd983bf5064844ab652fca77230da4ba2991ecc91bd472cbba9e0de4a622b6"
+    },
+    {
+      "private_path": "private/emulator/physical-pair-03.txt",
+      "sha256": "9d99e8236155797a743c33b950ec7a90eacf5840400eb47a0193bfe328e14c32"
+    },
+    {
+      "private_path": "private/emulator/physical-info-before.txt",
+      "sha256": "0fd89f1a548570c4f5930b8fc4dcae45b4fb79480997ec721f3041556173cc1a"
+    },
+    {
+      "private_path": "private/emulator/physical-info-after.txt",
+      "sha256": "4d35514bb7bb50404811e4cfdf2e9b2b82cd599fcf3d5c4f3ccd0320473881c8"
+    },
+    {
+      "private_path": "private/emulator/physical-pair-04.txt",
+      "sha256": "3cebca3832a5d90b0e37556f85b32c3c112f9c40572f0c13ed4fd8332a106521"
+    }
+  ],
+  "bonding_confirmed": true,
+  "final_state": {
+    "present_in_bluez_cache": true,
+    "identities_omitted": true,
+    "state": {
+      "Connected": true,
+      "Paired": true,
+      "Bonded": true,
+      "ServicesResolved": true,
+      "Blocked": false
+    },
+    "advertised_uuids": [
+      "00000ff0-0000-1000-8000-00805f9b34fb",
+      "00001101-0000-1000-8000-00805f9b34fb",
+      "0000110c-0000-1000-8000-00805f9b34fb",
+      "0000110e-0000-1000-8000-00805f9b34fb",
+      "0000111e-0000-1000-8000-00805f9b34fb",
+      "00001124-0000-1000-8000-00805f9b34fb",
+      "00001132-0000-1000-8000-00805f9b34fb",
+      "00001200-0000-1000-8000-00805f9b34fb",
+      "00001800-0000-1000-8000-00805f9b34fb",
+      "00001801-0000-1000-8000-00805f9b34fb",
+      "0000180a-0000-1000-8000-00805f9b34fb",
+      "0000180f-0000-1000-8000-00805f9b34fb",
+      "0000ffd0-0000-1000-8000-00805f9b34fb"
+    ],
+    "gatt_services": [
+      {
+        "uuid": "00000ff0-0000-1000-8000-00805f9b34fb",
+        "characteristics": [
+          {
+            "uuid": "00000002-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "notify"
+            ]
+          },
+          {
+            "uuid": "00000001-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "write",
+              "write-without-response"
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "00001800-0000-1000-8000-00805f9b34fb",
+        "characteristics": [
+          {
+            "uuid": "00002a04-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "read"
+            ]
+          },
+          {
+            "uuid": "00002a01-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "read"
+            ]
+          },
+          {
+            "uuid": "00002a00-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "read"
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "00001801-0000-1000-8000-00805f9b34fb",
+        "characteristics": [
+          {
+            "uuid": "00002b2a-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "read"
+            ]
+          },
+          {
+            "uuid": "00002b29-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "read",
+              "write"
+            ]
+          },
+          {
+            "uuid": "00002a05-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "indicate"
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "0000180a-0000-1000-8000-00805f9b34fb",
+        "characteristics": [
+          {
+            "uuid": "00002a50-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "read"
+            ]
+          },
+          {
+            "uuid": "00002a29-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "read"
+            ]
+          },
+          {
+            "uuid": "00002a24-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "read"
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "0000180f-0000-1000-8000-00805f9b34fb",
+        "characteristics": [
+          {
+            "uuid": "00002a19-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "notify",
+              "read"
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "0000ffd0-0000-1000-8000-00805f9b34fb",
+        "characteristics": [
+          {
+            "uuid": "0000ffd3-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "notify",
+              "write",
+              "write-without-response"
+            ]
+          },
+          {
+            "uuid": "0000ffd2-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "notify"
+            ]
+          },
+          {
+            "uuid": "0000ffd1-0000-1000-8000-00805f9b34fb",
+            "flags": [
+              "write",
+              "write-without-response"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "standard_read_fields": [
+    "pnp",
+    "manufacturer",
+    "model",
+    "battery"
+  ],
+  "target_identity_matches_user_supplied_about_screenshot": true,
+  "standard_dis_values": {
+    "manufacturer": "Manufacturer",
+    "model": "leopard",
+    "interpretation": "Literal standard GATT strings only; do not infer board/firmware OS"
+  },
+  "ble_connection_complete": true,
+  "tests_passed": 122
+}

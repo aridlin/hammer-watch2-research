@@ -1,0 +1,25 @@
+{
+  "acquired": "2026-10-29",
+  "base_apk_sha256": "e009d398056cc086132f7aa5745a457ebdd40a75935477b9883b259719717231",
+  "identity": {
+    "status": "parsed",
+    "package": "com.hammerup.app",
+    "version_name": "1.0.15",
+    "version_code": "35",
+    "certificate_sha256": [
+      "d6b2b309f5dec12e2e3e7d5f811c6157650dd82b52a2fcfeca220939bd7c6a03"
+    ],
+    "signature_schemes_present": {
+      "v1": false,
+      "v2": true,
+      "v3": true
+    },
+    "cryptographic_verification": "not performed; use apksigner verify",
+    "authenticity": "unverified without trusted Play certificate comparison"
+  },
+  "split_count": 20,
+  "split_certificate_consistency": "consistent",
+  "package_consistency": true,
+  "flutter_assets_present": true,
+  "note": "See apk-signature-verification.json for independent cryptographic verification; summary identity contains certificate extraction status only."
+}

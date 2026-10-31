@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-31",
+  "user_approval": "Explicit user approval for separately named test-face upload",
+  "artifact": {
+    "filename": "ewr24digital.bin",
+    "bytes": 429383,
+    "sha256": "86e5600fd53f8204610f0ef8866b0eb7e1cf17d455b1ec2b33c38177a7417e61",
+    "container_crc_valid": true,
+    "preserved_non_layout_resources": 127,
+    "factory_filename_different": true,
+    "palette": "original multi-palette selection",
+    "physical_installation_attempted": true,
+    "activation": "select test face manually on watch after upload",
+    "fresh_physical_preflight": "passed: three fresh checksum-valid replies despite advisory BlueZ ServicesResolved=false",
+    "tests_passed": 136,
+    "real_transfer_acknowledgments_tested": false,
+    "user_approved_physical_test_upload": true,
+    "outcome": "Completed through CRC-verified continuation from offset180; new test face active; factory entry retained",
+    "execution_evidence": "reports/physical-installation-validation.json"
+  },
+  "bytes": 429383,
+  "sha256": "86e5600fd53f8204610f0ef8866b0eb7e1cf17d455b1ec2b33c38177a7417e61",
+  "first_attempt": "Stopped after first180 bytes on a repeated start ACK; original factory retained",
+  "second_attempt": "Read-only resume query timed out because the new reply filter omitted D3; no additional data written",
+  "completed_attempt": "Explicit reviewed-test continuation from independently CRC-verified offset180; no new D1 start",
+  "real_ack_count": 2387,
+  "duplicate_acks_ignored": 2386,
+  "completed": true,
+  "post_upload_dial_metadata": {
+    "operation": "dial-info",
+    "response_code": 0,
+    "sequence_response_bit": true,
+    "response_bytes": 379,
+    "identifiers_omitted": true,
+    "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+    "crc16_valid": true,
+    "present_numeric_fields": {
+      "framework_version": 8,
+      "cloud_capacity_count": 24,
+      "cloud_used_count": 11,
+      "photo_capacity_count": 1,
+      "wallpaper_capacity_count": 1,
+      "total_bytes": 41943040,
+      "cloud_used_bytes": 3178496,
+      "compression": 4,
+      "photo_image_limit": 3,
+      "all_face_limit": 24
+    },
+    "face_entry_count": 11,
+    "active_is_acquired_adventurer": false,
+    "standalone_test_entry_present": true,
+    "active_is_standalone_test": true,
+    "adventurer_entry_present": true
+  },
+  "separate_activation_command_sent": false,
+  "firmware_or_bootloader_modified": false,
+  "visual_and_live_complications_validation": "User feedback pending",
+  "private_artifact_hashes": {
+    "private/emulator/physical-test-upload-03/upload.jsonl": "de2d8e673ba813c49cc3dd840bc3afca3fcea44920534d97b17996c0dbeb9a0a",
+    "private/emulator/physical-test-upload-03/dial-after.jsonl": "d4fe80d3446c4adf75aefbd802963c4adf0489ae94e80413e18b632d96d8ced7"
+  },
+  "tests_passed": 136
+}

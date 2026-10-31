@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-31",
+  "source": "Two user-supplied HAMMER App screenshots",
+  "target_face_name": "ADVENTURER",
+  "user_selection": "Default face shown in the first attachment",
+  "device_display_name": "HW2",
+  "model_number": 2039,
+  "firmware_version": "V2.0.12",
+  "target_firmware_id": {
+    "value": 2039,
+    "confidence": "high for observed app build field mapping; server validation pending",
+    "evidence": [
+      "AboutWatchView.build 0x324ed80..0x324eda8 reads controller field_2b for Model No.",
+      "AboutWatchController.getLocalDeviceInfo 0x29c24f8..0x29c2540 formats DeviceModel.field_7",
+      "FaceGalleryController._getDialMarketFromNet 0x2a62c7c..0x2a62d24 copies DeviceModel.field_7 to AllDialListRequestModel.field_7",
+      "AllDialListRequestModel.toJson 0x227ebf0 identifies field_7 as firmwareId"
+    ]
+  },
+  "dial_framework_version": null,
+  "serial_and_bluetooth_address": "Omitted; original screenshots retained only in ignored private/references",
+  "factory_face_binary_obtained": false,
+  "visible_elements": [
+    "Analog hour/minute/second hands",
+    "Compass cardinal/intercardinal labels",
+    "Pressure value labelled HPA",
+    "Altitude value labelled M",
+    "Heart icon and numeric value",
+    "Flame/activity-style outer arc",
+    "Walking/activity-style outer arc",
+    "Sun/UV-style outer arc"
+  ],
+  "visual_limit": "Marketing/app preview does not establish live behavior or downloadable sensor bindings",
+  "requested_change": "Replace analog clock hands with large 24-hour HH:MM; retain original verified dynamic elements",
+  "latest_cloud_attempt": {
+    "path": "/service-device/v1/model/color",
+    "firmwareId": 2039,
+    "colorCode": "A (app fallback, not verified physical color)",
+    "application_code": 509,
+    "meaning": "Account logged in at another location; no model metadata returned",
+    "automatic_relogin_attempted": false
+  },
+  "reference_hashes": [
+    {
+      "local_private_path": "private/references/adventurer-app-reference.png",
+      "sha256": "27050142083fd0e15b2873aac3aa4acdee30acba88857162f94a9c9c2f1a3edb"
+    },
+    {
+      "local_private_path": "private/references/user-watch-about.png",
+      "sha256": "6cd9a8bb5721dec672a46bbb090e16fa5641853b60e5fb45630faecf8a865b5d"
+    }
+  ],
+  "share_card_followup": {
+    "qr_decoded": true,
+    "result": "Companion-app download route only; no face binary or face ID",
+    "report": "reports/adventurer-share-findings.json"
+  }
+}

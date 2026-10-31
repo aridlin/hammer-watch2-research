@@ -1,0 +1,7 @@
+{
+  "version": "17.24.3",
+  "url": "https://github.com/frida/frida/releases/download/17.24.3/frida-server-17.24.3-android-x86_64.xz",
+  "sha256": "44aead87103ab9738771e5eff659640fb6bf566fe83b8629444c1be99f87ce68",
+  "size": 44804056,
+  "purpose": "Observe native BLE callback counts in isolated emulator; no secret extraction or authentication change"
+}

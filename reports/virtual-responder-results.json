@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-31",
+  "objective": "Continue virtual-watch development without requesting physical hardware",
+  "virtual_transport": "local Android Netsim only",
+  "physical_access": false,
+  "application_code_unmodified": true,
+  "synthetic_profile": {
+    "device_id": 2039,
+    "firmware": "2.0.12",
+    "id_and_version_source": "User screenshots, 2026-10-31",
+    "other_fields": "Synthetic: default SDK platform, shape, dimensions, battery, binding support and local address. They do not establish physical capabilities."
+  },
+  "device_command_mapping": {
+    "main": 1,
+    "sub": 0,
+    "wire_bytes_4_5": [
+      0,
+      1
+    ],
+    "source": "cmd_id_manager.dart _map 0x1f43674..0x1f43688 and HeadModel decoding"
+  },
+  "device_reply_schema": "CreekSDK deviceinfo.pb.swift protocol_device_info",
+  "trials": [
+    "Full reply initially refused by our MTU guard at ATT MTU 23",
+    "Full replies fragmented using C1/C2/C3, control byte 2",
+    "Minimal 20-byte ID/version reply, control byte 1",
+    "Deferred notifications after GATT write, CCCD 0100 confirmed",
+    "Fresh synthetic identity to exclude old GATT cache",
+    "Full fragmented reply preserving control byte 1"
+  ],
+  "transport_validation": {
+    "source": "Private emulator HCI capture summarized in reports/virtual-hci-summary.json",
+    "att_notifications_received_by_android": 6,
+    "app_write_commands_in_capture": 2,
+    "scope": "Capture snapshot; not total across all trials"
+  },
+  "application_pairing_complete": false,
+  "target_faces_downloaded": 0,
+  "observer": {
+    "frida_server": "17.24.3",
+    "frida_java_bridge": "7.0.13",
+    "esbuild": "0.28.2",
+    "buffer": "6.0.3",
+    "minimal_arch_probe": "x64 script ran",
+    "java_ble_observer": "create_script failed with TransportError; no successful callback observation",
+    "frida_server_stopped": true,
+    "adb_forward_removed": true,
+    "authentication_modified": false
+  },
+  "remaining": [
+    "App acceptance of device-info reply/reassembly and subsequent requests",
+    "Valid cloud account session for authenticated downloads",
+    "Actual dial framework/capabilities remain unverified"
+  ],
+  "artifacts": [
+    {
+      "path": "tools/virtual_watch_protocol.py",
+      "sha256": "128d662e426e7a0fb93649ea09075013e511e4821958d4aae183facdeee55c07"
+    },
+    {
+      "path": "tools/watch_emulator.py",
+      "sha256": "db41a77f0aaf44dfe9902bdbf7b4dca772834614fff542a66025ce196f1b76e2"
+    },
+    {
+      "path": "tools/hci_summary.py",
+      "sha256": "1555aea5b67290109875f94decd8b68abf92966eab263f8c15d27a51e6444f0f"
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/deviceinfo.pb.swift",
+      "sha256": "9c3926e9f4800d52a3ce4b491fdd7d4c926f4a0bfbac271f1defb8f51d443204"
+    },
+    {
+      "path": "private/emulator/synthetic-info-07-full-control1.jsonl",
+      "sha256": "c81c06624c16d9f98a09b1664ba77e59648c866d2c10e79858c213dfc700292c"
+    },
+    {
+      "path": "private/emulator/synthetic-05.btsnoop",
+      "sha256": "3a0b6d3922ced2a12ebf2832da96b11d706cd3d497cf7c00b7cac73cf1c34da5"
+    }
+  ]
+}

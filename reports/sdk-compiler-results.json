@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-29",
+  "sdk": "10.7",
+  "platform_argument": "JX_3085C_PLATFORM",
+  "network_and_bluetooth_permissions": false,
+  "watch_uploads_attempted": false,
+  "target_compatibility": "unverified",
+  "samples": [
+    {
+      "name": "photo",
+      "size": 39398,
+      "sha256": "8f01b4372fc37c53eebe5d0727a39304346bcf21df208f9f78d94e3d8a554600",
+      "resource_count": 58,
+      "dial_type": 6,
+      "dial_version": 0,
+      "compression_marker": 4,
+      "stored_crc32": "24df69a3",
+      "calculated_crc32": "24df69a3",
+      "crc_valid": true,
+      "index_end": 2248
+    },
+    {
+      "name": "CW06G_TITAD101_01",
+      "size": 251663,
+      "sha256": "e8c4f05fa3451f4570969097417d7f8c8896c467c736ea382943029470198c13",
+      "resource_count": 95,
+      "dial_type": 1,
+      "dial_version": 14,
+      "compression_marker": 4,
+      "stored_crc32": "a82f1174",
+      "calculated_crc32": "a82f1174",
+      "crc_valid": true,
+      "index_end": 3654
+    }
+  ],
+  "repeat_compilation_byte_identical": true,
+  "lossless_ir_roundtrip_samples": 2,
+  "pixel_identical_bgra_reference_images": 147,
+  "image_compression": "LZ4 block following a 4-byte bitfield header",
+  "container_crc": "CRC32/ISO-HDLC over bytes 44 through EOF",
+  "harness_apk_sha256": "b7e041ba4b8ae1e81a1bd9c5f8d76b77f10962a83ea68fd8ce1ef532b814d5e1"
+}

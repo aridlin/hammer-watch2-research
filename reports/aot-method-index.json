@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "evidence": "Blutter annotated disassembly, not original Dart source",
+  "files": [
+    {
+      "package": "package:creek_dial_sdk/dial/dial_tool.dart",
+      "analysis_file_sha256": "5745f7c0181fc956f358c59b835c6d3a13b9114d6817f3c74e5719288d34d05f",
+      "methods": [
+        {
+          "method": "static _ drawPreviewImage(/* No info */) async",
+          "address_hex": "0x28b6818",
+          "size_hex": "0x1808"
+        },
+        {
+          "method": "static _ drawPositionImage(/* No info */) async",
+          "address_hex": "0x28b944c",
+          "size_hex": "0x524"
+        },
+        {
+          "method": "static _ dialJson(/* No info */) async",
+          "address_hex": "0x28c032c",
+          "size_hex": "0x9e0"
+        },
+        {
+          "method": "static _ appJson(/* No info */) async",
+          "address_hex": "0x28c2ce0",
+          "size_hex": "0x275c"
+        },
+        {
+          "method": "static _ encode(/* No info */) async",
+          "address_hex": "0x2a0aff4",
+          "size_hex": "0x1ff0"
+        },
+        {
+          "method": "static _ copyMultiLanguageFoldersToFirmwareDir(/* No info */) async",
+          "address_hex": "0x2a1e940",
+          "size_hex": "0x1b4"
+        },
+        {
+          "method": "static _ encodeActRes(/* No info */) async",
+          "address_hex": "0x2a1f3d8",
+          "size_hex": "0xebc"
+        },
+        {
+          "method": "static _ saveDialJson(/* No info */) async",
+          "address_hex": "0x2a20cf0",
+          "size_hex": "0x90"
+        },
+        {
+          "method": "static _ copyImage(/* No info */) async",
+          "address_hex": "0x2a2113c",
+          "size_hex": "0xf4"
+        },
+        {
+          "method": "static _ deleteImage(/* No info */) async",
+          "address_hex": "0x2a212c0",
+          "size_hex": "0x54"
+        },
+        {
+          "method": "static _ saveAppJson(/* No info */) async",
+          "address_hex": "0x2a227e0",
+          "size_hex": "0x90"
+        }
+      ]
+    },
+    {
+      "package": "package:creek_dial_sdk/dial/crc_check.dart",
+      "analysis_file_sha256": "bf30144197fae09d8a39d215773186cf1564285151499e1b10d43fdf6c80eaa0",
+      "methods": [
+        {
+          "method": "static _ calculateUint8List(/* No info */)",
+          "address_hex": "0x2a0cfe4",
+          "size_hex": "0xec"
+        }
+      ]
+    },
+    {
+      "package": "package:creek_blue_manage/creek_head_model.dart",
+      "analysis_file_sha256": "4ca83375b012f881dc1c719363ca12b2f7658091c4fe06aaa44c5dcadc05d0a9",
+      "methods": [
+        {
+          "method": "static _ intToModel(/* No info */)",
+          "address_hex": "0x1f46588",
+          "size_hex": "0x1ec"
+        },
+        {
+          "method": "_ uint8ListToModel(/* No info */)",
+          "address_hex": "0x1f42fd8",
+          "size_hex": "0x414"
+        },
+        {
+          "method": "_ recoverModelToUint8List(/* No info */)",
+          "address_hex": "0x243a68c",
+          "size_hex": "0x3fc"
+        },
+        {
+          "method": "_ modelToUint8List(/* No info */)",
+          "address_hex": "0x243ad2c",
+          "size_hex": "0x430"
+        },
+        {
+          "method": "_ HeadModel(/* No info */)",
+          "address_hex": "0x243b744",
+          "size_hex": "0x98"
+        }
+      ]
+    },
+    {
+      "package": "package:creek_app/app/datas/manager/network/request/base_request.dart",
+      "analysis_file_sha256": "db23ccbaed8106b80e7dcbe9c7fec6e167c778e88379e893c508e640e75eecb7",
+      "methods": [
+        {
+          "method": "get _ ip(/* No info */)",
+          "address_hex": "0x23cbb5c",
+          "size_hex": "0x9c"
+        },
+        {
+          "method": "get _ url(/* No info */)",
+          "address_hex": "0x27c5624",
+          "size_hex": "0x2c"
+        },
+        {
+          "method": "get _ httpMethod(/* No info */)",
+          "address_hex": "0x27c5680",
+          "size_hex": "0xc"
+        },
+        {
+          "method": "get _ header(/* No info */)",
+          "address_hex": "0x2db0c38",
+          "size_hex": "0x9c"
+        },
+        {
+          "method": "get _ authorityForHealth(/* No info */)",
+          "address_hex": "0x2db3b1c",
+          "size_hex": "0x44"
+        },
+        {
+          "method": "get _ _getDomain(/* No info */)",
+          "address_hex": "0x2db3b60",
+          "size_hex": "0x60"
+        },
+        {
+          "method": "get _ authority(/* No info */)",
+          "address_hex": "0x2db3d1c",
+          "size_hex": "0x2c"
+        }
+      ]
+    },
+    {
+      "package": "package:creek_app/app/datas/manager/network/request/device/dial_list.dart",
+      "analysis_file_sha256": "91e494b00b9b7b9a3e8ed7978cbe4489b9070ffc97a49140b4ba01e156335e99",
+      "methods": [
+        {
+          "method": "get _ path(/* No info */)",
+          "address_hex": "0x2dd2054",
+          "size_hex": "0xc"
+        }
+      ]
+    }
+  ]
+}

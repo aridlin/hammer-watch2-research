@@ -1,0 +1,972 @@
+{
+  "retrieved": "2026-10-29",
+  "commit": "085d919da3d02103f490e37a1a5f108132dcf515",
+  "artifacts": [
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/.gitkeep",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/CreekInterFace.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/CreekInterFace.swift",
+      "sha256": "79e4147bbf5cd48efc5d96c17a21bd77bb098e84134052244db358d22e6163ea",
+      "bytes": 154
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/extension/CreekEnum.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/extension/CreekEnum.swift",
+      "sha256": "424f1afb4101ee84bd425c1bd205dcd8e6c2a0dd5a13749d663cf1c7c8c3d6da",
+      "bytes": 18815
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/extension/CreekSDK.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/extension/CreekSDK.swift",
+      "sha256": "fd933b99b22488689ef0a43ae5ddc7ee4b2af52e7bb3f6e7f32d0253514b02b7",
+      "bytes": 105534
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/extension/CreekSDKExtension.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/extension/CreekSDKExtension.swift",
+      "sha256": "8cfef8459c251ef30e3e55a5663c6864316ba4680253e642a36e888e728c78d2",
+      "bytes": 129957
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/extension/Log.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/extension/Log.swift",
+      "sha256": "fa1bac22dd1dd262dac0cbb1d9a14b3d13a89f582f450e667dba8e8011bc2305",
+      "bytes": 1007
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/ActivityModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/ActivityModel.swift",
+      "sha256": "4ab4643bb175cf07aba9f0d927049aec2699e2a8cc88f715dbe1639c11e025dd",
+      "bytes": 1805
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/AfModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/AfModel.swift",
+      "sha256": "ae2c615351fac55700c5d927d5e18b97521ef49b0ea769db80494e6e67ae3276",
+      "bytes": 495
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/AfPpgModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/AfPpgModel.swift",
+      "sha256": "8ffe22bf544dce97e4d8313fbd9f3767d7fc71835fe9ca9ec7b1a8eb22827b33",
+      "bytes": 393
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/BaseModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/BaseModel.swift",
+      "sha256": "beecbcfe6063218b355bfa6fcc1903139414a6cc54209734093f5e066d115ff9",
+      "bytes": 351
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/ContactsIconModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/ContactsIconModel.swift",
+      "sha256": "9a7f86311422322146cfda1c5432165d2aeebd650fbfb4e5f74be02510ee1512",
+      "bytes": 895
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/CourseModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/CourseModel.swift",
+      "sha256": "304ab76308d5533df98045eae3220b8f83f291091d79f7cfa324cb18c23eda65",
+      "bytes": 612
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/CreekRingtoneModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/CreekRingtoneModel.swift",
+      "sha256": "91242b1a9a8db1097346fe74590c79845efd719c47e235a0de4212067ce9a10e",
+      "bytes": 488
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/DeviceInfo.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/DeviceInfo.swift",
+      "sha256": "42cd45ebff27c5cb9321766062cb2f64191926dc989bf46bec2f38e0f09dad9d",
+      "bytes": 2296
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/DeviceModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/DeviceModel.swift",
+      "sha256": "4f942dfd53dc5ea02d1e5e25abc51f1b27c14dac1f1cd61f1e6957ef501a3c83",
+      "bytes": 471
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/DialParseModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/DialParseModel.swift",
+      "sha256": "1a2a2a00bfb0a2c96c17c6118d4a5e7582d90da9ec7fd406cd02265ad7a74b40",
+      "bytes": 1108
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/DialPhotoParseModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/DialPhotoParseModel.swift",
+      "sha256": "4ddd1b788b29c69f3e7e6a8a06cb264f934937af8178ad4d529236f6e4b83b1c",
+      "bytes": 1440
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/EphemerisGPSModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/EphemerisGPSModel.swift",
+      "sha256": "fb08498a28702f0719773d7dfbb07e57fea88a4bb2dfb2f604b0bf43eefa8fdb",
+      "bytes": 722
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/EphemerisModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/EphemerisModel.swift",
+      "sha256": "7d0f0f9b34165a8e27dbed3fec709bddf6c1585601cda7ab2f1534dbfb5d60b2",
+      "bytes": 1537
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/EventReportModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/EventReportModel.swift",
+      "sha256": "1c9b0702e942dd67fb2becaba7c4703b59f6b692d9dca2f0602b35607dbaccc0",
+      "bytes": 369
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/GPSModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/GPSModel.swift",
+      "sha256": "c099480ef51abae14c288b2800545e34bfabcd494801146697037923bab9b3e6",
+      "bytes": 565
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/GoalsModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/GoalsModel.swift",
+      "sha256": "f1e2e1ba47bb43d336a915953bae4abe1fe23f147ff5c76865db01637c0fda2c",
+      "bytes": 877
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/HeartRateModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/HeartRateModel.swift",
+      "sha256": "1c0e677c843feaf0082dad4782f0f647cd5cfcbfa966822d2374474d5193832b",
+      "bytes": 1231
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/HrvModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/HrvModel.swift",
+      "sha256": "1076b2bf965ddd782e8652827e94313f70c70375ef384f3fa8e2e4197b492d48",
+      "bytes": 970
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/MusicModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/MusicModel.swift",
+      "sha256": "b7985073e651161051eb0814ac7226f7943e3756c21f173d2e6ab2af6fb3a7a0",
+      "bytes": 658
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/NoiseModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/NoiseModel.swift",
+      "sha256": "7269752b3a6971bd193b31bdbfd6be9c6a201c3efeb34f835e6d0e2c9bce0626",
+      "bytes": 774
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/NoticeUpdateModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/NoticeUpdateModel.swift",
+      "sha256": "10ddbf10d05d2a70bf4e69a6100ed7e48b09b2fe9f58ed503548653eca024bb4",
+      "bytes": 275
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/OxygenModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/OxygenModel.swift",
+      "sha256": "772ef7d23bd01094686ad324dd0f604a7fb0c438dcf30fb65fb7e197aab2d2f5",
+      "bytes": 833
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/ParseJson.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/ParseJson.swift",
+      "sha256": "5e75d2eaf226b9a02aaec889013977dbeaed66bc84e590784d42c9369c8dd1cf",
+      "bytes": 610
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/PhoneModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/PhoneModel.swift",
+      "sha256": "b60a2fb111c07297181159a626e6911b4c11814217eaa2799741a0b06d7383a8",
+      "bytes": 381
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/ProtoExtension.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/ProtoExtension.swift",
+      "sha256": "3c71465f90e83e1a0a38400de6ce31c16c91249d0be4846e5e7ea416c306fa0e",
+      "bytes": 4352
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/RespiratoryModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/RespiratoryModel.swift",
+      "sha256": "d4d84e96b421e09298fa0f24d6a427f975469c891e7dc9878999697d55c91c3c",
+      "bytes": 797
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/SleepModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/SleepModel.swift",
+      "sha256": "f1f58cc0890a42899bbe39fa4e5d8625653bf0190bf9b7ce1f6d252a2e8ead10",
+      "bytes": 4030
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/SportModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/SportModel.swift",
+      "sha256": "9796e4ce56265c6203ba7ec86a432a1ddd2278270886e353942db67b1b33980b",
+      "bytes": 15198
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/StressModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/StressModel.swift",
+      "sha256": "9c803a5e50d49ea70236de48fc77d6b884d9a3446fcaca60abc2934daf0f8102",
+      "bytes": 1071
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/TemperatureModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/TemperatureModel.swift",
+      "sha256": "7481437aa80bf268f0c32f17210d7152333d3f9149147fdbd00b495cfbf46a11",
+      "bytes": 1450
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/model/UpgradeModel.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/model/UpgradeModel.swift",
+      "sha256": "753c145b3e9050c6b53fc3c40d190556db2bc00475b20b98919d5f0a1c2070cc",
+      "bytes": 316
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/activeOta.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/activeOta.pb.swift",
+      "sha256": "8cc5690681e9e5f5e1410926f4dbd988cde93eb1e0f139c7ca2ea2c248bef440",
+      "bytes": 6129
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/afServeSwitch.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/afServeSwitch.pb.swift",
+      "sha256": "aa13febabfccc938948d1a6dcfa773e901467a24c0a847bd5db59c472aefbd63",
+      "bytes": 5214
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/alarm.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/alarm.pb.swift",
+      "sha256": "1ca6e8689d303931451fe3552bf3dff388166eb2afe637e0399613f54020da3b",
+      "bytes": 13285
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/alexa.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/alexa.pb.swift",
+      "sha256": "bbf5dc987fa13bd0dae9a3eb25f0ba00b311d187f67342e355610623adfbbbd0",
+      "bytes": 103271
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/alipay.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/alipay.pb.swift",
+      "sha256": "579a8da511545ed3cf55667d438edb774f42dc0ff6a9880ac6717c75f85d93f1",
+      "bytes": 3345
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/appList.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/appList.pb.swift",
+      "sha256": "a972aee203a3293be6f3adfb1c8852ff60472ee38659b53d79910f6ecd79f912",
+      "bytes": 21153
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/appSleep.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/appSleep.pb.swift",
+      "sha256": "193a7721570eb83097f03b6250d192235de7f5ea1f66204a46cba0e08685aa96",
+      "bytes": 27321
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/appTable.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/appTable.pb.swift",
+      "sha256": "0a3b9b58109f0e0f4d6dc6a8d8a04425d87bee2398a94d873dd986b33c91ab35",
+      "bytes": 4320
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/applets.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/applets.pb.swift",
+      "sha256": "070c4f897a734b0b7f8ee51e7acef96cffe987f61122cce57631a0dddcf8a36b",
+      "bytes": 18424
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/binding.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/binding.pb.swift",
+      "sha256": "f7af015fab3306691a49aa80153644a3edfc8184cefbc26fa89d41226916bd5b",
+      "bytes": 6913
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/bloodPressure.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/bloodPressure.pb.swift",
+      "sha256": "86bbd825c208a1f515427c11c1e4c0f8bbeb0fa5afc4bed02dc5b55d185ea199",
+      "bytes": 11250
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/broadcastSwitch.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/broadcastSwitch.pb.swift",
+      "sha256": "a152c55f722d3f11521dd659b4b1624f74ab427c7ee67427bc062b5d6cf71eb0",
+      "bytes": 7863
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/calendar.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/calendar.pb.swift",
+      "sha256": "4f27a63ceed2b6a034d7dcda555897fa819102f35eb15ce01d9d17d9566fddd7",
+      "bytes": 14471
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/calendar_v2.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/calendar_v2.pb.swift",
+      "sha256": "d3e11fa6a4f1af6aca629e65319f8d786fd47389c90f0f43f6194a5fe211002e",
+      "bytes": 33902
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/call.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/call.pb.swift",
+      "sha256": "2d8f8076ac5c75196c14990584f2a680d0fe04705809c96db42e68b11efdd8b5",
+      "bytes": 10266
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/card.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/card.pb.swift",
+      "sha256": "e424ff4da47f33c994865ce25f55437d50c6f6375930de6350bd393a341d1214",
+      "bytes": 40181
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/cardioFitness.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/cardioFitness.pb.swift",
+      "sha256": "e0175825b60963fc7f04bf5efae060f3e3a86442e277f31e8c229cb10d0242f8",
+      "bytes": 15146
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/commonError.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/commonError.pb.swift",
+      "sha256": "58a669589a95446dd934ee2a3064c1722893cfdc3e9e2d6ffd2ad59ccf06e569",
+      "bytes": 3203
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/contacts.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/contacts.pb.swift",
+      "sha256": "012abcd1be873429b99b5c0649e1b36dad10e28875cbd193b75cb949b06db933",
+      "bytes": 9273
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/contactssos.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/contactssos.pb.swift",
+      "sha256": "84493f203df461a8bf332bda5fed9de5645f10156424f309b3fff6d6d136dc1b",
+      "bytes": 8131
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/customFocusMode.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/customFocusMode.pb.swift",
+      "sha256": "7ab11dbcaab4bebda7e2b15d16e19583548cd5ad757b93c4402d5bf6c6a27739",
+      "bytes": 28641
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/deviceStatus.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/deviceStatus.pb.swift",
+      "sha256": "ae7750b97923854e727132405296377e765b3073fd791149b1576a4af02df75d",
+      "bytes": 5607
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/deviceinfo.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/deviceinfo.pb.swift",
+      "sha256": "9c3926e9f4800d52a3ce4b491fdd7d4c926f4a0bfbac271f1defb8f51d443204",
+      "bytes": 57426
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/distanceAdjust.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/distanceAdjust.pb.swift",
+      "sha256": "9e2ecd42ae69d6ab01203afae9663bfa6f2213de6d78217566203fa3ee0dd1db",
+      "bytes": 3487
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/disturb.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/disturb.pb.swift",
+      "sha256": "6450ccb1936298b4a01984d594428fd791e4f5e15fee276909a1932162f88f7e",
+      "bytes": 16757
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/enums.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/enums.pb.swift",
+      "sha256": "8cf8cd2d4a49c0eec295fa1ce0e68bf8aa95fc747b35c3397c331713eaaf1f93",
+      "bytes": 324106
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/ephemeris.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/ephemeris.pb.swift",
+      "sha256": "3ced32b157b8f37c52c56ff6c04510a24234eab6eb74ee6ea06f63a5ce9b1bca",
+      "bytes": 6857
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/event.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/event.pb.swift",
+      "sha256": "df708d1f066c43a192075f87c6c1396e2578429d6ca37d7c36d186c89c5fd930",
+      "bytes": 3716
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/exerciseSupport.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/exerciseSupport.pb.swift",
+      "sha256": "0596d00e278487cfca3732c4f384fc6693a565e126ed45341935071804be68c9",
+      "bytes": 7082
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/exerciseTarget.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/exerciseTarget.pb.swift",
+      "sha256": "0d05f39bec259769a814a0c615891a52b8aa7b9f709b46300b080896eb7830de",
+      "bytes": 11561
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/fileBatchTransfer.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/fileBatchTransfer.pb.swift",
+      "sha256": "54fe84efe10caf09c422d8dbc9d759be3f30cba64251d4bcc5d13bd8d938a6f4",
+      "bytes": 5396
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/fileBatchTransferNotify.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/fileBatchTransferNotify.pb.swift",
+      "sha256": "b64f8d7350406081a37b4edbbfb60ef9b0c4d9b629640d664c7bf00d95109d39",
+      "bytes": 4378
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/findphone.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/findphone.pb.swift",
+      "sha256": "6670999c96dddd4fe29977e0d733f136763fb10dd20a24b2eef7b0fcbf99bcb2",
+      "bytes": 7002
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/focus.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/focus.pb.swift",
+      "sha256": "d0d1448f928fa6345d6e53099cfe0bcc7726af1d20add784262587f46a0f3852",
+      "bytes": 11051
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/font.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/font.pb.swift",
+      "sha256": "f8b765a0ccb48500b2f3142efe613b90bf267fd1ea6ac49958670524d7d4f4cf",
+      "bytes": 7586
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/frequentContactsV2.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/frequentContactsV2.pb.swift",
+      "sha256": "72cdaa70fe284a1d2b33458ce381f243078d1bd8b3931f2a7974130490f16e35",
+      "bytes": 11933
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/geo.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/geo.pb.swift",
+      "sha256": "f7a5149b5a74e2156bb3a523942d6cc9c2b23bb9809263f5b0caadaed1d84752",
+      "bytes": 9255
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/gesture.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/gesture.pb.swift",
+      "sha256": "6561a88b67c31141b70b2752f49d81c53d6560f59cd7a16497d74f9944b85c0f",
+      "bytes": 9901
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/gomoreConfigSwitch.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/gomoreConfigSwitch.pb.swift",
+      "sha256": "d5a4487a9d857fbf0825a4e9db73a6c53e47d9ba1a526d618b620c7ef1d060a6",
+      "bytes": 5351
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/gomoreFitnessLevel.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/gomoreFitnessLevel.pb.swift",
+      "sha256": "0c54da0befda501c074a42040f227b98a6d72727b6d2a41c84c7cdcc13deae83",
+      "bytes": 13634
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/health.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/health.pb.swift",
+      "sha256": "159bb92769bbedced625fccfe60feca11cdd99d13d1ca122f273278143ffd278",
+      "bytes": 23815
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/healthRealtime.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/healthRealtime.pb.swift",
+      "sha256": "c5eab20121998bebed742ff926299df19c13f670614ccdb6ba70441939b65ade",
+      "bytes": 27822
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/healthhead.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/healthhead.pb.swift",
+      "sha256": "28bba491c4ccd7498c1c4970fc9a457357c6cc7cc6f5b4e103ff67f21e8626d7",
+      "bytes": 6696
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/healthsnapshot.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/healthsnapshot.pb.swift",
+      "sha256": "283a5d691acb4122311fa7f229a15d4bace3c802cbb9280a65d72559f5dde2f2",
+      "bytes": 11953
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/hotKey.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/hotKey.pb.swift",
+      "sha256": "4580ee87163404f001dea096b88cf9d9a7c3a028380bbdb8003befc197f9dee3",
+      "bytes": 6456
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/hrBroadcastSwitch.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/hrBroadcastSwitch.pb.swift",
+      "sha256": "c74b43e9912c8c3398b5c05d3fab03ae243bce611583f003404807de46f7f172",
+      "bytes": 5809
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/httpPublicKey.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/httpPublicKey.pb.swift",
+      "sha256": "e1299b00078b7a7a236ce408b611958ee24afcec6078c0fc9bad4c360240a023",
+      "bytes": 3760
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/hydrateAassistant.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/hydrateAassistant.pb.swift",
+      "sha256": "aec193c5daf7eb63b78ab56a095edc7d98cb893506a491ec9148a0b92eb596df",
+      "bytes": 48974
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/irCalibrationButton.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/irCalibrationButton.pb.swift",
+      "sha256": "1b2d3f8520079accede0784e106b2f24639740da95e755e0b49ee25f1fb10398",
+      "bytes": 5586
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/language.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/language.pb.swift",
+      "sha256": "5fe61cece9aab6fb14b509eab982ac8f2c42b652930ec4a446dfa01a5aabd1d5",
+      "bytes": 34220
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/log.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/log.pb.swift",
+      "sha256": "fc96893bbd3b0739f7ac9b8fb804771f9c4b729b1b1abfb17ac52ac86b9d0553",
+      "bytes": 3014
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/medicine.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/medicine.pb.swift",
+      "sha256": "ffb72553345504848042d03e5c7579329c814413d0b13d401fafdcc3cfcfd8d5",
+      "bytes": 10593
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/menstrual.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/menstrual.pb.swift",
+      "sha256": "8f5dc9e01ed270d7aa2df91e962f1e5f9f7a58af34c308d71dcea494b51ba549",
+      "bytes": 16210
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/message.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/message.pb.swift",
+      "sha256": "10e6e23bbb959ead79210907de27695b03af0689610d57e6ba0d9a2b9c6f0cf6",
+      "bytes": 140250
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/monitor.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/monitor.pb.swift",
+      "sha256": "ac4b9ba5f4befc4e548d863e963be292a1a66bbf168e6a5bd77d054ce071fb3a",
+      "bytes": 25880
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/morning.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/morning.pb.swift",
+      "sha256": "7c08eebcb38bb8d6db32d2e0219f49b867c11ddaa98431937ba82cc7413f6fc3",
+      "bytes": 9791
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/motorPreview.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/motorPreview.pb.swift",
+      "sha256": "31e90c25e0db5dce4786323cb38055d46d7448b8e6a917a24ffb647982ec4158",
+      "bytes": 6843
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/mtu.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/mtu.pb.swift",
+      "sha256": "2cc415b838f36e4e03f30c36d8d4fe198a9197bc1abc2f9e70b00bbd8b71d668",
+      "bytes": 8569
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/multifileTran.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/multifileTran.pb.swift",
+      "sha256": "a03c89ddc08fea9dc27e1dce5f2c08e532a8792a00e1db91483628b893c0f624",
+      "bytes": 6084
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/music.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/music.pb.swift",
+      "sha256": "4ce755a67141811f4c8a34457631698047a257da64cb0af06e4878cd6a12668d",
+      "bytes": 15066
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/netWork.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/netWork.pb.swift",
+      "sha256": "2b56317e44626d76a527412b05094bc923ae4922118213c44f1242154d30df11",
+      "bytes": 6664
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/nfcCard.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/nfcCard.pb.swift",
+      "sha256": "3c56035f614c98d161fcb2f973adb9b15036bf92409f8c6bf9ea9589e58ca9d4",
+      "bytes": 19752
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/offlineMap.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/offlineMap.pb.swift",
+      "sha256": "41c373210e99b741d21f016cc599916edb83aef1f6270ce74b9f6c474cc5e0ad",
+      "bytes": 9572
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/onekeyMeasure.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/onekeyMeasure.pb.swift",
+      "sha256": "f51ef14144a9f3bd186cbc11eb26ec00a9b98ed77b97dcd6954b7224c737b4ad",
+      "bytes": 8019
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/otaHistory.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/otaHistory.pb.swift",
+      "sha256": "32f70d7409757f1b5c48b2525ad392cfb22c9da9beefe116967210e45567b8bc",
+      "bytes": 9104
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/passcodePage.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/passcodePage.pb.swift",
+      "sha256": "961458fb7562b1c5a5a43bfd2c13a0a1af0e7cb66a532998a2562379f6111a2a",
+      "bytes": 6017
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/prayer.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/prayer.pb.swift",
+      "sha256": "d18705cd571da04b715692434b89496b150e02b358bc43babf018771f2f8e54e",
+      "bytes": 17738
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/protocol_fifa.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/protocol_fifa.pb.swift",
+      "sha256": "824826e0a58fd72ec3f95194f836103fd0a94d384c3cdd0476064851e54094a5",
+      "bytes": 16083
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/pspkey.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/pspkey.pb.swift",
+      "sha256": "125363ebf13a131d993f16fbfcae203983ec87432d9f74acff42e6ba62f1246b",
+      "bytes": 4533
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/qrcodeList.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/qrcodeList.pb.swift",
+      "sha256": "1a6f5209fe144052e82ea1e18727b3498fd13fbc2c85f0808f4cfca6e3130d04",
+      "bytes": 10087
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/recovery.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/recovery.pb.swift",
+      "sha256": "a20b7aea1d829de6a6d44888b4b99fab4cee8fe22a578f4f88014727c6c5c4d6",
+      "bytes": 12114
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/ring.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/ring.pb.swift",
+      "sha256": "c94770775d52cb4ddd40a3fa0e623ed105723557943cc45928cca19374925542",
+      "bytes": 36805
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/ringtone.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/ringtone.pb.swift",
+      "sha256": "d856f1d214ca21daf01326287a6d4ef882cec9ea8f35c257b6fb8ce221624ba9",
+      "bytes": 10303
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/routeNavigationSwitch.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/routeNavigationSwitch.pb.swift",
+      "sha256": "d60731467d493e2dda54e8e73ee37300e751b9cf5ed410ee142db12bd43caed6",
+      "bytes": 5699
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/schedule.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/schedule.pb.swift",
+      "sha256": "851abd0f966efbc2b3ffca81e602f0eeceb53eb7ab9baf1225aa20d60f5e9c18",
+      "bytes": 16512
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/screen.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/screen.pb.swift",
+      "sha256": "67f3a07fb496b67353f1b8ee1cfa1b076da8196a8b43c0eef9c28fceed44b406",
+      "bytes": 25891
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/sensor.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/sensor.pb.swift",
+      "sha256": "f74e17e21d6bb342259284715d2b90718c5783f5d21d6e151fabaa4d974e35e0",
+      "bytes": 26333
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/skill.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/skill.pb.swift",
+      "sha256": "0c894f8b822edc8abd4f7c1b54086f5bf4083c40890ef4b20adddfe98425bfa4",
+      "bytes": 50075
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/sleepMonitor.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/sleepMonitor.pb.swift",
+      "sha256": "098102b058dfd61c5c613b40e69013f43dbdbc7a0d7894651953305c087effda",
+      "bytes": 6060
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/sport.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/sport.pb.swift",
+      "sha256": "240e217195e757efc65245738fb69ead5aa4d596a24db5daaf0346e36b6f8547",
+      "bytes": 134682
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/sportPrescription.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/sportPrescription.pb.swift",
+      "sha256": "e2e59735d615c9ac256fc799afa5641518553d7bf3e38807568996c23bb7b609",
+      "bytes": 25653
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/standing.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/standing.pb.swift",
+      "sha256": "d46ce9b2f874e1c66041b226c3500a5d9ec066bc74b720a190e5d98296f0c7f1",
+      "bytes": 11134
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/system.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/system.pb.swift",
+      "sha256": "32298a573f38002384a33176b36e9c4fb550cde7fa4eef1f41737eba0a256cb8",
+      "bytes": 4407
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/table.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/table.pb.swift",
+      "sha256": "b18ab28e848f6518e86adbbf8b3a4e9e0afc11a0a8124cee166bfdf5d0365e89",
+      "bytes": 97197
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/time.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/time.pb.swift",
+      "sha256": "8cd851855013cae9552d03d81eb3702ce7f00e73201f848d24a5250fe5319f7f",
+      "bytes": 10699
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/tracking.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/tracking.pb.swift",
+      "sha256": "84ccd8a6d2aae4cf6e4df009468aca19de81152b21b162adcfedee0dce097570",
+      "bytes": 8165
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/trainingLoad.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/trainingLoad.pb.swift",
+      "sha256": "7838539924e8dd7f2c5b8c9d9db13c3b156d1794ebee6d50b43c1bdfe7f07746",
+      "bytes": 10698
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/update.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/update.pb.swift",
+      "sha256": "dda20a6cf477893ea90b0ca4b16b4be9f17e91746b9e2d592636616b31c14d73",
+      "bytes": 3363
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/userinfo.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/userinfo.pb.swift",
+      "sha256": "829b5340cc43e1f60fa1e60bd44db0a8bd8b777014b8e4448a97102b70927df1",
+      "bytes": 31560
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/vitalityScore.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/vitalityScore.pb.swift",
+      "sha256": "e96970250977631d419db0ead1262ae64a2e29b4ab6bab10db1f4d70faca3054",
+      "bytes": 3148
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/voice.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/voice.pb.swift",
+      "sha256": "dec06b013bef0b355e58ca5206e8df97ee6f76ed4915d7128e0a15d408dae042",
+      "bytes": 6432
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/voiceMemo.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/voiceMemo.pb.swift",
+      "sha256": "aa74fc5631d69503263cb81d20b68d639793219f6da98d47724370cb94cb788b",
+      "bytes": 10469
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/volumeAdjust.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/volumeAdjust.pb.swift",
+      "sha256": "bf96fe203ea1ef7892909d0c3bc27c526e0cb92d97d47d039d6069d6a9799ddd",
+      "bytes": 5658
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/watchSensor.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/watchSensor.pb.swift",
+      "sha256": "63a337d211e1a8b7b9f526cc26cd9631de3290875c921f4fb47815165e2a3de8",
+      "bytes": 8080
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/watchdial.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/watchdial.pb.swift",
+      "sha256": "eb93a51d540871acf0bb72ad620234ac40bf9601c6f3404f7989dcba85e60cfe",
+      "bytes": 21254
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/watchdirection.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/watchdirection.pb.swift",
+      "sha256": "c60a00491b169e42eee13a87fae364647d4be713bd8ab2b26777f50a968f88e8",
+      "bytes": 5619
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/waterAssistant.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/waterAssistant.pb.swift",
+      "sha256": "d9e53e6a194b0618a223fb58a109c60067ced77589f9969137947d0150140608",
+      "bytes": 22375
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/waterMonitor.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/waterMonitor.pb.swift",
+      "sha256": "45e7bca4401a96a768d7157c34e916f867a78fcf6158c710aad0ba42e06a3582",
+      "bytes": 10569
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/weather.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/weather.pb.swift",
+      "sha256": "d6ad6e3e5d10ebe6fb4aadad7d8c075462a3f863c4875ffd5aeb37a3dc23be11",
+      "bytes": 37157
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/whatsapp.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/whatsapp.pb.swift",
+      "sha256": "53d519afe33c3ced034c406ff88f495de4e6e2c85ab7d2b359c698772979d3a7",
+      "bytes": 7303
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/wifiFileTransfer.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/wifiFileTransfer.pb.swift",
+      "sha256": "ba4cc8d125fc5ebcee592c8ad60ae6ce0d152dbf6b8b4274210f90cd919c6f6c",
+      "bytes": 7685
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/wifiFileTransferNotify.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/wifiFileTransferNotify.pb.swift",
+      "sha256": "b8584660a3e8fc7cf3ed175d3e987ba9cdcddaeec08b01e610c2ebbf8f081685",
+      "bytes": 3896
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/wordtime.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/wordtime.pb.swift",
+      "sha256": "7e2f6aba3fddc996819dcc547bf18f60efb8dbf5c4e26bebc9ba649556ccd588",
+      "bytes": 8588
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/wtm.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/wtm.pb.swift",
+      "sha256": "aff8c8396d1c9f47358c5acdd5de3fec9db033c945a90e3dff05c23d645c8977",
+      "bytes": 2652
+    },
+    {
+      "path": "private/sources/CreekSDK/CreekSDK/Classes/proto/zsWeather.pb.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/CreekSDK/Classes/proto/zsWeather.pb.swift",
+      "sha256": "49e6b3f4919903c6b65244451f24ebad43441e3ac7bb24d9a4ceb8c9095c6141",
+      "bytes": 37312
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/DialDetailsViewController.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/DialDetailsViewController.swift",
+      "sha256": "ea9f9246e5dedc7706170b866da8d69dcfdf6c50c3e6ca9fa9e8331bd453b5ac",
+      "bytes": 13018
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/DialPhotoViewController.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/DialPhotoViewController.swift",
+      "sha256": "069f96ea9aa30926e3f57015227cbeaea067d1432b19a4b2810b34e52a8f1a56",
+      "bytes": 18499
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/DialVideoViewController.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/DialVideoViewController.swift",
+      "sha256": "bfef31581e1eb67c1bf697792e65a78f2443eac611a6d49c4ecc2ee185844383",
+      "bytes": 15529
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/DialViewController.swift",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/DialViewController.swift",
+      "sha256": "246c463630370f174978cc308dc0cdacb2f5533a071bc4c9738cff89ab886e06",
+      "bytes": 5814
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/Images.xcassets/AIDial_0.imageset/AIDial_0.png",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/Images.xcassets/AIDial_0.imageset/AIDial_0.png",
+      "sha256": "7eb8a64c752ee2a23134b31452188be0ad10e1ae6e58e1d94d2c0b06c93bdf19",
+      "bytes": 345907
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/Images.xcassets/AIDial_0.imageset/Contents.json",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/Images.xcassets/AIDial_0.imageset/Contents.json",
+      "sha256": "966d3d0574b17d70030880c7242f7408dc9b1fdb830f0902d8bfe278fc4de209",
+      "bytes": 306
+    },
+    {
+      "path": "private/sources/CreekSDK/README.md",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/README.md",
+      "sha256": "33c720a06bdc8c4211ed82dc43a517e453acf36c6d2a905f75df915d0a42c8b6",
+      "bytes": 1941
+    },
+    {
+      "path": "private/sources/CreekSDK/LICENSE",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/LICENSE",
+      "sha256": "37d760c389f23f90bda1af0141ccf721eeee94c773ba12625ed17614d3985dd2",
+      "bytes": 1067
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/Act06_1201_03.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/Act06_1201_03.zip",
+      "sha256": "3b7aeac57d5ef2db399f3c3f75788fb50cf4891e7fa4b256a241eaf415cdc56a",
+      "bytes": 192553
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/CASIO01_01.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/CASIO01_01.zip",
+      "sha256": "8e83899f20457266722bade7313aebe74668111885332477d2fd9bb64ad9a8aa",
+      "bytes": 545418
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/CW06G_TITAD101_01.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/CW06G_TITAD101_01.zip",
+      "sha256": "fe903a37b61454a4968a4dee6b07dbac2996ba369f192dda862e74860c815002",
+      "bytes": 403316
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/Fun061101_03.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/Fun061101_03.zip",
+      "sha256": "88e733fc847c320fd2ad3136b49da879ef462756ded217991603c57eb6223d8a",
+      "bytes": 2895859
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/Fun_061211_05_2.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/Fun_061211_05_2.zip",
+      "sha256": "63e96fbbd042e1c94591106253c9a49cee5e113e2801d45ea73cd0bff31ac3fe",
+      "bytes": 198148
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/acti06_2.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/acti06_2.zip",
+      "sha256": "18f58571ad32715aa5458b9302f41deb06d7407ed0d2a24019dd500e95e1de6f",
+      "bytes": 113757
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/circlePhoto.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/circlePhoto.zip",
+      "sha256": "746fa5009ff2b41dfb7f37f47b11f679771e14ee755bf3427350e146a70d1042",
+      "bytes": 68987
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/func6_pink.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/func6_pink.zip",
+      "sha256": "3abd7100b1e8579e4bb762a045a6890091f28dd5c9f40bc5b6da843021ee5a23",
+      "bytes": 313929
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/squarePhoto.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/squarePhoto.zip",
+      "sha256": "0260ab9607ea900ccdefd25a416a63a2a427a7bf7ae0ee56ff09f9ed48877f36",
+      "bytes": 84452
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/titan.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/titan.zip",
+      "sha256": "031be1f57d3d7a33a2ae8128e2db54f72048146d940edf960c28a08dc55d2ab3",
+      "bytes": 6358777
+    },
+    {
+      "path": "private/sources/CreekSDK/Example/CreekSDK/video.zip",
+      "url": "https://raw.githubusercontent.com/creekwearable/CreekSDK/085d919da3d02103f490e37a1a5f108132dcf515/Example/CreekSDK/video.zip",
+      "sha256": "0ff5a77f3ad8f1715a4530a7feef7d6c04f57505f51b71e40026bea5d93d884c",
+      "bytes": 63069
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-31",
+  "device": {
+    "operation": "device-info",
+    "response_code": 0,
+    "sequence_response_bit": true,
+    "response_bytes": 146,
+    "identifiers_omitted": true,
+    "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+    "crc16_valid": true,
+    "present_numeric_fields": {
+      "device_id": 2039,
+      "firmware_major": 2,
+      "firmware_patch": 12,
+      "platform_enum": 3,
+      "shape_enum": 1,
+      "device_color": 72
+    },
+    "display": {
+      "1": 466,
+      "2": 466,
+      "3": 233
+    }
+  },
+  "dial": {
+    "operation": "dial-info",
+    "response_code": 0,
+    "sequence_response_bit": true,
+    "response_bytes": 354,
+    "identifiers_omitted": true,
+    "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+    "crc16_valid": true,
+    "present_numeric_fields": {
+      "framework_version": 8,
+      "cloud_capacity_count": 24,
+      "cloud_used_count": 10,
+      "photo_capacity_count": 1,
+      "wallpaper_capacity_count": 1,
+      "total_bytes": 41943040,
+      "cloud_used_bytes": 2719744,
+      "compression": 4,
+      "photo_image_limit": 3,
+      "all_face_limit": 24
+    },
+    "face_entry_count": 10,
+    "active_is_acquired_adventurer": false,
+    "standalone_test_entry_present": false,
+    "active_is_standalone_test": false,
+    "adventurer_entry_present": true
+  },
+  "sdk_platform_mapping": {
+    "wire_value": 3,
+    "enum_name": "JX_3085S_PLATFORM",
+    "source": "CreekSDK Classes/proto/enums.pb.swift Platform; Java Enums.Platform verified with javap",
+    "does_not_identify_physical_chipset": true
+  },
+  "installed_adventurer": {
+    "name": "ewrcompass_0819@LC.bin",
+    "version": 5,
+    "reported_allocated_bytes": 458752
+  },
+  "actual_sdk_platform_compilation": {
+    "original_matches_official_byte_for_byte": true,
+    "candidate_matches_previous_byte_for_byte": true,
+    "abi": "arm64-v8a",
+    "platform": "JX_3085S_PLATFORM",
+    "candidate_sha256": "0eb01fda693e0126c3f78b7b716699f8377344ddd1413433c7ab6b1829645299",
+    "candidate_bytes": 429497,
+    "candidate_crc_valid": true,
+    "source_framework_version": 1,
+    "watch_framework_version": 8,
+    "source_framework_not_newer_than_watch": true,
+    "non_layout_resources_unchanged": true
+  },
+  "physical_operations": [
+    "standard Bluetooth bonding/GATT discovery",
+    "standard DIS/PnP/battery reads",
+    "device info inquiry main1/sub0",
+    "dial inquiry main22/sub0 operate0",
+    "Approved separate test-face D1 start and first data packet",
+    "Read-only D3 position query and verified continuation",
+    "Remaining D2 packets and D4 completion"
+  ],
+  "physical_mutation_commands_sent": true,
+  "face_installation_attempted": true,
+  "remaining": [
+    "User-observed rendering, 24-hour correctness, compass/altitude/pressure and AOD acceptance"
+  ],
+  "private_raw_hashes": {
+    "physical-device-inquiry-01.jsonl": "0d15f38c2fa6fdd1068ea3c340c577806e7828c92e89efbd4247e4cebe2d18e9",
+    "physical-dial-inquiry-01.jsonl": "f2efc9e384889e9375028925a435ae152700e63dc94f8d639500f01723e92b44"
+  },
+  "palette_selection_evidence": {
+    "device_color": 72,
+    "official_gallery_displays_orange": true,
+    "official_color65_and_color72_binaries_byte_identical": true,
+    "original_json_cur_sn": 0,
+    "inference": "Retain original multi-palette metadata and allow the firmware to select color72; explicit palette-index forcing is no longer preferred",
+    "candidate_revision": "Standalone ewr24digital.bin compiled; original palettes retained; not installed"
+  },
+  "mtu": {
+    "operation": "mtu-info",
+    "response_code": 0,
+    "sequence_response_bit": true,
+    "response_bytes": 22,
+    "identifiers_omitted": true,
+    "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+    "crc16_valid": true,
+    "present_numeric_fields": {
+      "operate": 1,
+      "transfer_mtu": 244,
+      "bt_pairing": 1,
+      "bt_connected": 1
+    }
+  },
+  "preferred_standalone_candidate": {
+    "filename": "ewr24digital.bin",
+    "bytes": 429383,
+    "sha256": "86e5600fd53f8204610f0ef8866b0eb7e1cf17d455b1ec2b33c38177a7417e61",
+    "container_crc_valid": true,
+    "preserved_non_layout_resources": 127,
+    "factory_filename_different": true,
+    "palette": "original multi-palette selection",
+    "physical_installation_attempted": false,
+    "activation": "select test face manually on watch after upload"
+  },
+  "tests_passed": 136,
+  "virtual_transfer": "Full original stream reconstructed and SDK success callback verified; ACKs simulated only in emulator",
+  "harness_apk_sha256": "307db50ccf41857e73cead9106f0567ee5b6babc3b9010ff35d589db7f7eaf2b",
+  "physical_installation_completed": true,
+  "physical_installation_evidence": "reports/physical-installation-validation.json"
+}

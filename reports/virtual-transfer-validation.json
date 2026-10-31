@@ -1,0 +1,42 @@
+{
+  "last_completed_transfer": {
+    "start": {
+      "opcode": "d1",
+      "header_byte_1": 0,
+      "bytes": 34,
+      "stage": "start",
+      "transfer_bytes": 427972,
+      "original_bytes": 427972,
+      "parameter_byte": 1,
+      "filename_sha256": "945a811c12e8d77dbfcdd402ee022f829c394bf2793b7e054d3759995381e8ab",
+      "known_adventurer_name": true
+    },
+    "end": {
+      "opcode": "d4",
+      "header_byte_1": 0,
+      "bytes": 7,
+      "stage": "end",
+      "reserved_byte": 0,
+      "checksum": 42872
+    },
+    "data_packet_count": 2378,
+    "sha256": "bcb39cc699ffc6289009ef5b23431b76bfa23bbffb6d099afe4c0da095fab84e",
+    "bytes": 427972,
+    "crc16_xmodem_valid": true,
+    "physical_transfer_tested": false
+  },
+  "capture_notes": {
+    "invalid_or_truncated_starts": 4,
+    "incomplete_final_bytes": 0
+  },
+  "sdk_reported_upload_success": true,
+  "acknowledgment_source": "Frida Java callbacks, fixed synthetic Netsim identity04 only",
+  "data_path": "Unchanged official SDK GATT writes captured by Netsim",
+  "matches_original_byte_for_byte": true,
+  "actual_watch_upload_attempted": false,
+  "private_artifact_sha256": {
+    "transfer-peer-02.jsonl": "70c8e02a54c6863a26671ddf3a3ce03b35e2413dd9072bce159e014b6dcfe18a",
+    "virtual-transfer-02.jsonl": "de07db93e27bbe7d6ebf2b6b9cb5ac44656aca28375a62f365669aa0ddb42498",
+    "virtual-transfer-complete-sdk.log": "d35ccff905c81e6e940f04090e9f5b207fa3ed37a24a8bcb1de97924840b785b"
+  }
+}

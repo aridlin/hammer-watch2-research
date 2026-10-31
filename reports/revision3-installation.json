@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-31",
+  "revision": 3,
+  "transfer_completed": true,
+  "real_ack_count": 2317,
+  "post_upload_metadata": {
+    "operation": "dial-info",
+    "response_code": 0,
+    "sequence_response_bit": true,
+    "response_bytes": 403,
+    "identifiers_omitted": true,
+    "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+    "crc16_valid": true,
+    "present_numeric_fields": {
+      "framework_version": 8,
+      "cloud_capacity_count": 24,
+      "cloud_used_count": 12,
+      "photo_capacity_count": 1,
+      "wallpaper_capacity_count": 1,
+      "total_bytes": 41943040,
+      "cloud_used_bytes": 3604480,
+      "compression": 4,
+      "photo_image_limit": 3,
+      "all_face_limit": 24
+    },
+    "face_entry_count": 12,
+    "active_is_acquired_adventurer": false,
+    "revision3_test_entry_present": true,
+    "active_is_revision3_test": true,
+    "revision4_test_entry_present": false,
+    "active_is_revision4_test": false,
+    "standalone_test_entry_present": true,
+    "active_is_standalone_test": false,
+    "adventurer_entry_present": true
+  },
+  "private_log_sha256": {
+    "upload.jsonl": "8abdef6aa34c16e625e6cf75635753988daa4b8b046408f2a8ce4c11d2c81657",
+    "dial-after.jsonl": "8bc0ab2cbaebdbeccf558b8fedd7063662e8d007e03ff956950297a6d8d9cd1d"
+  },
+  "firmware_modified": false,
+  "factory_overwritten": false,
+  "runtime_acceptance": "Seconds work; compass still freezes"
+}

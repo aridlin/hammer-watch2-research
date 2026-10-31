@@ -1,0 +1,22 @@
+{
+  "operation": "device-info",
+  "response_code": 0,
+  "sequence_response_bit": true,
+  "response_bytes": 146,
+  "identifiers_omitted": true,
+  "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+  "crc16_valid": true,
+  "present_numeric_fields": {
+    "device_id": 2039,
+    "firmware_major": 2,
+    "firmware_patch": 12,
+    "platform_enum": 3,
+    "shape_enum": 1,
+    "device_color": 72
+  },
+  "display": {
+    "1": 466,
+    "2": 466,
+    "3": 233
+  }
+}

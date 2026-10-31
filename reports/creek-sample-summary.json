@@ -1,0 +1,498 @@
+[
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/Act06_1201_03.zip",
+    "archive_sha256": "3b7aeac57d5ef2db399f3c3f75788fb50cf4891e7fa4b256a241eaf415cdc56a",
+    "metadata_sha256": "fada37f46fda0dee0b6099794fb9dbeff5b39f1f62101c2f799df5eddff06c14",
+    "member": "Act06_1201_03/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "466x466",
+    "name": "Act06_1201_03",
+    "layers": {
+      "item": {
+        "count": 9,
+        "types": {
+          "background": 1,
+          "hour": 1,
+          "min": 1,
+          "week": 1,
+          "day": 1,
+          "month": 1,
+          "sport": 1,
+          "steplist": 1,
+          "step": 1
+        },
+        "widgets": {
+          "icon": 3,
+          "text": 4,
+          "array": 2
+        }
+      },
+      "fade_item": {
+        "count": 2,
+        "types": {
+          "hour": 1,
+          "min": 1
+        },
+        "widgets": {
+          "text": 2
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/CASIO01_01.zip",
+    "archive_sha256": "8e83899f20457266722bade7313aebe74668111885332477d2fd9bb64ad9a8aa",
+    "metadata_sha256": "962422e191af5c2a068b1f4db8538fbfb30c3cc7bdb09e696ad01c13561f54ae",
+    "member": "CASIO01_01/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "368x448",
+    "name": "CASIO01_01",
+    "layers": {
+      "item": {
+        "count": 13,
+        "types": {
+          "background": 1,
+          "week": 1,
+          "time": 1,
+          "day": 1,
+          "step": 2,
+          "month": 1,
+          "apm": 1,
+          "distance": 1,
+          "units": 1,
+          "calorie": 1,
+          "sleep": 1,
+          "batarray": 1
+        },
+        "widgets": {
+          "icon": 1,
+          "array": 6,
+          "text": 6
+        }
+      },
+      "fade_item": {
+        "count": 4,
+        "types": {
+          "other": 1,
+          "time": 1,
+          "apm": 1,
+          "week": 1
+        },
+        "widgets": {
+          "icon": 1,
+          "text": 1,
+          "array": 2
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/CW06G_TITAD101_01.zip",
+    "archive_sha256": "fe903a37b61454a4968a4dee6b07dbac2996ba369f192dda862e74860c815002",
+    "metadata_sha256": "5e806aa08f763c34dd3454320956900539c281898ff5e5a2344aed8823691159",
+    "member": "firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "466x466",
+    "name": "CW06G_TITAD101_01",
+    "layers": {
+      "item": {
+        "count": 15,
+        "types": {
+          "background": 1,
+          "other": 3,
+          "bluetooth": 1,
+          "batarray": 1,
+          "time": 1,
+          "apm": 1,
+          "day": 1,
+          "month": 1,
+          "week": 1,
+          "calorie": 2,
+          "step": 2
+        },
+        "widgets": {
+          "icon": 4,
+          "array": 7,
+          "text": 4
+        }
+      },
+      "fade_item": {
+        "count": 2,
+        "types": {
+          "time": 1,
+          "other": 1
+        },
+        "widgets": {
+          "text": 1,
+          "icon": 1
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/Fun061101_03.zip",
+    "archive_sha256": "88e733fc847c320fd2ad3136b49da879ef462756ded217991603c57eb6223d8a",
+    "metadata_sha256": "c6984d510636cbde432bf83fe65de0acb988d0f9c14d4d9c083aa938649d0128",
+    "member": "Fun061101_03/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "466x466",
+    "name": "Fun061101_03",
+    "layers": {
+      "item": {
+        "count": 12,
+        "types": {
+          "background": 1,
+          "hour": 1,
+          "min": 1,
+          "date": 1,
+          "week": 1,
+          "other": 2,
+          "step": 2,
+          "heart": 1,
+          "sport": 1,
+          "sleep": 1
+        },
+        "widgets": {
+          "icon": 6,
+          "text": 4,
+          "array": 2
+        }
+      },
+      "fade_item": {
+        "count": 4,
+        "types": {
+          "hour": 1,
+          "min": 1,
+          "date": 1,
+          "week": 1
+        },
+        "widgets": {
+          "text": 3,
+          "array": 1
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/Fun_061211_05_2.zip",
+    "archive_sha256": "63e96fbbd042e1c94591106253c9a49cee5e113e2801d45ea73cd0bff31ac3fe",
+    "metadata_sha256": "f3fb7b40edea347840b53c5a3d40deb5bb821af587b96c9109d38937397e6222",
+    "member": "Fun_061211_05_2/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "466x466",
+    "name": "Fun_061211_05_2",
+    "layers": {
+      "item": {
+        "count": 9,
+        "types": {
+          "hour": 1,
+          "min": 1,
+          "day": 1,
+          "week": 1,
+          "month": 1,
+          "heart": 1,
+          "sport": 1,
+          "calling": 1,
+          "batarray": 1
+        },
+        "widgets": {
+          "text": 3,
+          "array": 3,
+          "icon": 3
+        }
+      },
+      "fade_item": {
+        "count": 2,
+        "types": {
+          "hour": 1,
+          "min": 1
+        },
+        "widgets": {
+          "text": 2
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/acti06_2.zip",
+    "archive_sha256": "18f58571ad32715aa5458b9302f41deb06d7407ed0d2a24019dd500e95e1de6f",
+    "metadata_sha256": "a82c7bd66d49070b2daabcb764d392332565862ba87a1dd97443fdec975341eb",
+    "member": "acti06_2/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "368x448",
+    "name": "acti06_2",
+    "layers": {
+      "item": {
+        "count": 13,
+        "types": {
+          "week": 1,
+          "date": 1,
+          "hour": 1,
+          "min": 1,
+          "other": 3,
+          "step": 2,
+          "battery": 2,
+          "calorie": 2
+        },
+        "widgets": {
+          "array": 1,
+          "text": 6,
+          "icon": 3,
+          "arc": 3
+        }
+      },
+      "fade_item": {
+        "count": 2,
+        "types": {
+          "hour": 1,
+          "min": 1
+        },
+        "widgets": {
+          "text": 2
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/circlePhoto.zip",
+    "archive_sha256": "746fa5009ff2b41dfb7f37f47b11f679771e14ee755bf3427350e146a70d1042",
+    "metadata_sha256": "c5456c7ec9e71767ffdd61284547944b975a15b55264d4dff5dc29a17a00d59d",
+    "member": "circlePhoto/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "466x466",
+    "name": "photo",
+    "layers": {
+      "item": {
+        "count": 4,
+        "types": {
+          "background": 1,
+          "day": 1,
+          "week": 1,
+          "time": 1
+        },
+        "widgets": {
+          "array": 2,
+          "text": 2
+        }
+      },
+      "fade_item": {
+        "count": 3,
+        "types": {
+          "time": 1,
+          "day": 1,
+          "week": 1
+        },
+        "widgets": {
+          "text": 2,
+          "array": 1
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/func6_pink.zip",
+    "archive_sha256": "3abd7100b1e8579e4bb762a045a6890091f28dd5c9f40bc5b6da843021ee5a23",
+    "metadata_sha256": "7570ac9edb5fd849620fc84d1193808975a894d38bcf2b87a94a041b6ce1620f",
+    "member": "func6_pink/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "368x448",
+    "name": "func6_pink",
+    "layers": {
+      "item": {
+        "count": 14,
+        "types": {
+          "background": 1,
+          "week": 1,
+          "day": 1,
+          "month": 1,
+          "other": 3,
+          "hour": 1,
+          "min": 1,
+          "step": 2,
+          "heart": 1,
+          "sleep": 1,
+          "sport": 1
+        },
+        "widgets": {
+          "icon": 7,
+          "array": 3,
+          "text": 4
+        }
+      },
+      "fade_item": {
+        "count": 6,
+        "types": {
+          "week": 1,
+          "day": 1,
+          "month": 1,
+          "other": 1,
+          "hour": 1,
+          "min": 1
+        },
+        "widgets": {
+          "array": 2,
+          "text": 3,
+          "icon": 1
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/squarePhoto.zip",
+    "archive_sha256": "0260ab9607ea900ccdefd25a416a63a2a427a7bf7ae0ee56ff09f9ed48877f36",
+    "metadata_sha256": "a32c47fb415a992c62ef0a979ae7fdfce547af75dff76864b4ec8330535e6cc8",
+    "member": "squarePhoto/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "368x448",
+    "name": "photo",
+    "layers": {
+      "item": {
+        "count": 4,
+        "types": {
+          "background": 1,
+          "day": 1,
+          "week": 1,
+          "time": 1
+        },
+        "widgets": {
+          "array": 2,
+          "text": 2
+        }
+      },
+      "fade_item": {
+        "count": 3,
+        "types": {
+          "time": 1,
+          "day": 1,
+          "week": 1
+        },
+        "widgets": {
+          "text": 2,
+          "array": 1
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/CreekSDK/Example/CreekSDK/video.zip",
+    "archive_sha256": "0ff5a77f3ad8f1715a4530a7feef7d6c04f57505f51b71e40026bea5d93d884c",
+    "metadata_sha256": "310c8511922a9ebb660c201563baa50376b36ab9ebf4bdb687d4c6d24e1756e6",
+    "member": "video/firmware/dial.json",
+    "platform": "ats3085s",
+    "resolution": "480x480",
+    "name": "video",
+    "layers": {
+      "item": {
+        "count": 4,
+        "types": {
+          "other": 1,
+          "day": 1,
+          "week": 1,
+          "time": 1
+        },
+        "widgets": {
+          "animal": 1,
+          "text": 2,
+          "array": 1
+        }
+      },
+      "fade_item": {
+        "count": 3,
+        "types": {
+          "time": 1,
+          "day": 1,
+          "week": 1
+        },
+        "widgets": {
+          "text": 2,
+          "array": 1
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/androidSDKDemo/app/src/main/assets/S6L8UQJij6O78LFmcwr03gykzn02.zip",
+    "archive_sha256": "59ecc55c332b039a369b2b4c010ffc16ab522e3134cb8cdc3384b9e4d087f90f",
+    "metadata_sha256": "072519df034249df8c0dc0dd75b471db3a1189ea5df4e4347e275bef2f32af1b",
+    "member": "firmware/dial.json",
+    "platform": "ats3085s",
+    "resolution": "466x466",
+    "name": "cwr03g_ykzn02",
+    "layers": {
+      "item": {
+        "count": 20,
+        "types": {
+          "background": 1,
+          "step": 2,
+          "weather": 2,
+          "week": 1,
+          "date": 1,
+          "apm": 1,
+          "hour": 1,
+          "min": 1,
+          "calorie": 1,
+          "walk": 1,
+          "other": 2,
+          "altitude": 1,
+          "altitude_unit": 1,
+          "batarray": 1,
+          "battery": 1,
+          "heart": 2
+        },
+        "widgets": {
+          "icon": 3,
+          "chart": 1,
+          "text": 10,
+          "array": 6
+        }
+      },
+      "fade_item": {
+        "count": 2,
+        "types": {
+          "hour": 1,
+          "min": 1
+        },
+        "widgets": {
+          "text": 2
+        }
+      }
+    }
+  },
+  {
+    "sample": "private/sources/androidSDKDemo/app/src/main/assets/a12345.zip",
+    "archive_sha256": "07b96193a3fd5389f75f3cb9f2552e889259cc24dfc8afd7cafb3f81dd5e081a",
+    "metadata_sha256": "076ee08075e0d1692d4c0060dac6d8eb643999fc2e4b90c3ee9a61e9c6059b5a",
+    "member": "a12345/firmware/dial.json",
+    "platform": "ats3085c",
+    "resolution": "466x466",
+    "name": "Col06_1206_03",
+    "layers": {
+      "item": {
+        "count": 4,
+        "types": {
+          "background": 1,
+          "week": 1,
+          "day": 1,
+          "time": 1
+        },
+        "widgets": {
+          "icon": 1,
+          "array": 1,
+          "text": 2
+        }
+      },
+      "fade_item": {
+        "count": 3,
+        "types": {
+          "week": 1,
+          "day": 1,
+          "time": 1
+        },
+        "widgets": {
+          "array": 1,
+          "text": 2
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-31",
+  "original_offline_compiler_matches_official_app_byte_for_byte": true,
+  "vendor_compiled_candidate_matches_python_json_replacement": false,
+  "candidate_sha256": "0eb01fda693e0126c3f78b7b716699f8377344ddd1413433c7ab6b1829645299",
+  "candidate_bytes": 429497,
+  "candidate_crc_valid": true,
+  "candidate_lossless_roundtrip": true,
+  "non_json_resources_unchanged": true,
+  "non_json_resource_count": 127,
+  "real_digital_comparison_sample": "ewr01_compass_4: text/time widget",
+  "normal_time_layers": {
+    "item": {
+      "widget": "text",
+      "type": "time",
+      "x": 145,
+      "y": 174,
+      "w": 176,
+      "h": 40,
+      "font": "Time",
+      "fontnum": 11,
+      "enable_font": 0,
+      "min_numwidth": 2,
+      "unit_count": 10,
+      "align": "center"
+    },
+    "fade_item": {
+      "widget": "text",
+      "type": "time",
+      "x": 145,
+      "y": 174,
+      "w": 176,
+      "h": 40,
+      "font": "Time",
+      "fontnum": 11,
+      "enable_font": 0,
+      "min_numwidth": 2,
+      "unit_count": 10,
+      "align": "center",
+      "color": "#2e2e2f"
+    }
+  },
+  "remaining_validation": [
+    "24-hour preference must be honored by real firmware",
+    "Palette-index selection and recoloring need rendering check",
+    "Layout and calibration-warning relocation need rendering check",
+    "AOD power consumption and burn-in behavior untested",
+    "Compass/altitude/pressure and other complications untested on physical hardware",
+    "Custom installation and transfer finalization not validated"
+  ],
+  "no_physical_watch_writes": true,
+  "vendor_and_python_layout_semantically_equal": true,
+  "binary_difference": "JSON serialization whitespace; all 127 non-layout resource hashes match",
+  "tests_passed": 120,
+  "test_result": "reports/test-results.txt"
+}

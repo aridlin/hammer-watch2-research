@@ -1,0 +1,77 @@
+{
+  "python": "3.12.13",
+  "programs": {
+    "python3": {
+      "path": "/usr/bin/python3",
+      "version": [
+        "Python 3.14.8"
+      ],
+      "exit_code": 0
+    },
+    "java": {
+      "path": "/usr/bin/java",
+      "version": [
+        "openjdk version \"27.0.1.0.3\" 2026-10-24",
+        "OpenJDK Runtime Environment (build 27.0.1.0.3)"
+      ],
+      "exit_code": 0
+    },
+    "adb": {
+      "path": "/usr/bin/adb",
+      "version": [
+        "Android Debug Bridge version 1.0.41",
+        "Version 37.0.0p1-android-tools"
+      ],
+      "exit_code": 0
+    },
+    "jadx": {
+      "path": "/home/aridlin/Documents/Codex/2026-10-29-project-reverse-engineer-hammer-watch-2/private/jadx/bin/jadx",
+      "version": [
+        "1.5.6"
+      ],
+      "exit_code": 0
+    },
+    "apktool": {
+      "path": null
+    },
+    "apksigner": {
+      "path": null
+    },
+    "tshark": {
+      "path": "/usr/bin/tshark",
+      "version": [
+        "TShark (Wireshark) 4.7.4.",
+        ""
+      ],
+      "exit_code": 0
+    },
+    "unzip": {
+      "path": "/usr/bin/unzip",
+      "version": [
+        "UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send",
+        "bug reports using http://www.info-zip.org/zip-bug.html; see README for details."
+      ],
+      "exit_code": 0
+    },
+    "git": {
+      "path": "/usr/bin/git",
+      "version": [
+        "git version 2.56.0"
+      ],
+      "exit_code": 0
+    },
+    "uv": {
+      "path": "/home/aridlin/.local/bin/uv",
+      "version": [
+        "uv 0.11.3 (x86_64-unknown-linux-gnu)"
+      ],
+      "exit_code": 0
+    }
+  },
+  "packages": {
+    "androguard": "4.1.3",
+    "Pillow": "13.0.0",
+    "pytest": "8.4.2"
+  },
+  "device_access": "none; doctor does not enumerate or connect devices"
+}

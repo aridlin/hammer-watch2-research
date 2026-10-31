@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-31",
+  "acquisition": "Official HAMMER App 1.0.15, user-authenticated API, Android debug emulator and synthetic Netsim peer; no physical watch",
+  "pairing": "Official UI reported Pairing Successful; synthetic normal binding 1/success2",
+  "samples": [
+    {
+      "name": "ewrcompass_0819@LC",
+      "size": 427972,
+      "sha256": "bcb39cc699ffc6289009ef5b23431b76bfa23bbffb6d099afe4c0da095fab84e",
+      "resource_count": 128,
+      "dial_version": 5,
+      "crc_valid": true,
+      "compression_marker": 4,
+      "source_platform": "ats3089C",
+      "widgets": {
+        "icon": 21,
+        "arc": 4,
+        "text": 5,
+        "curved": 4,
+        "array": 1,
+        "pointer": 5,
+        "compass": 10
+      },
+      "bindings": {
+        "other": 20,
+        "step": 2,
+        "calorie": 2,
+        "uvi": 2,
+        "walk": 2,
+        "heart": 1,
+        "altitude": 2,
+        "air_pressure": 2,
+        "altitude_min": 1,
+        "altitude_max": 1,
+        "altitude_unit": 1,
+        "compass_hint": 1,
+        "angle": 2,
+        "liangle": 8,
+        "hour": 1,
+        "min": 1,
+        "second": 1
+      }
+    },
+    {
+      "name": "ewr01_compass_4",
+      "size": 259331,
+      "sha256": "89ee0c25fe59aaf0b126a8fb54824b33b20ac7cc71942db172afa1b3b125d8c7",
+      "resource_count": 174,
+      "dial_version": 4,
+      "crc_valid": true,
+      "compression_marker": 4,
+      "source_platform": "ats3085s",
+      "widgets": {
+        "array": 1,
+        "text": 8,
+        "icon": 16,
+        "curved": 4,
+        "arc": 2,
+        "chart": 1
+      },
+      "bindings": {
+        "week": 1,
+        "day": 1,
+        "time": 1,
+        "other": 12,
+        "second": 1,
+        "weather": 2,
+        "day_temp": 1,
+        "heart": 2,
+        "sport": 1,
+        "step": 2,
+        "uvi": 2,
+        "compass_icon": 1,
+        "angle": 1,
+        "compass_pos": 1,
+        "compass_hint": 1,
+        "sunrise": 1,
+        "sunset": 1
+      }
+    }
+  ],
+  "adventurer_source_zip": {
+    "sha256": "4e39c85f2d352be867355e1a2913f6019cc4c127fc05f9b3b4aec38db170dcec",
+    "bytes": 468570
+  },
+  "palettes": {
+    "source_sn_list": [
+      65,
+      72
+    ],
+    "primary_colors": [
+      "#B0CD53",
+      "#F67F31"
+    ],
+    "physical_variant_selection": "unverified"
+  },
+  "unknowns": [
+    "Actual watch dial framework version remains unknown; virtual value 9 is a lab parameter",
+    "Weather conditions and battery are absent from the acquired ADVENTURER layout",
+    "Runtime complications and target installation remain untested"
+  ]
+}

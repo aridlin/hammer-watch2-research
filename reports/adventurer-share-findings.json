@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-31",
+  "source": "User supplied ADVENTURER share-card image",
+  "qr_decoder": "zbarimg",
+  "qr_decode_succeeded": true,
+  "destination_host": "app.hammerphones.com",
+  "route_kind": "hash /code/:key",
+  "face_identifier_in_url": false,
+  "frontend_entry": "js/app.2e46cd22.js",
+  "frontend_route_chunk": "js/chunk-dcbf33a8.7d7dde4b.js",
+  "observed_lookup": {
+    "method": "GET",
+    "path": "service-manager/v1/app/info/markingDetail",
+    "purpose": "App store/download metadata"
+  },
+  "conclusion": "App-download share link; no face resource link recovered",
+  "limits": "Frontend inspected as text; no embedded authorization token used, no authenticated lookup or face resource obtained",
+  "personal_fields": "Account name and raw image remain private",
+  "artifacts": [
+    {
+      "path": "private/references/adventurer-share-card.png",
+      "sha256": "7d9c92950189f09d9885fb0e87696ad76aba5e546c05aa72ac8a6711c37a7d01",
+      "size": 649697
+    },
+    {
+      "path": "private/references/hammer-share-index.html",
+      "sha256": "ff0210bf2d0ace8157d45bbb765069ddb532d393df97e62389f5109d308b6c8b",
+      "size": 982
+    },
+    {
+      "path": "private/references/hammer-share-app.js",
+      "sha256": "d76f4792bb1a0186ee12e0dcbcf79943846e62dfe54bdb5b4b24e9f3e195dea2",
+      "size": 12347
+    },
+    {
+      "path": "private/references/hammer-share-code.js",
+      "sha256": "dd2a96f041cc0369af811cf7707258b5cf2ea304864f51bb19d0755cb94bc261",
+      "size": 85716
+    }
+  ]
+}

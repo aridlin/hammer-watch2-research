@@ -1,0 +1,23 @@
+{
+  "retrieved": "2026-10-29",
+  "artifacts": [
+    {
+      "path": "private/sources/specification.pdf",
+      "url": "https://download.mptech.eu/User_Manual/hammer/hammer-watch-2/HAMMER%20WATCH%202%20-%20specyfikacja.pdf",
+      "sha256": "a983ebf9114030559fda577929e2c11864cc4993f4ccae8dfa34a3bf61bae96e",
+      "bytes": 251207
+    },
+    {
+      "path": "private/sources/google-play.html",
+      "url": "https://play.google.com/store/apps/details?id=com.hammerup.app",
+      "sha256": "c2da7870c98db217f8ff86786646083891ace03e355f04713b119a70f4291e4e",
+      "bytes": 1306835
+    }
+  ],
+  "failed": [
+    {
+      "url": "https://manuals.plus/m/822ba8fe06c9caf68fed3d579a391e7a607065ee40282b9540ed6f43803e6241",
+      "error_type": "HTTPError"
+    }
+  ]
+}

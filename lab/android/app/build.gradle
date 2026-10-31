@@ -1,0 +1,41 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'local.hammer.compiler'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'local.hammer.compiler'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '0.1'
+        ndk { abiFilters 'x86_64', 'arm64-v8a' }
+    }
+    signingConfigs {
+        lab {
+            storeFile file('../../../private/emulator/lab-debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+    buildTypes { debug { signingConfig signingConfigs.lab } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    packaging {
+        resources { excludes += ['META-INF/AL2.0', 'META-INF/LGPL2.1'] }
+        jniLibs { useLegacyPackaging true }
+    }
+}
+dependencies {
+    implementation 'com.example.creek_sdk:flutter_release:10.7'
+    implementation 'creek_aar:creek_aar_release:10.7'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.3.20'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.google.protobuf:protobuf-javalite:4.0.0-rc-2'
+}
+// Keep the lab on the installed API 35. The oracle only uses offline image/layout paths.
+configurations.configureEach {
+    resolutionStrategy.force 'androidx.core:core:1.15.0', 'androidx.core:core-ktx:1.15.0'
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Deliberately address only this project's emulator on a separate ADB server.
+set -eu
+project_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+export ANDROID_USER_HOME="$project_root/private/android-user"
+exec adb -P 5038 -s emulator-5580 "$@"

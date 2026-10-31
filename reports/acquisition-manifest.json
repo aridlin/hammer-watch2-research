@@ -1,0 +1,25 @@
+{
+  "retrieved": "2026-10-29",
+  "apk_original_request": "https://d.apkpure.net/b/XAPK/com.hammerup.app?version=latest",
+  "apk_authenticity": "unverified against Play; all contained APK signatures verified with Google apksig 8.13.0",
+  "artifacts": [
+    {
+      "path": "private/apks/hammer-app.xapk",
+      "url": "https://d.apkpure.net/b/XAPK/com.hammerup.app?versionCode=35&nc=arm64-v8a&sv=28",
+      "sha256": "ea1a3ac0f52b7caec7bf5eb15348c7e748e6c0ab77b6bfc0d39ba8e10931b474",
+      "bytes": 200172218
+    },
+    {
+      "path": "private/sources/jadx-1.5.6.zip",
+      "url": "https://github.com/skylot/jadx/releases/download/v1.5.6/jadx-1.5.6.zip",
+      "sha256": "545ea2be9c242511bc145755cf4bda2485ade42966e096f8b4d3da2a230e8974",
+      "bytes": 72646741
+    },
+    {
+      "path": "private/sources/apksig-8.13.0.jar",
+      "url": "https://dl.google.com/dl/android/maven2/com/android/tools/build/apksig/8.13.0/apksig-8.13.0.jar",
+      "sha256": "c070ed1394629d74641aa0906f60b2ffa1ee77e6366a1f93437f59717b1aeb89",
+      "bytes": 506969
+    }
+  ]
+}

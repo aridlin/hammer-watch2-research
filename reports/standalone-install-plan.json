@@ -1,0 +1,17 @@
+{
+  "filename": "ewr24digital.bin",
+  "bytes": 429383,
+  "sha256": "86e5600fd53f8204610f0ef8866b0eb7e1cf17d455b1ec2b33c38177a7417e61",
+  "container_crc_valid": true,
+  "preserved_non_layout_resources": 127,
+  "factory_filename_different": true,
+  "palette": "original multi-palette selection",
+  "physical_installation_attempted": true,
+  "activation": "select test face manually on watch after upload",
+  "fresh_physical_preflight": "passed: three fresh checksum-valid replies despite advisory BlueZ ServicesResolved=false",
+  "tests_passed": 136,
+  "real_transfer_acknowledgments_tested": false,
+  "user_approved_physical_test_upload": true,
+  "outcome": "Completed through CRC-verified continuation from offset180; new test face active; factory entry retained",
+  "execution_evidence": "reports/physical-installation-validation.json"
+}

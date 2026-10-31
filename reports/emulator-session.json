@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-29",
+  "android_api": 35,
+  "image": "google_apis/x86_64 revision 9",
+  "arm64_translation": "libndk_translation.so",
+  "serial": "emulator-5580",
+  "adb_server_port": 5038,
+  "app_package": "com.hammerup.app",
+  "app_version": "1.0.15",
+  "installed_apk_splits": 20,
+  "app_code_modified": false,
+  "physical_watch_access": false,
+  "virtual_watch": "HW2 discovered and GATT-connected; initial writes observed; no replies or completed app handshake",
+  "catalog_request": {
+    "method": "POST",
+    "host": "cloud-frankfurt.creekcould.com",
+    "path": "/service-device/v1/device/bluetooth",
+    "http_status": 200,
+    "application_code": 200,
+    "credentials_sent": true,
+    "description": "Read-only Bluetooth-name configuration; target face catalog not acquired"
+  },
+  "dart_version": "3.9.2",
+  "dart_snapshot": "97ff04a728735e6b6b098bdf983faaba",
+  "blutter_commit": "4a60ac648bf448c5a7596437243bcd0b9376fdf0",
+  "login_ui": {
+    "visible_emulator_opened": true,
+    "persistent_desktop_reminder_launched": true,
+    "credentials_entry": "directly in official app by user",
+    "automation_paused_for_entry": false,
+    "entry_completed_by_user": true,
+    "authentication_verified": true
+  }
+}

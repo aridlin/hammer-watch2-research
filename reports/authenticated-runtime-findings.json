@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-29",
+  "configuration_application_code": 200,
+  "bluetooth_names": [
+    "HW2_LITE",
+    "HW2",
+    "123",
+    "Hammer Ventus",
+    "Ventus Pro",
+    "HW3"
+  ],
+  "virtual_peer_only": true,
+  "discovered_by_official_app": true,
+  "gatt_connected": true,
+  "application_handshake_complete": false,
+  "protocol_replies_sent": 0,
+  "target_faces_downloaded": 0,
+  "physical_watch_access": false,
+  "initial_request_hex": "c128010100010b000000000000",
+  "request_count": 2,
+  "retry_interval_seconds_approx": 5,
+  "request_metadata_source": "core_plugin/src/network/networks.dart Networks.send 0x1fdf258",
+  "notification_selection_source": "creek_blue_manage/scanBind/creek_scan_bind.dart 0x2c3fa34 and 0x2c3faa4",
+  "private_artifact_hashes": [
+    {
+      "path": "private/auth/client-smoke.json",
+      "sha256": "7dd286fdaba1265ee6ed82557ed08e04d9ab09aa844cd53fc47c91d3754f0854"
+    },
+    {
+      "path": "private/emulator/watch-hw2-corrected-events.jsonl",
+      "sha256": "cc7efb23de7d362e9f3e6b4c10ccdeb8d238c0ed5b5262fc12b46fe9712f1dfb"
+    }
+  ]
+}

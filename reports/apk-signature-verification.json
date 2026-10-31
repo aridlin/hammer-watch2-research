@@ -1,0 +1,22 @@
+[
+  {"file":"com.hammerup.app.apk","verified":true,"v2":false,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.ar.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.arm64_v8a.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.de.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.en.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.es.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.fr.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.hi.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.in.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.it.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.ja.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.ko.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.my.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.pt.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.ru.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.th.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.tr.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.vi.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.xhdpi.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]},
+  {"file":"config.zh.apk","verified":true,"v2":true,"v3":true,"error_count":0,"warning_count":0,"signer_certificate_sha256":["8926647d9feb0239ad67b6fe61843e7ea9ab75648fd047758901ad27df081d1d"]}
+]

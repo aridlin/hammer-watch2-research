@@ -1,0 +1,93 @@
+{
+  "att_opcode_counts": {
+    "0x08": 11,
+    "0x09": 5,
+    "0x10": 3,
+    "0x11": 2,
+    "0x01": 7,
+    "0x04": 2,
+    "0x05": 2,
+    "0x12": 1,
+    "0x13": 1,
+    "0x52": 2,
+    "0x1b": 6
+  },
+  "value_size_histogram": {
+    "16": 1,
+    "13": 4,
+    "20": 4
+  },
+  "candidate_creek_start_headers": [
+    {
+      "frame": 259,
+      "opcode": "0x52",
+      "type_byte": 193,
+      "sequence": 12,
+      "flags": 1,
+      "control": 1,
+      "command_byte_0": 0,
+      "command_byte_1": 1,
+      "declared_length": 11,
+      "code": 0,
+      "type_name": "start",
+      "packet_size": 13,
+      "bytes_after_header": 2,
+      "length_semantics": "unresolved",
+      "payload_omitted": true
+    },
+    {
+      "frame": 261,
+      "opcode": "0x1b",
+      "type_byte": 193,
+      "sequence": 12,
+      "flags": 1,
+      "control": 2,
+      "command_byte_0": 0,
+      "command_byte_1": 1,
+      "declared_length": 47,
+      "code": 0,
+      "type_name": "start",
+      "packet_size": 20,
+      "bytes_after_header": 9,
+      "length_semantics": "unresolved",
+      "payload_omitted": true
+    },
+    {
+      "frame": 264,
+      "opcode": "0x52",
+      "type_byte": 193,
+      "sequence": 12,
+      "flags": 1,
+      "control": 1,
+      "command_byte_0": 0,
+      "command_byte_1": 1,
+      "declared_length": 11,
+      "code": 0,
+      "type_name": "start",
+      "packet_size": 13,
+      "bytes_after_header": 2,
+      "length_semantics": "unresolved",
+      "payload_omitted": true
+    },
+    {
+      "frame": 266,
+      "opcode": "0x1b",
+      "type_byte": 193,
+      "sequence": 12,
+      "flags": 1,
+      "control": 2,
+      "command_byte_0": 0,
+      "command_byte_1": 1,
+      "declared_length": 47,
+      "code": 0,
+      "type_name": "start",
+      "packet_size": 20,
+      "bytes_after_header": 9,
+      "length_semantics": "unresolved",
+      "payload_omitted": true
+    }
+  ],
+  "payloads_and_identities_omitted": true,
+  "reassembly_and_crc_validation": false,
+  "capture_sha256": "3a0b6d3922ced2a12ebf2832da96b11d706cd3d497cf7c00b7cac73cf1c34da5"
+}

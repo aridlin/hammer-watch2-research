@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-31",
+  "revision1_hardware_feedback": {
+    "photo_sha256": "720528941b2bce505a7ce4978179749df6d6fa7bbd2e29ff52ccc9327c098411",
+    "photo_kept_private": true,
+    "observed": [
+      "Digital time renders but overlaps fixed background pressure and mountain icons",
+      "Orange palette renders",
+      "Pressure/altitude numeric fields are visible; live behavior was uncertain to user"
+    ],
+    "user_confirmed": [
+      "Factory compass rotates normally",
+      "Test compass freezes between minute changes and catches up when the minute changes"
+    ],
+    "acceptance": "Rejected visual/refresh behavior despite successful transfer"
+  },
+  "scope_update": "User requested seconds and removal of both pressure and altitude meters",
+  "revision3": {
+    "filename": "ewr24dig03.bin",
+    "revision": 3,
+    "bytes": 416683,
+    "sha256": "6452bf0100e6214922feb68c73c8f149a9d3bc78ab7d833bbb844b9c81818b9b",
+    "container_crc_valid": true,
+    "preserved_non_layout_resources": 124,
+    "patched_meter_backgrounds": [
+      "Fade_bg_0_0565.bmp",
+      "Fade_bg_1_0565.bmp",
+      "bg_0888.bmp"
+    ],
+    "factory_filename_different": true,
+    "palette": "original multi-palette selection",
+    "physical_installation_attempted": true,
+    "activation": "select test face manually on watch after upload",
+    "transfer_acknowledged": true,
+    "active_confirmed": true,
+    "factory_retained": true,
+    "user_feedback": "Seconds work; compass still freezes"
+  },
+  "implementation": [
+    "Normal-mode HH:MM plus colon icon plus seconds text, using existing Time glyphs",
+    "No second updates added to AOD",
+    "Removed pressure/altitude widget bindings, gauges, labels and units",
+    "Patched fixed normal icons and AOD gauges within three declared background masks",
+    "All other 124 image resources unchanged; outer compass pixels unchanged",
+    "Physical result disproves text/second as sufficient compass redraw trigger"
+  ],
+  "new_image_format_evidence": "Marker12 is opaque BGR888/LZ4; decoded original background matches source RGB pixels byte-for-byte",
+  "tests_passed": 142,
+  "latest_scope": "Subtle analog hands behind digital time, date instead of heart rate, short seconds sweep at rim, remove white artifact"
+}

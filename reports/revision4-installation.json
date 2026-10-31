@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-31",
+  "revision": 4,
+  "transfer_completed": true,
+  "real_ack_count": 2273,
+  "post_upload_metadata": {
+    "operation": "dial-info",
+    "response_code": 0,
+    "sequence_response_bit": true,
+    "response_bytes": 429,
+    "identifiers_omitted": true,
+    "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+    "crc16_valid": true,
+    "present_numeric_fields": {
+      "framework_version": 8,
+      "cloud_capacity_count": 24,
+      "cloud_used_count": 13,
+      "photo_capacity_count": 1,
+      "wallpaper_capacity_count": 1,
+      "total_bytes": 41943040,
+      "cloud_used_bytes": 4030464,
+      "compression": 4,
+      "photo_image_limit": 3,
+      "all_face_limit": 24
+    },
+    "face_entry_count": 13,
+    "active_is_acquired_adventurer": false,
+    "revision3_test_entry_present": true,
+    "active_is_revision3_test": false,
+    "revision4_test_entry_present": true,
+    "active_is_revision4_test": true,
+    "standalone_test_entry_present": true,
+    "active_is_standalone_test": false,
+    "adventurer_entry_present": true
+  },
+  "private_log_sha256": {
+    "upload.jsonl": "a5abbed40669768e30dcfc9baad13c241717182d1316b6f2528b785752eaf6dd",
+    "dial-after.jsonl": "192595e17ff90239119a9115e8a7650f5f73eaeb4a58460d304ae0836e111fae"
+  },
+  "firmware_modified": false,
+  "factory_overwritten": false,
+  "runtime_acceptance": "Awaiting user observation"
+}
