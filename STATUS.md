@@ -11,7 +11,8 @@ custom face is **not accepted as complete**: compass refresh is still broken.
 | 3 (`ewr24dig03`) | Installed and active; user confirms seconds work but compass still freezes; meters removed |
 | 4 (`ewr24dig04`) | Installed; user confirms compass still broken. Weather font/date and badge removal requested. |
 | 5 (`ewr24dig05`) | Installed; weather font, curved orange date without badge, weather heading widgets; runtime result pending |
-| 6 (`ewr24dig06`) | Installed and active; Polish weekdays; factory retained; runtime observation pending |
+| 6 (`ewr24dig06`) | Installed and active; Polish weekdays; compass still broken per user; weekday too high |
+| 7 (`ewrcompass_24d07@LC`) | Installed and active; smaller clock/lower weekday; compass behavior pending |
 
 Revision 4 restores the factory hour/minute/second pointer geometry, dims the
 hour/minute/hub sprites, and changes the second sprite to a short outer marker.
@@ -22,7 +23,7 @@ remaining “white texture” report has no new close-up, so complete removal is
 not yet claimed. Compass widgets themselves are unchanged. Retaining pointers is
 a redraw hypothesis, not a proven fix. The host upload never modifies firmware.
 
-Offline checks: **153 passed**, including actual source/compiler image guards.
+Offline checks: **156 passed**, including actual source/compiler image guards.
 Real sample tests skip when proprietary local samples are absent. Final acceptance
 requires checking date, time, rim position, absence of unwanted graphics, and
 continuous compass rotation on the physical watch. Earlier sections below retain
@@ -143,7 +144,7 @@ Do not rerun the uploader automatically after successful completion.
 ## Repository
 
 Use `tools/git-project` for metadata in ignored `private/git` because this workspace
-reserves read-only `.git`. No remote/publication exists. See [README](README.md),
+reserves read-only `.git`. Public snapshot: https://github.com/aridlin/hammer-watch2-research. See [README](README.md),
 [protocol](protocol.md), [research](research.md), [format](format.md) and
 [emulator lab](emulator.md).
 
@@ -172,3 +173,19 @@ twice through the observed host path. The inquiry parser now keeps raw and
 adjacent-duplicate-suppressed interpretations and accepts only a CRC-valid message.
 A fresh read confirms 15 installed faces, revision 6 active, and factory ADVENTURER
 present. The initial unassembled reply was not evidence of missing/deleted faces.
+
+## Revision 7: subtle clock reduction and integrated lower date
+
+The user confirms revision 6 compass is still broken. `sob` is too high and feels
+stickered on. Revision 7 lowers the weekday baseline radius from 130 to 138 pixels,
+matching the numeric date renderer's radius. Clock glyphs change from 48×58 to
+47×57; colon from 20×58 to 20×57. HH:MM:SS stays centered at x233, with overall
+width 322 rather than 328 pixels (1.83% smaller).
+
+Both acquired original compass face names contain `compass`; all prior test names
+omitted it. A new separate `ewrcompass_24d07@LC.bin` preserves the factory naming
+prefix/suffix while avoiding either factory filename. Filename-based firmware
+sensor activation is an unverified hypothesis. Compass and pointer widget dicts
+are identical to revision 6; no refresh-rate setting is invented. Cosmetics change
+in the same iteration, so this is not a strict naming-only control. Physical
+transfer and fresh metadata confirmation are recorded in reports/revision7-installation.json.

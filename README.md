@@ -14,7 +14,7 @@ Revision 4 adds dim analog hands behind `HH:MM:SS`, replaces heart rate with
 `DD.MM`, removes pressure/altitude meters, and uses the factory second-pointer
 widget for a short rim marker completing one lap per minute. This also tests
 whether retaining the factory pointer model restores compass redraws. The user confirms the compass still freezes with these pointers restored.
-Revision 5 uses weather-face font/date and its native heading renderer. Revision 6 adds Polish weekday labels and is installed/active; physical compass acceptance remains pending.
+Revision 5 uses weather-face font/date and its native heading renderer. Revision 6 adds Polish weekday labels and is installed/active; the user confirms its compass is still broken. Revision 7 tests factory-style naming alongside a tiny clock reduction and lower date.
 
 See [current status](STATUS.md), [research](research.md), [format](format.md),
 [protocol](protocol.md), [field feedback](reports/field-feedback-and-revision3.json)

@@ -3,11 +3,12 @@ import binascii,json
 from pathlib import Path
 import pytest
 from tools.watch_face_install import validate_ack
+from tools.adventurer_digital import TEST_NAMES
 
-@pytest.mark.parametrize('revision,directory',[(3,'physical-seconds-no-meters-02'),(4,'physical-hands-date-rim-01'),(5,'physical-weather-font-01'),(6,'physical-polish-weather-01')])
+@pytest.mark.parametrize('revision,directory',[(3,'physical-seconds-no-meters-02'),(4,'physical-hands-date-rim-01'),(5,'physical-weather-font-01'),(6,'physical-polish-weather-01'),(7,'physical-smaller-time-lower-date-01')])
 def test_real_acknowledgments_match_source_bytes(revision,directory):
     log=Path('private/emulator')/directory/'upload.jsonl'
-    binary=Path(f'faces/local/adventurer/ewr24dig0{revision}.bin')
+    binary=Path('faces/local/adventurer')/(TEST_NAMES[revision]+'.bin')
     if not log.exists() or not binary.exists():pytest.skip('Private physical capture absent')
     data=binary.read_bytes();sent=None;acks=0;complete=False
     for line in log.read_text().splitlines():

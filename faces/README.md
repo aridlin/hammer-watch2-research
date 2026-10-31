@@ -25,3 +25,21 @@ upload or rendering acceptance has occurred. See the prepared plan and STATUS.md
 The real watch has now accepted and activated `ewr24digital.bin` after explicit
 approval. Original ADVENTURER remains present. This supersedes the earlier
 "no physical upload" status; visual and live-complication acceptance is pending.
+
+Current revision 7 source preparation (private samples required):
+
+```sh
+.venv/bin/python -m tools.adventurer_source --revision 7 \
+  --source faces/local/adventurer/source \
+  --destination faces/local/adventurer/revision7-rebuild-source
+.venv/bin/python -m tools.sdk_compile_reference \
+  --source faces/local/adventurer/revision7-rebuild-source \
+  --destination faces/local/adventurer/revision7-rebuild.bin \
+  --platform JX_3085S_PLATFORM --abi arm64-v8a
+.venv/bin/python -m tools.watch_face_install --revision 7 \
+  --candidate faces/local/adventurer/revision7-rebuild.bin
+```
+
+These commands prepare, compile and validate only. They do not install. Existing
+destinations are refused. Original samples, font dependency and offline emulator
+setup remain necessary; vendor assets are not supplied by this repository.

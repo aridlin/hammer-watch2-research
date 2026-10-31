@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-31",
+  "revision": 7,
+  "transfer_completed": true,
+  "real_ack_count": 2633,
+  "post_upload_metadata": {
+    "operation": "dial-info",
+    "response_code": 0,
+    "sequence_response_bit": true,
+    "response_bytes": 525,
+    "identifiers_omitted": true,
+    "trailer_integrity": "CRC16_CCITT_FALSE_little_endian_observed",
+    "crc16_valid": true,
+    "present_numeric_fields": {
+      "framework_version": 8,
+      "cloud_capacity_count": 24,
+      "cloud_used_count": 16,
+      "photo_capacity_count": 1,
+      "wallpaper_capacity_count": 1,
+      "total_bytes": 41943040,
+      "cloud_used_bytes": 5439488,
+      "compression": 4,
+      "photo_image_limit": 3,
+      "all_face_limit": 24
+    },
+    "face_entry_count": 16,
+    "active_is_acquired_adventurer": false,
+    "revision3_test_entry_present": true,
+    "active_is_revision3_test": false,
+    "revision4_test_entry_present": true,
+    "active_is_revision4_test": false,
+    "revision5_test_entry_present": true,
+    "active_is_revision5_test": false,
+    "revision6_test_entry_present": true,
+    "active_is_revision6_test": false,
+    "revision7_test_entry_present": true,
+    "active_is_revision7_test": true,
+    "standalone_test_entry_present": true,
+    "active_is_standalone_test": false,
+    "adventurer_entry_present": true,
+    "bluez_services_resolved_flag": true
+  },
+  "immediate_followup": "Incomplete fragment sequence; no missing/deleted face inference; fresh read succeeds",
+  "private_log_sha256": {
+    "upload.jsonl": "c0064f20aa5fae3182ca59ef4ce6de7ea7bbdab7b1d98dd30785048b1997212c",
+    "dial-after.jsonl": "6b26d969a751719d79a8c77d51da2fef80ef561abdd30f74b66f36362d7dd710",
+    "dial-recheck.jsonl": "73f6002625f64cbc259f04df2082d5753ae5eae63f389b5af2525f4dc62ca905"
+  },
+  "firmware_modified": false,
+  "factory_overwritten": false,
+  "runtime_acceptance": "Awaiting visual check; no compass fix claimed",
+  "tests_passed": 156
+}

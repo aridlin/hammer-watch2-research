@@ -28,6 +28,7 @@ def status_keys(revision):
     if revision==4:return 'revision4_test_entry_present','active_is_revision4_test'
     if revision==5:return 'revision5_test_entry_present','active_is_revision5_test'
     if revision==6:return 'revision6_test_entry_present','active_is_revision6_test'
+    if revision==7:return 'revision7_test_entry_present','active_is_revision7_test'
     raise ValueError('Unsupported physical test revision')
 
 
@@ -39,11 +40,11 @@ def prepare(candidate,original,revision=1):
     original_model=next(r['json'] for r in source['resources'] if r['name']=='dial.json')
     expected,_=transform(original_model,standalone=True,revision=revision)
     if report['name']!=TEST_NAMES[revision] or model!=expected:raise ValueError('Only the reviewed standalone digital layout is accepted')
-    from .adventurer_source import PATCH_PATHS,clean_meter_background,revision4_images,revision5_images,revision6_images
+    from .adventurer_source import PATCH_PATHS,clean_meter_background,revision4_images,revision5_images,revision6_images,revision7_images
     changed=set(PATCH_PATHS) if revision==3 else set()
     expected_images={}
     if revision>=4:
-        image_transform=revision6_images if revision==6 else (revision5_images if revision==5 else revision4_images)
+        image_transform={4:revision4_images,5:revision5_images,6:revision6_images,7:revision7_images}[revision]
         expected_images={Path(k).name:v for k,v in image_transform(ROOT/'faces/local/adventurer/source').items()}
         for name in PATCH_PATHS:
             if revision>=5 and name=='bg_0888.bmp':continue
@@ -192,7 +193,7 @@ def execute(data,target,destination,resume=False,revision=1):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--revision',type=int,choices=[1,3,4,5,6],default=1)
+    p.add_argument('--revision',type=int,choices=[1,3,4,5,6,7],default=1)
     p.add_argument('--candidate',required=True,type=Path)
     p.add_argument('--original',type=Path,default=Path('faces/local/adventurer/official-green.bin'))
     p.add_argument('--resume-reviewed-test',action='store_true',help='Only continue an already-approved partial test after verifying receiver prefix CRC; no new D1')

@@ -122,7 +122,7 @@ def revision5_images(source):
 POLISH_WEEKDAYS=('pon','wt','śr','czw','pt','sob','ndz')
 
 
-def revision6_images(source):
+def revision6_images(source,week_radius=130):
     """Monday-first order verified by viewing all seven weather source assets.
 
     Numeric time/day glyphs remain vendor originals. Polish letters absent from
@@ -141,12 +141,21 @@ def revision6_images(source):
         flat=flat.resize((72,28),Image.Resampling.LANCZOS)
         curved=Image.new('RGBA',(466,466))
         # Inverse sampling fills the curved baseline without forward-map holes.
-        for y in range(310,365):
+        for y in range(310+week_radius-130,365+week_radius-130):
             for x in range(170,251):
-                dx=x-233;dy=y-233;radius=math.hypot(dx,dy)
-                sx=round(math.atan2(dx,dy)*130+58);sy=round(radius-130+27)
+                dx=x-233;dy=y-233;distance=math.hypot(dx,dy)
+                sx=round(math.atan2(dx,dy)*week_radius+58);sy=round(distance-week_radius+27)
                 if 0<=sx<72 and 0<=sy<28:curved.putpixel((x,y),flat.getpixel((sx,sy)))
         result[f'WWeek/WWeek_{i}_8888.png']=curved
+    return result
+
+
+def revision7_images(source):
+    from PIL import Image
+    result=revision6_images(source,week_radius=138)
+    for i in range(11):
+        name=f'Time/Time_{i}_8888.png';image=result[name]
+        result[name]=image.resize((47 if i<10 else 20,57),Image.Resampling.LANCZOS)
     return result
 
 
@@ -172,7 +181,7 @@ def prepare_source(source,destination,revision=3):
                             'original_file_sha256':hashlib.sha256(original.read_bytes()).hexdigest(),
                             'new_file_sha256':hashlib.sha256(output.read_bytes()).hexdigest()})
     if revision>=4:
-        images=revision6_images(source) if revision==6 else (revision5_images(source) if revision==5 else revision4_images(source))
+        images={4:revision4_images,5:revision5_images,6:revision6_images,7:revision7_images}[revision](source)
         for relative,image in images.items():
             output=destination/'firmware'/relative;output.parent.mkdir(parents=True,exist_ok=True)
             image.save(output)
@@ -183,7 +192,7 @@ def prepare_source(source,destination,revision=3):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--source',required=True,type=Path)
-    p.add_argument('--destination',required=True,type=Path);p.add_argument('--revision',type=int,choices=[3,4,5,6],default=3);a=p.parse_args()
+    p.add_argument('--destination',required=True,type=Path);p.add_argument('--revision',type=int,choices=[3,4,5,6,7],default=3);a=p.parse_args()
     try:print(json.dumps(prepare_source(a.source,a.destination,a.revision),indent=2));return 0
     except (OSError,ValueError,KeyError,TypeError) as exc:
         print(json.dumps({'error_type':type(exc).__name__}));return 2

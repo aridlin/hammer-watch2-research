@@ -114,6 +114,8 @@ def summarize_response(operation,packet,verify_crc=True):
         result['active_is_revision5_test']=canonical(nested.get(14,[b''])[0])==b'ewr24dig05'
         result['revision6_test_entry_present']=any(any(canonical(n)==b'ewr24dig06' for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))
         result['active_is_revision6_test']=canonical(nested.get(14,[b''])[0])==b'ewr24dig06'
+        result['revision7_test_entry_present']=any(any(canonical(n)==b'ewrcompass_24d07@LC' for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))
+        result['active_is_revision7_test']=canonical(nested.get(14,[b''])[0])==b'ewrcompass_24d07@LC'
         result['standalone_test_entry_present']=any(any(canonical(n)==b'ewr24digital' for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))
         result['active_is_standalone_test']=canonical(nested.get(14,[b''])[0])==b'ewr24digital'
         result['adventurer_entry_present']=any(any(canonical(n)==target for n in byte_fields(e,{4}).get(4,[])) for e in nested.get(10,[]))

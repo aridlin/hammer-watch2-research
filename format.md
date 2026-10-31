@@ -123,3 +123,10 @@ source contains day and curved widgets separately; this combination is new.
 Revision 6 uses Monday-first Polish labels, verified against the actual weather
 array order. DejaVu Sans Bold Oblique supplies letters unavailable in the original
 English weekday bitmaps. Numeric date and time retain actual weather glyphs.
+
+Revision 7 makes the weather clock subtly smaller: digits 47×57 instead of 48×58,
+colon 20×57 instead of 20×58. The 322-pixel combined time remains centered on x233.
+Weekday bitmap baseline radius increases from 130 to 138; native numeric date
+radius stays 138. Native compass/pointer bindings remain identical to revision 6.
+The separate candidate name preserves `ewrcompass_` and `@LC` as a naming hypothesis,
+without changing the original entry or asserting a firmware naming rule.

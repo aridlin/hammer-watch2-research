@@ -43,7 +43,7 @@
   },
   "firmware_modified": false,
   "factory_overwritten": false,
-  "runtime_acceptance": "Awaiting user observation",
+  "runtime_acceptance": "User confirms compass still broken; weekday sob feels too high and stickered on; requests tiny clock reduction",
   "immediate_followup": "Unassembled due to duplicate C2 notifications, not absence of entries",
   "fresh_recheck": {
     "operation": "dial-info",

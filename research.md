@@ -166,3 +166,14 @@ widgets, retaining outer-ring widget dictionaries. This is a renderer experiment
 no verified refresh-rate option has been found. Curved weekday is a bitmap layout
 change; `curved/day` is a new combination of known widget and data binding and
 requires physical confirmation. No claim of a working compass is made.
+
+## Compass naming lead and revision 7 — 2026-10-31
+
+User feedback rejects compass behavior in revision 6 too. Actual source names
+`ewrcompass_0819@LC` and `ewr01_compass_4` both contain `compass`; custom revisions
+1–6 use `ewr24digital` / `ewr24digNN`. Revision 7 tests a new name
+`ewrcompass_24d07@LC` without touching either original entry. This is a correlation
+between two acquired samples, not proof of a firmware rule. No firmware code has
+established name-based activation. Existing sensor widget dictionaries remain
+unchanged from revision 6. Tiny time scaling and lower weekday placement are
+independent user-requested cosmetic changes included in the same candidate.
